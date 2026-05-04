@@ -89,9 +89,14 @@ const faqs = [
   },
 ] as const
 
-export default async function HomePage() {
+type LandingPageProps = {
+  searchParams?: Promise<{ referred?: string; verify?: string }>
+}
+
+export default async function HomePage({ searchParams }: LandingPageProps) {
   const cookieStore = await cookies()
   const referredByCode = cookieStore.get("mortem-ref")?.value ?? null
+  const resolvedSearch = (await searchParams) ?? {}
 
   return (
     <main className="min-h-screen bg-background text-foreground">
@@ -113,6 +118,30 @@ export default async function HomePage() {
             </Button>
           </div>
         </nav>
+
+        {resolvedSearch.referred === "1" ? (
+          <section className="mt-8 border border-line bg-ink-2 p-5">
+            <p className="eyebrow">Referral filed</p>
+            <h2 className="mt-2 font-display text-3xl leading-tight">
+              This request was opened from a referral link.
+            </h2>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-muted-foreground">
+              The referral only counts after you complete signup and verify your email.
+            </p>
+          </section>
+        ) : null}
+
+        {resolvedSearch.verify === "invalid" ? (
+          <section className="mt-8 border border-line bg-ink-2 p-5">
+            <p className="eyebrow">Verification failed</p>
+            <h2 className="mt-2 font-display text-3xl leading-tight">
+              That verification link is no longer valid.
+            </h2>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-muted-foreground">
+              Submit the form again and Mortem will issue a fresh verification email.
+            </p>
+          </section>
+        ) : null}
 
         <section className="grid min-h-[calc(100vh-7rem)] gap-10 py-14 lg:grid-cols-[minmax(0,1.05fr)_460px] lg:items-center">
           <Reveal>

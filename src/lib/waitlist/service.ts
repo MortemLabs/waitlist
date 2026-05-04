@@ -31,6 +31,10 @@ export function normalizeEmail(email: string): string {
   return email.trim().toLowerCase()
 }
 
+export function isDuplicateEmail(existingEmail: string, incomingEmail: string): boolean {
+  return normalizeEmail(existingEmail) === normalizeEmail(incomingEmail)
+}
+
 export function hashVerificationToken(token: string): string {
   return createHash("sha256").update(token).digest("hex")
 }
@@ -52,7 +56,40 @@ export function createVerificationExpiry(now = new Date()): Date {
 }
 
 export function shouldIgnoreSelfReferral(email: string, referrerEmail: string): boolean {
-  return normalizeEmail(email) === normalizeEmail(referrerEmail)
+  return isDuplicateEmail(email, referrerEmail)
+}
+
+export function getVerificationStatus(
+  entry: Pick<WaitlistEntry, "emailVerificationExpiresAt" | "emailVerifiedAt">,
+  now = new Date(),
+): "already_verified" | "expired" | "verified" {
+  if (entry.emailVerifiedAt !== null) {
+    return "already_verified"
+  }
+
+  if (
+    entry.emailVerificationExpiresAt !== null &&
+    entry.emailVerificationExpiresAt.getTime() < now.getTime()
+  ) {
+    return "expired"
+  }
+
+  return "verified"
+}
+
+export function getNextPriorityState(
+  currentCount: number,
+  priorityUnlockedAt: Date | null,
+  now = new Date(),
+) {
+  const nextReferralCount = currentCount + 1
+  const unlocksNow = priorityUnlockedAt === null && nextReferralCount >= 3
+
+  return {
+    nextReferralCount,
+    priorityUnlockedAt: unlocksNow ? now : priorityUnlockedAt,
+    unlocksNow,
+  }
 }
 
 export async function submitWaitlistEntry(
@@ -166,28 +203,16 @@ export async function verifyWaitlistEntry(
       return { status: "invalid" }
     }
 
-    if (entry.emailVerifiedAt !== null) {
-      return {
-        dashboardToken: entry.dashboardToken,
-        priorityUnlocked: false,
-        priorityUnlockedEmail: null,
-        priorityUnlockedEntryId: null,
-        priorityUnlockedReferralCount: null,
-        status: "already_verified",
-      }
-    }
+    const verificationStatus = getVerificationStatus(entry, now)
 
-    if (
-      entry.emailVerificationExpiresAt !== null &&
-      entry.emailVerificationExpiresAt.getTime() < now.getTime()
-    ) {
+    if (verificationStatus === "already_verified" || verificationStatus === "expired") {
       return {
         dashboardToken: entry.dashboardToken,
         priorityUnlocked: false,
         priorityUnlockedEmail: null,
         priorityUnlockedEntryId: null,
         priorityUnlockedReferralCount: null,
-        status: "expired",
+        status: verificationStatus,
       }
     }
 
@@ -211,21 +236,23 @@ export async function verifyWaitlistEntry(
       })
 
       if (referrer !== undefined) {
-        const nextReferralCount = referrer.verifiedReferralCount + 1
-        const shouldUnlock =
-          referrer.priorityUnlockedAt === null && nextReferralCount >= 3
+        const nextPriorityState = getNextPriorityState(
+          referrer.verifiedReferralCount,
+          referrer.priorityUnlockedAt,
+          now,
+        )
 
         const [updatedReferrer] = await tx
           .update(waitlistEntries)
           .set({
-            priorityUnlockedAt: shouldUnlock ? now : referrer.priorityUnlockedAt,
+            priorityUnlockedAt: nextPriorityState.priorityUnlockedAt,
             updatedAt: now,
-            verifiedReferralCount: nextReferralCount,
+            verifiedReferralCount: nextPriorityState.nextReferralCount,
           })
           .where(eq(waitlistEntries.id, referrer.id))
           .returning()
 
-        if (shouldUnlock) {
+        if (nextPriorityState.unlocksNow) {
           priorityUnlocked = true
           priorityUnlockedEmail = updatedReferrer.email
           priorityUnlockedEntryId = updatedReferrer.id
