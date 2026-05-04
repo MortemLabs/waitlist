@@ -40,7 +40,7 @@ export function WaitlistForm({
   const referredLabel = useMemo(
     () =>
       referredByCode
-        ? "Referral recorded. Your referrer only gets credit after you verify your email."
+        ? "Referral recorded. It counts after you verify your email."
         : null,
     [referredByCode],
   )
@@ -105,16 +105,16 @@ export function WaitlistForm({
         <div>
           <p className="eyebrow">Early access request</p>
           <h2 className="mt-2 font-display text-3xl leading-tight">
-            Get in line before the next bad trade.
+            Join the queue.
           </h2>
         </div>
-        <span className="death-stamp">3 referrals = priority</span>
+        <span className="case-meta text-signal">3 referrals = priority</span>
       </div>
 
       <div className="mt-5 space-y-4">
         <Field
           error={fieldErrors.email}
-          helper="Verification required. One operator, one place in line."
+          helper="Verification required."
           id="email"
           label="Work email"
         >
@@ -136,7 +136,7 @@ export function WaitlistForm({
         <div className="grid gap-4 md:grid-cols-2">
           <Field
             error={fieldErrors.role}
-            helper="Who will actually use the diagnosis output?"
+            helper="Who will use the product?"
             id="role"
             label="Role"
           >
@@ -157,7 +157,7 @@ export function WaitlistForm({
 
           <Field
             error={fieldErrors.teamType}
-            helper="This shapes the first beta cohort."
+            helper="Choose the setup you run today."
             id="teamType"
             label="Setup"
           >
@@ -179,7 +179,7 @@ export function WaitlistForm({
 
         <Field
           error={fieldErrors.biggestFailureMode}
-          helper="Pick the failure class you would pay to catch sooner."
+          helper="Pick the main thing you want to catch sooner."
           id="biggestFailureMode"
           label="Primary failure mode"
         >
@@ -223,7 +223,7 @@ export function WaitlistForm({
             Join the waitlist
           </Button>
           <p className="max-w-xs text-sm leading-6 text-muted-foreground">
-            Verify your email. Refer three verified operators. Move into the priority queue.
+            Verify your email. Three verified referrals move you up.
           </p>
         </div>
       </div>

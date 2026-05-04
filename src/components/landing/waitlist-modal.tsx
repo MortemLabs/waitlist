@@ -74,9 +74,9 @@ export function WaitlistModal({
             >
               <div className="flex items-center justify-between border border-line border-b-0 bg-ink-2 px-5 py-4">
                 <div>
-                  <p className="eyebrow">Open the case file</p>
+                  <p className="eyebrow">Early access</p>
                   <h2 id={titleId} className="mt-2 font-display text-3xl leading-tight">
-                    Request early access before the next bad trade lands.
+                    Request access.
                   </h2>
                 </div>
                 <Button
