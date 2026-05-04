@@ -17,6 +17,10 @@ export type SubmitWaitlistResult = {
 export type VerifyWaitlistResult =
   | {
       dashboardToken: string
+      priorityUnlocked: boolean
+      priorityUnlockedEntryId: string | null
+      priorityUnlockedEmail: string | null
+      priorityUnlockedReferralCount: number | null
       status: "already_verified" | "expired" | "verified"
     }
   | {
@@ -165,6 +169,10 @@ export async function verifyWaitlistEntry(
     if (entry.emailVerifiedAt !== null) {
       return {
         dashboardToken: entry.dashboardToken,
+        priorityUnlocked: false,
+        priorityUnlockedEmail: null,
+        priorityUnlockedEntryId: null,
+        priorityUnlockedReferralCount: null,
         status: "already_verified",
       }
     }
@@ -175,6 +183,10 @@ export async function verifyWaitlistEntry(
     ) {
       return {
         dashboardToken: entry.dashboardToken,
+        priorityUnlocked: false,
+        priorityUnlockedEmail: null,
+        priorityUnlockedEntryId: null,
+        priorityUnlockedReferralCount: null,
         status: "expired",
       }
     }
@@ -182,17 +194,67 @@ export async function verifyWaitlistEntry(
     const [updated] = await tx
       .update(waitlistEntries)
       .set({
-        emailVerificationExpiresAt: null,
-        emailVerificationTokenHash: null,
         emailVerifiedAt: now,
         updatedAt: now,
       })
       .where(eq(waitlistEntries.id, entry.id))
       .returning()
 
+    let priorityUnlocked = false
+    let priorityUnlockedEntryId: string | null = null
+    let priorityUnlockedEmail: string | null = null
+    let priorityUnlockedReferralCount: number | null = null
+
+    if (updated.referredById !== null) {
+      const referrer = await tx.query.waitlistEntries.findFirst({
+        where: eq(waitlistEntries.id, updated.referredById),
+      })
+
+      if (referrer !== undefined) {
+        const nextReferralCount = referrer.verifiedReferralCount + 1
+        const shouldUnlock =
+          referrer.priorityUnlockedAt === null && nextReferralCount >= 3
+
+        const [updatedReferrer] = await tx
+          .update(waitlistEntries)
+          .set({
+            priorityUnlockedAt: shouldUnlock ? now : referrer.priorityUnlockedAt,
+            updatedAt: now,
+            verifiedReferralCount: nextReferralCount,
+          })
+          .where(eq(waitlistEntries.id, referrer.id))
+          .returning()
+
+        if (shouldUnlock) {
+          priorityUnlocked = true
+          priorityUnlockedEmail = updatedReferrer.email
+          priorityUnlockedEntryId = updatedReferrer.id
+          priorityUnlockedReferralCount = updatedReferrer.verifiedReferralCount
+        }
+      }
+    }
+
     return {
       dashboardToken: updated.dashboardToken,
+      priorityUnlocked,
+      priorityUnlockedEmail,
+      priorityUnlockedEntryId,
+      priorityUnlockedReferralCount,
       status: "verified",
     }
   })
+}
+
+export async function markPriorityNotificationSent(
+  db: DatabaseExecutor,
+  entryId: string,
+  now = new Date(),
+): Promise<void> {
+  await db
+    .update(waitlistEntries)
+    .set({
+      priorityNotifiedAt: now,
+      updatedAt: now,
+    })
+    .where(eq(waitlistEntries.id, entryId))
 }

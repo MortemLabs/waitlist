@@ -49,3 +49,37 @@ export async function sendVerificationEmail({
     to: email,
   })
 }
+
+export async function sendPriorityUnlockedEmail({
+  email,
+  referralCount,
+}: {
+  email: string
+  referralCount: number
+}) {
+  const appUrl = getAppUrl()
+
+  await getResendClient().emails.send({
+    from: getResendFromEmail(),
+    html: `
+      <div style="background:#0E0D0C;color:#EDEEE9;padding:32px;font-family:Inter Tight,Arial,sans-serif">
+        <p style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#A39C95;margin:0 0 16px">Mortem · Priority Queue</p>
+        <h1 style="font-family:Instrument Serif,Georgia,serif;font-size:36px;line-height:1.05;margin:0 0 16px">You moved up the file.</h1>
+        <p style="font-size:16px;line-height:1.7;color:#C3BFB9;margin:0 0 16px">
+          ${referralCount} verified referrals have been filed under your link. Your request is now marked for priority beta review.
+        </p>
+        <p style="font-size:14px;line-height:1.7;color:#A39C95;margin:0 0 24px">
+          This does not mean instant access. It does move your case higher in the review queue.
+        </p>
+        <p style="margin:0">
+          <a href="${appUrl}" style="display:inline-block;background:#DC2626;color:#EDEEE9;padding:14px 20px;text-decoration:none;font-family:JetBrains Mono,monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase">
+            Open Mortem
+          </a>
+        </p>
+      </div>
+    `,
+    subject: "Mortem early access — priority queue unlocked",
+    text: `Your Mortem request is now in the priority queue after ${referralCount} verified referrals.`,
+    to: email,
+  })
+}
