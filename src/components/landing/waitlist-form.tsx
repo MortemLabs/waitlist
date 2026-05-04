@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Select } from "@/components/ui/select"
+import { cn } from "@/lib/utils"
 import { waitlistFormSchema, type WaitlistFormInput } from "@/lib/waitlist/schema"
 import {
   FAILURE_MODE_OPTIONS,
@@ -13,10 +14,16 @@ import { AlertCircle, Loader2 } from "lucide-react"
 import { useMemo, useState } from "react"
 
 type WaitlistFormProps = {
+  autoFocusEmail?: boolean
+  className?: string
   referredByCode?: string | null
 }
 
-export function WaitlistForm({ referredByCode }: WaitlistFormProps) {
+export function WaitlistForm({
+  autoFocusEmail = false,
+  className,
+  referredByCode,
+}: WaitlistFormProps) {
   const [form, setForm] = useState<WaitlistFormInput>({
     biggestFailureMode: FAILURE_MODE_OPTIONS[0].value,
     email: "",
@@ -91,7 +98,7 @@ export function WaitlistForm({ referredByCode }: WaitlistFormProps) {
     <form
       id="waitlist"
       onSubmit={onSubmit}
-      className="border border-line bg-ink-2 p-5 md:p-6"
+      className={cn("border border-line bg-ink-2 p-5 md:p-6", className)}
       noValidate
     >
       <div className="flex items-start justify-between gap-4 border-b border-line pb-4">
@@ -114,6 +121,7 @@ export function WaitlistForm({ referredByCode }: WaitlistFormProps) {
           <Input
             id="email"
             type="email"
+            autoFocus={autoFocusEmail}
             autoComplete="email"
             inputMode="email"
             spellCheck={false}

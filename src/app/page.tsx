@@ -1,10 +1,10 @@
 import { cookies } from "next/headers"
 import Link from "next/link"
 import { Wordmark } from "@/components/mortem/mark"
+import { WaitlistModal } from "@/components/landing/waitlist-modal"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Reveal } from "@/components/landing/reveal"
-import { WaitlistForm } from "@/components/landing/waitlist-form"
 
 const diagnosisSteps = [
   {
@@ -56,39 +56,6 @@ const proofCards = [
   },
 ] as const
 
-const faqs = [
-  {
-    answer:
-      "No. Early access starts with retrospective diagnosis and a referral-gated queue. The beta cohort is for operators who want the real-time layer as it comes online.",
-    question: "Is real-time intervention already live?",
-  },
-  {
-    answer:
-      "No. Three verified referrals move you into the priority queue. Access is still reviewed so the cohort stays useful and feedback stays sharp.",
-    question: "Do 3 referrals guarantee instant access?",
-  },
-  {
-    answer:
-      "Bot builders, trading teams, and solo operators running live Solana strategies who need to know why trades failed before those failures repeat.",
-    question: "Who is this actually for?",
-  },
-  {
-    answer:
-      "No. The first version keeps humans in the loop. Mortem explains the failure path and points to the code that should change before any automation gets trust.",
-    question: "Will Mortem auto-edit my strategy code?",
-  },
-  {
-    answer:
-      "No. Referral credit only counts after the referred operator completes signup and verifies their email.",
-    question: "Do unverified referrals count?",
-  },
-  {
-    answer:
-      "Waitlist records stay private and scoped to Mortem's beta process. Nothing here is used to train models or made public.",
-    question: "What happens to my signup data?",
-  },
-] as const
-
 type LandingPageProps = {
   searchParams?: Promise<{ referred?: string; verify?: string }>
 }
@@ -113,9 +80,7 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
             <Button asChild variant="outline">
               <Link href="#how-it-works">Read the process</Link>
             </Button>
-            <Button asChild>
-              <Link href="#waitlist">Join the queue</Link>
-            </Button>
+            <WaitlistModal referredByCode={referredByCode} triggerLabel="Join the queue" triggerSize="default" />
           </div>
         </nav>
 
@@ -176,9 +141,7 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
               </div>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <Button asChild size="lg">
-                  <Link href="#waitlist">Request early access</Link>
-                </Button>
+                <WaitlistModal referredByCode={referredByCode} triggerLabel="Request early access" />
                 <Button asChild size="lg" variant="outline">
                   <Link href="#beta-access">How the queue works</Link>
                 </Button>
@@ -192,9 +155,42 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
           </Reveal>
 
           <Reveal delay={0.08}>
-            <div className="grid-noise border border-line bg-ink p-1">
-              <WaitlistForm referredByCode={referredByCode} />
-            </div>
+            <aside className="grid-noise border border-line bg-ink p-1">
+              <div className="border border-line bg-ink-2 p-5 md:p-6">
+                <div className="flex items-start justify-between gap-4 border-b border-line pb-4">
+                  <div>
+                    <p className="eyebrow">Beta docket</p>
+                    <h2 className="mt-2 font-display text-3xl leading-tight">
+                      The first cohort is being filed around one question.
+                    </h2>
+                  </div>
+                  <span className="death-stamp">Referral gated</span>
+                </div>
+
+                <div className="mt-5 space-y-3">
+                  <DocketRow
+                    label="What gets evaluated"
+                    value="Bad trading decisions tied to payloads, market context, and execution."
+                  />
+                  <DocketRow
+                    label="Who gets pulled in first"
+                    value="Builders and operators who can describe real failure modes clearly."
+                  />
+                  <DocketRow
+                    label="What moves you up"
+                    value="Three verified referrals that care about the same class of problem."
+                  />
+                </div>
+
+                <div className="mt-6 border border-line bg-ink px-4 py-4">
+                  <p className="case-meta text-signal">Review rule</p>
+                  <p className="mt-3 text-sm leading-6 text-muted-foreground">
+                    Priority queue is not automatic access. It means your case gets reviewed ahead
+                    of the general line once the referrals are verified.
+                  </p>
+                </div>
+              </div>
+            </aside>
           </Reveal>
         </section>
 
@@ -280,30 +276,6 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
           </div>
         </section>
 
-        <section className="py-12 md:py-16">
-          <Reveal>
-            <div className="mx-auto max-w-4xl">
-              <div className="text-center">
-                <p className="eyebrow">FAQ</p>
-                <h2 className="mt-3 font-display text-4xl leading-tight md:text-5xl">
-                  The first questions serious operators ask.
-                </h2>
-              </div>
-
-              <div className="mt-10 divide-y divide-line border border-line bg-ink-2">
-                {faqs.map((faq) => (
-                  <details key={faq.question} className="group p-5">
-                    <summary className="cursor-pointer list-none pr-6 text-left font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
-                      {faq.question}
-                    </summary>
-                    <p className="mt-4 text-sm leading-6 text-muted-foreground">{faq.answer}</p>
-                  </details>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-        </section>
-
         <section className="border border-line bg-ink-2 px-6 py-12 text-center md:px-10 md:py-16">
           <p className="eyebrow">Final call</p>
           <h2 className="mt-3 font-display text-4xl leading-tight md:text-6xl">
@@ -314,9 +286,7 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
             same class of failure.
           </p>
           <div className="mt-8 flex justify-center">
-            <Button asChild size="lg">
-              <Link href="#waitlist">Request early access</Link>
-            </Button>
+            <WaitlistModal referredByCode={referredByCode} triggerLabel="Request early access" />
           </div>
         </section>
 
@@ -338,6 +308,15 @@ function SignalCard({
       <p className="case-meta text-signal">{meta}</p>
       <h2 className="mt-3 font-display text-2xl leading-tight">{label}</h2>
       <p className="mt-4 text-sm leading-6 text-muted-foreground">{value}</p>
+    </div>
+  )
+}
+
+function DocketRow({ label, value }: Readonly<{ label: string; value: string }>) {
+  return (
+    <div className="border border-line bg-ink px-4 py-4">
+      <p className="case-meta text-fg-muted">{label}</p>
+      <p className="mt-3 text-sm leading-6 text-muted-foreground">{value}</p>
     </div>
   )
 }
