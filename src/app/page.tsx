@@ -147,10 +147,6 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
                 </Button>
               </div>
 
-              <p className="mt-5 max-w-xl text-sm leading-6 text-muted-foreground">
-                Early access is referral-gated. Three verified referrals move you into the priority
-                queue. The point is signal, not vanity signup counts.
-              </p>
             </div>
           </Reveal>
 
