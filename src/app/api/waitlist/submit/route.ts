@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server"
 import { getDb } from "@/db/client"
+import { sendVerificationEmail } from "@/lib/waitlist/mailer"
 import { submitWaitlistEntry } from "@/lib/waitlist/service"
 import { waitlistFormSchema } from "@/lib/waitlist/schema"
 
@@ -18,6 +19,13 @@ export async function POST(request: Request) {
     }
 
     const result = await submitWaitlistEntry(getDb(), parsed.data)
+
+    if (result.verificationToken !== null) {
+      await sendVerificationEmail({
+        email: parsed.data.email.trim().toLowerCase(),
+        verificationToken: result.verificationToken,
+      })
+    }
 
     return NextResponse.json({
       alreadyVerified: result.alreadyVerified,

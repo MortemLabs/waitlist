@@ -14,6 +14,15 @@ export type SubmitWaitlistResult = {
   verificationToken: string | null
 }
 
+export type VerifyWaitlistResult =
+  | {
+      dashboardToken: string
+      status: "already_verified" | "expired" | "verified"
+    }
+  | {
+      status: "invalid"
+    }
+
 export function normalizeEmail(email: string): string {
   return email.trim().toLowerCase()
 }
@@ -134,5 +143,56 @@ export async function findEntryByVerificationHash(
 ): Promise<WaitlistEntry | undefined> {
   return db.query.waitlistEntries.findFirst({
     where: eq(waitlistEntries.emailVerificationTokenHash, verificationHash),
+  })
+}
+
+export async function verifyWaitlistEntry(
+  db: DatabaseExecutor,
+  rawToken: string,
+  now = new Date(),
+): Promise<VerifyWaitlistResult> {
+  const verificationHash = hashVerificationToken(rawToken)
+
+  return db.transaction(async (tx) => {
+    const entry = await tx.query.waitlistEntries.findFirst({
+      where: eq(waitlistEntries.emailVerificationTokenHash, verificationHash),
+    })
+
+    if (entry === undefined) {
+      return { status: "invalid" }
+    }
+
+    if (entry.emailVerifiedAt !== null) {
+      return {
+        dashboardToken: entry.dashboardToken,
+        status: "already_verified",
+      }
+    }
+
+    if (
+      entry.emailVerificationExpiresAt !== null &&
+      entry.emailVerificationExpiresAt.getTime() < now.getTime()
+    ) {
+      return {
+        dashboardToken: entry.dashboardToken,
+        status: "expired",
+      }
+    }
+
+    const [updated] = await tx
+      .update(waitlistEntries)
+      .set({
+        emailVerificationExpiresAt: null,
+        emailVerificationTokenHash: null,
+        emailVerifiedAt: now,
+        updatedAt: now,
+      })
+      .where(eq(waitlistEntries.id, entry.id))
+      .returning()
+
+    return {
+      dashboardToken: updated.dashboardToken,
+      status: "verified",
+    }
   })
 }
