@@ -1,0 +1,256 @@
+"use client"
+
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Select } from "@/components/ui/select"
+import { waitlistFormSchema, type WaitlistFormInput } from "@/lib/waitlist/schema"
+import {
+  FAILURE_MODE_OPTIONS,
+  ROLE_OPTIONS,
+  TEAM_TYPE_OPTIONS,
+} from "@/lib/waitlist/options"
+import { AlertCircle, Loader2 } from "lucide-react"
+import { useMemo, useState } from "react"
+
+type WaitlistFormProps = {
+  referredByCode?: string | null
+}
+
+export function WaitlistForm({ referredByCode }: WaitlistFormProps) {
+  const [form, setForm] = useState<WaitlistFormInput>({
+    biggestFailureMode: FAILURE_MODE_OPTIONS[0].value,
+    email: "",
+    referredByCode: referredByCode ?? undefined,
+    role: ROLE_OPTIONS[0].value,
+    teamType: TEAM_TYPE_OPTIONS[0].value,
+  })
+  const [fieldErrors, setFieldErrors] = useState<Partial<Record<keyof WaitlistFormInput, string>>>(
+    {},
+  )
+  const [formError, setFormError] = useState<string | null>(null)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const referredLabel = useMemo(
+    () =>
+      referredByCode
+        ? "Referral recorded. Your referrer only gets credit after you verify your email."
+        : null,
+    [referredByCode],
+  )
+
+  const updateField = <Key extends keyof WaitlistFormInput>(key: Key, value: WaitlistFormInput[Key]) => {
+    setForm((current) => ({ ...current, [key]: value }))
+    setFieldErrors((current) => ({ ...current, [key]: undefined }))
+    setFormError(null)
+  }
+
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    setFormError(null)
+
+    const parsed = waitlistFormSchema.safeParse(form)
+
+    if (!parsed.success) {
+      const flattened = parsed.error.flatten().fieldErrors
+      setFieldErrors({
+        biggestFailureMode: flattened.biggestFailureMode?.[0],
+        email: flattened.email?.[0],
+        role: flattened.role?.[0],
+        teamType: flattened.teamType?.[0],
+      })
+      return
+    }
+
+    setIsSubmitting(true)
+
+    try {
+      const response = await fetch("/api/waitlist/submit", {
+        body: JSON.stringify(parsed.data),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+      })
+
+      const payload = (await response.json()) as { error?: string; redirectTo?: string }
+
+      if (!response.ok || payload.redirectTo === undefined) {
+        setFormError(payload.error ?? "We could not file your request. Try again.")
+        return
+      }
+
+      window.location.assign(payload.redirectTo)
+    } catch {
+      setFormError("The form could not reach Mortem. Check the connection and retry.")
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  return (
+    <form
+      id="waitlist"
+      onSubmit={onSubmit}
+      className="border border-line bg-ink-2 p-5 md:p-6"
+      noValidate
+    >
+      <div className="flex items-start justify-between gap-4 border-b border-line pb-4">
+        <div>
+          <p className="eyebrow">Early access request</p>
+          <h2 className="mt-2 font-display text-3xl leading-tight">
+            Get in line before the next bad trade.
+          </h2>
+        </div>
+        <span className="death-stamp">3 referrals = priority</span>
+      </div>
+
+      <div className="mt-5 space-y-4">
+        <Field
+          error={fieldErrors.email}
+          helper="Verification required. One operator, one place in line."
+          id="email"
+          label="Work email"
+        >
+          <Input
+            id="email"
+            type="email"
+            autoComplete="email"
+            inputMode="email"
+            spellCheck={false}
+            placeholder="you@desk.xyz"
+            value={form.email}
+            onChange={(event) => updateField("email", event.currentTarget.value)}
+            aria-invalid={fieldErrors.email ? "true" : undefined}
+            aria-describedby={fieldErrors.email ? "email-error" : "email-helper"}
+          />
+        </Field>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <Field
+            error={fieldErrors.role}
+            helper="Who will actually use the diagnosis output?"
+            id="role"
+            label="Role"
+          >
+            <Select
+              id="role"
+              value={form.role}
+              onChange={(event) => updateField("role", event.currentTarget.value)}
+              aria-invalid={fieldErrors.role ? "true" : undefined}
+              aria-describedby={fieldErrors.role ? "role-error" : "role-helper"}
+            >
+              {ROLE_OPTIONS.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </Select>
+          </Field>
+
+          <Field
+            error={fieldErrors.teamType}
+            helper="This shapes the first beta cohort."
+            id="teamType"
+            label="Setup"
+          >
+            <Select
+              id="teamType"
+              value={form.teamType}
+              onChange={(event) => updateField("teamType", event.currentTarget.value)}
+              aria-invalid={fieldErrors.teamType ? "true" : undefined}
+              aria-describedby={fieldErrors.teamType ? "teamType-error" : "teamType-helper"}
+            >
+              {TEAM_TYPE_OPTIONS.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </Select>
+          </Field>
+        </div>
+
+        <Field
+          error={fieldErrors.biggestFailureMode}
+          helper="Pick the failure class you would pay to catch sooner."
+          id="biggestFailureMode"
+          label="Primary failure mode"
+        >
+          <Select
+            id="biggestFailureMode"
+            value={form.biggestFailureMode}
+            onChange={(event) => updateField("biggestFailureMode", event.currentTarget.value)}
+            aria-invalid={fieldErrors.biggestFailureMode ? "true" : undefined}
+            aria-describedby={
+              fieldErrors.biggestFailureMode
+                ? "biggestFailureMode-error"
+                : "biggestFailureMode-helper"
+            }
+          >
+            {FAILURE_MODE_OPTIONS.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </Select>
+        </Field>
+
+        {referredLabel ? (
+          <div className="border border-line bg-ink px-4 py-3 text-sm text-muted-foreground">
+            {referredLabel}
+          </div>
+        ) : null}
+
+        {formError ? (
+          <div className="border border-signal bg-transparent px-4 py-3 text-sm text-signal">
+            <div className="flex items-start gap-2">
+              <AlertCircle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+              <p>{formError}</p>
+            </div>
+          </div>
+        ) : null}
+
+        <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center sm:justify-between">
+          <Button type="submit" size="lg" disabled={isSubmitting} aria-busy={isSubmitting}>
+            {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : null}
+            Join the waitlist
+          </Button>
+          <p className="max-w-xs text-sm leading-6 text-muted-foreground">
+            Verify your email. Refer three verified operators. Move into the priority queue.
+          </p>
+        </div>
+      </div>
+    </form>
+  )
+}
+
+function Field({
+  children,
+  error,
+  helper,
+  id,
+  label,
+}: Readonly<{
+  children: React.ReactNode
+  error?: string
+  helper: string
+  id: string
+  label: string
+}>) {
+  return (
+    <div className="space-y-1.5">
+      <label htmlFor={id} className="block text-sm font-medium text-foreground">
+        {label}
+      </label>
+      {children}
+      {error ? (
+        <p id={`${id}-error`} className="text-xs text-signal">
+          {error}
+        </p>
+      ) : (
+        <p id={`${id}-helper`} className="text-xs text-muted-foreground">
+          {helper}
+        </p>
+      )}
+    </div>
+  )
+}
