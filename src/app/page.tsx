@@ -4,6 +4,7 @@ import { Wordmark } from "@/components/mortem/mark"
 import { WaitlistModal } from "@/components/landing/waitlist-modal"
 import { Button } from "@/components/ui/button"
 import { Reveal } from "@/components/landing/reveal"
+import { TiltCard } from "@/components/landing/tilt-card"
 
 const diagnosisSteps = [
   {
@@ -38,6 +39,27 @@ const queueSteps = [
   },
 ] as const
 
+const exhibits = [
+  {
+    exhibit: "A",
+    label: "Agent decision",
+    meta: "Payload captured",
+    value: "The strategy fired the buy path.",
+  },
+  {
+    exhibit: "B",
+    label: "Market reality",
+    meta: "Context diverged",
+    value: "Liquidity shifted and the quote aged out.",
+  },
+  {
+    exhibit: "C",
+    label: "Bad outcome",
+    meta: "Loss realized",
+    value: "Execution landed worse than the model assumed.",
+  },
+] as const
+
 type LandingPageProps = {
   searchParams?: Promise<{ referred?: string; verify?: string }>
 }
@@ -51,14 +73,14 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
     <main className="min-h-screen bg-background text-foreground">
       <div className="tape h-2 w-full" aria-hidden="true" />
 
-      <div className="mx-auto max-w-7xl px-4 py-6 md:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         <nav
-          className="flex flex-col gap-4 border-b border-line pb-6 sm:flex-row sm:items-center sm:justify-between"
+          className="flex flex-col gap-4 border-b border-line py-5 sm:flex-row sm:items-center sm:justify-between"
           aria-label="Primary"
         >
           <Wordmark />
           <div className="flex flex-wrap items-center gap-2">
-            <Button asChild variant="outline">
+            <Button asChild variant="ghost">
               <Link href="#how-it-works">How it works</Link>
             </Button>
             <WaitlistModal referredByCode={referredByCode} triggerLabel="Join the queue" triggerSize="default" />
@@ -67,7 +89,7 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
 
         {resolvedSearch.referred === "1" ? (
           <section className="mt-8 border border-line bg-ink-2 p-5">
-            <p className="eyebrow">Referral filed</p>
+            <p className="eyebrow text-signal">Referral filed</p>
             <h2 className="mt-2 font-display text-3xl leading-tight">
               This request was opened from a referral link.
             </h2>
@@ -79,7 +101,7 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
 
         {resolvedSearch.verify === "invalid" ? (
           <section className="mt-8 border border-line bg-ink-2 p-5">
-            <p className="eyebrow">Verification failed</p>
+            <p className="eyebrow text-signal">Verification failed</p>
             <h2 className="mt-2 font-display text-3xl leading-tight">
               That verification link is no longer valid.
             </h2>
@@ -89,86 +111,69 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
           </section>
         ) : null}
 
-        <section className="grid gap-10 py-14 lg:grid-cols-[minmax(0,1.05fr)_420px] lg:items-center lg:py-20">
-          <Reveal>
-            <div className="max-w-3xl">
-              <p className="eyebrow">Case File № EA-001 · Solana agent early access</p>
-              <h1 className="mt-6 font-display text-5xl leading-[0.92] tracking-tight md:text-7xl lg:text-[5.75rem]">
-                Catch bad trading decisions before more capital gets buried
+        {/* Hero */}
+        <section className="py-16 md:py-24 lg:py-28">
+          <div>
+            <Reveal>
+              <div className="death-stamp mb-10 w-fit" style={{ transform: "none" }}>
+                Case File № EA-001 · Solana agent early access
+              </div>
+
+              <h1 className="max-w-3xl font-display text-5xl leading-[0.92] tracking-tight md:text-7xl lg:text-[6rem]">
+                Catch bad trading decisions before{" "}
+                <em>more capital</em> gets buried
                 <span className="text-signal">.</span>
               </h1>
-              <p className="mt-7 max-w-2xl text-base leading-7 text-muted-foreground md:text-xl md:leading-8">
+
+              <p className="mt-8 max-w-xl text-base leading-7 text-muted-foreground md:text-xl md:leading-8">
                 Mortem helps Solana trading teams catch bad agent decisions, see what caused them,
                 and fix the logic before the same loss repeats.
               </p>
 
-              <div className="mt-10 grid gap-4 border border-line bg-ink-2 p-5 md:grid-cols-3">
-                <SignalCard
-                  label="Agent decision"
-                  meta="Payload captured"
-                  value="The strategy fired the buy path."
-                />
-                <SignalCard
-                  label="Market reality"
-                  meta="Context diverged"
-                  value="Liquidity shifted and the quote aged out."
-                />
-                <SignalCard
-                  label="Bad outcome"
-                  meta="Loss realized"
-                  value="Execution landed worse than the model assumed."
-                />
-              </div>
-
-              <div className="mt-8 flex flex-wrap gap-3">
-                <WaitlistModal referredByCode={referredByCode} triggerLabel="Request early access" />
+              <div className="mt-12 flex flex-wrap gap-3">
+                <WaitlistModal referredByCode={referredByCode} triggerLabel="Request early access" triggerSize="lg" />
                 <Button asChild size="lg" variant="outline">
-                  <Link href="#beta-access">View the queue</Link>
+                  <Link href="#how-it-works">How it works</Link>
                 </Button>
               </div>
-              <p className="mt-5 max-w-xl text-sm leading-6 text-muted-foreground">
+              <p className="mt-5 text-sm leading-6 text-muted-foreground">
                 Three verified referrals move you into the priority queue.
               </p>
+            </Reveal>
+          </div>
+
+          {/* Evidence chain */}
+          <Reveal delay={0.06}>
+            <div className="mt-16 border border-line">
+              <div className="flex items-center justify-between border-b border-line bg-ink-3 px-4 py-2.5">
+                <p className="case-meta text-fg-muted">Evidence chain</p>
+                <p className="case-meta text-fg-muted">Three-point failure</p>
+              </div>
+              <div className="grid gap-px bg-line md:grid-cols-3">
+                {exhibits.map((ex) => (
+                  <TiltCard key={ex.exhibit}>
+                    <ExhibitCard {...ex} />
+                  </TiltCard>
+                ))}
+              </div>
             </div>
           </Reveal>
-
-          <Reveal delay={0.08}>
-            <aside className="border border-line bg-ink p-1">
-              <div className="border border-line bg-ink-2 p-5 md:p-6">
-                <div className="border-b border-line pb-4">
-                  <div>
-                    <p className="eyebrow">Beta docket</p>
-                    <h2 className="mt-2 font-display text-3xl leading-tight">
-                      The first cohort is small on purpose.
-                    </h2>
-                  </div>
-                </div>
-
-                <div className="mt-5 space-y-3">
-                  <DocketRow
-                    label="Focus"
-                    value="Bad trading decisions tied to payloads, market context, and execution."
-                  />
-                  <DocketRow
-                    label="Who it is for"
-                    value="Builders and operators with a clear failure mode to fix."
-                  />
-                  <DocketRow
-                    label="Priority rule"
-                    value="Three verified referrals move you ahead in the queue."
-                  />
-                </div>
-              </div>
-            </aside>
-          </Reveal>
         </section>
+      </div>
 
-        <section id="how-it-works" className="py-12 md:py-16">
+      {/* Section break */}
+      <div className="tape h-1.5 w-full" aria-hidden="true" />
+
+      <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+        {/* How it works */}
+        <section id="how-it-works" className="py-16 md:py-20">
           <Reveal>
             <div className="max-w-2xl">
               <p className="eyebrow">The process</p>
               <h2 className="mt-3 font-display text-4xl leading-tight md:text-5xl">
-                Diagnose the trade. Prove the cause. Fix the branch.
+                Diagnose the trade.<br />
+                Prove the cause.<br />
+                Fix the branch.
               </h2>
               <p className="mt-4 text-base leading-7 text-muted-foreground">
                 The product is simple: catch the mistake, show the evidence, and point to the fix.
@@ -176,90 +181,124 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
             </div>
           </Reveal>
 
-          <div className="mt-10 grid gap-4 lg:grid-cols-3">
+          <div className="mt-10 grid gap-px bg-line lg:grid-cols-3">
             {diagnosisSteps.map((item, index) => (
-              <Reveal key={item.step} delay={index * 0.04}>
-                <article className="border border-line bg-ink-2 p-5 md:p-6">
-                  <p className="case-meta text-signal">{item.step}</p>
-                  <h3 className="mt-4 font-display text-3xl leading-tight">{item.title}</h3>
-                  <p className="mt-4 text-base leading-7 text-muted-foreground">{item.body}</p>
+              <Reveal key={item.step} delay={index * 0.05}>
+                <article className="relative overflow-hidden bg-ink-2 p-6 md:p-8">
+                  <div
+                    className="pointer-events-none absolute -right-2 -top-6 select-none font-mono text-[9rem] font-bold leading-none text-ink-3"
+                    aria-hidden="true"
+                  >
+                    {item.step}
+                  </div>
+                  <div className="relative">
+                    <div className="mb-5 h-px w-10 bg-signal" aria-hidden="true" />
+                    <p className="case-meta text-signal">{item.step}</p>
+                    <h3 className="mt-3 font-display text-3xl leading-tight">{item.title}</h3>
+                    <p className="mt-4 text-sm leading-7 text-muted-foreground">{item.body}</p>
+                  </div>
                 </article>
               </Reveal>
             ))}
           </div>
         </section>
 
+        {/* Beta access */}
         <section id="beta-access" className="py-12 md:py-16">
           <Reveal>
-            <div className="grid gap-8 border border-line bg-ink-2 p-6 md:p-8 lg:grid-cols-[0.9fr_1.1fr]">
-              <div>
-                <p className="eyebrow">Beta access</p>
-                <h2 className="mt-3 font-display text-4xl leading-tight">
-                  A simple queue with one fast path.
-                </h2>
-                <p className="mt-5 max-w-xl text-base leading-7 text-muted-foreground">
-                  Join, verify, and refer three other real operators if you want priority review.
-                </p>
-              </div>
-
-              <div className="space-y-3">
-                {queueSteps.map((item, index) => (
-                  <div key={item.title} className="grid gap-3 border border-line bg-ink px-4 py-4 md:grid-cols-[52px_1fr]">
-                    <div className="flex h-12 w-12 items-center justify-center border border-line font-mono text-sm text-signal">
-                      0{index + 1}
-                    </div>
-                    <div>
-                      <h3 className="font-display text-2xl leading-tight">{item.title}</h3>
-                      <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.body}</p>
-                    </div>
+            <div className="border border-line">
+              <div className="grid lg:grid-cols-[0.85fr_1.15fr]">
+                <div className="border-b border-line p-6 md:p-8 lg:border-b-0 lg:border-r">
+                  <p className="eyebrow">Beta access</p>
+                  <h2 className="mt-3 font-display text-4xl leading-tight">
+                    A simple queue with one fast path.
+                  </h2>
+                  <p className="mt-5 text-base leading-7 text-muted-foreground">
+                    Join, verify, and refer three other real operators if you want priority review.
+                  </p>
+                  <div className="mt-8">
+                    <WaitlistModal referredByCode={referredByCode} triggerLabel="Join the queue" />
                   </div>
-                ))}
+                </div>
+
+                <div className="divide-y divide-line">
+                  {queueSteps.map((item, index) => (
+                    <QueueStep key={item.title} index={index} title={item.title} body={item.body} />
+                  ))}
+                </div>
               </div>
             </div>
           </Reveal>
         </section>
 
-        <section className="border border-line bg-ink-2 px-6 py-12 text-center md:px-10 md:py-16">
-          <p className="eyebrow">Final call</p>
-          <h2 className="mt-3 font-display text-4xl leading-tight md:text-6xl">
-            Get in before the next bad trade repeats.
-          </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-muted-foreground md:text-lg">
-            Request early access. Verify your email. Bring three real referrals if you want
-            priority review.
-          </p>
-          <div className="mt-8 flex justify-center">
-            <WaitlistModal referredByCode={referredByCode} triggerLabel="Request early access" />
+        {/* Final CTA */}
+        <section className="relative mb-16 overflow-hidden border border-line grid-noise">
+          <div className="px-6 py-14 text-center md:px-10 md:py-20">
+            <div className="tape mx-auto mb-8 h-1.5 w-20" aria-hidden="true" />
+            <p className="eyebrow">Final call</p>
+            <h2 className="mt-4 font-display text-4xl leading-tight md:text-6xl">
+              Get in before the next<br />
+              <em>bad trade repeats.</em>
+            </h2>
+            <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-muted-foreground md:text-lg">
+              Request early access. Verify your email. Bring three real referrals if you want
+              priority review.
+            </p>
+            <div className="mt-8 flex justify-center">
+              <WaitlistModal
+                referredByCode={referredByCode}
+                triggerLabel="Request early access"
+                triggerSize="lg"
+              />
+            </div>
           </div>
         </section>
 
-        <footer className="border-t border-line py-6">
-          <p className="case-meta text-center text-fg-muted">☩ Ship · Learn · Bury · Repeat ☩</p>
+        <footer className="border-t border-line py-8">
+          <div className="death-stamp mx-auto w-fit" style={{ transform: "none" }}>
+            ☩ Ship · Learn · Bury · Repeat ☩
+          </div>
         </footer>
       </div>
     </main>
   )
 }
 
-function SignalCard({
+function ExhibitCard({
+  exhibit,
   label,
   meta,
   value,
-}: Readonly<{ label: string; meta: string; value: string }>) {
+}: Readonly<{ exhibit: string; label: string; meta: string; value: string }>) {
   return (
-    <div className="border border-line bg-ink px-4 py-4">
-      <p className="case-meta text-signal">{meta}</p>
-      <h2 className="mt-3 font-display text-2xl leading-tight">{label}</h2>
-      <p className="mt-4 text-sm leading-6 text-muted-foreground">{value}</p>
+    <div className="bg-ink px-4 py-5">
+      <div className="flex items-start justify-between gap-2">
+        <p className="case-meta text-fg-muted">{meta}</p>
+        <span className="case-meta shrink-0 border border-signal px-1.5 py-0.5 text-signal">
+          EXHIBIT {exhibit}
+        </span>
+      </div>
+      <h3 className="mt-3 font-display text-xl leading-tight">{label}</h3>
+      <p className="mt-3 text-sm leading-6 text-muted-foreground">{value}</p>
     </div>
   )
 }
 
-function DocketRow({ label, value }: Readonly<{ label: string; value: string }>) {
+
+function QueueStep({
+  index,
+  title,
+  body,
+}: Readonly<{ index: number; title: string; body: string }>) {
   return (
-    <div className="border border-line bg-ink px-4 py-4">
-      <p className="case-meta text-fg-muted">{label}</p>
-      <p className="mt-3 text-sm leading-6 text-muted-foreground">{value}</p>
+    <div className="flex gap-5 bg-ink-2 px-6 py-5 transition-colors duration-100 hover:bg-ink-3">
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-line font-mono text-xs text-signal">
+        0{index + 1}
+      </div>
+      <div>
+        <h3 className="font-display text-2xl leading-tight">{title}</h3>
+        <p className="mt-1.5 text-sm leading-6 text-muted-foreground">{body}</p>
+      </div>
     </div>
   )
 }
