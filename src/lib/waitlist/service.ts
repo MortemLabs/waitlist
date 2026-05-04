@@ -17,6 +17,8 @@ export type SubmitWaitlistResult = {
 export type VerifyWaitlistResult =
   | {
       dashboardToken: string
+      email: string
+      referralCode: string
       priorityUnlocked: boolean
       priorityUnlockedEntryId: string | null
       priorityUnlockedEmail: string | null
@@ -208,6 +210,8 @@ export async function verifyWaitlistEntry(
     if (verificationStatus === "already_verified" || verificationStatus === "expired") {
       return {
         dashboardToken: entry.dashboardToken,
+        email: entry.email,
+        referralCode: entry.referralCode,
         priorityUnlocked: false,
         priorityUnlockedEmail: null,
         priorityUnlockedEntryId: null,
@@ -263,6 +267,8 @@ export async function verifyWaitlistEntry(
 
     return {
       dashboardToken: updated.dashboardToken,
+      email: updated.email,
+      referralCode: updated.referralCode,
       priorityUnlocked,
       priorityUnlockedEmail,
       priorityUnlockedEntryId,

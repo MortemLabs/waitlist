@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 import { getDb } from "@/db/client"
-import { sendPriorityUnlockedEmail } from "@/lib/waitlist/mailer"
+import { sendConfirmationEmail, sendPriorityUnlockedEmail } from "@/lib/waitlist/mailer"
 import {
   markPriorityNotificationSent,
   verifyWaitlistEntry,
@@ -18,6 +18,14 @@ export async function GET(
 
   if (result.status === "invalid") {
     return NextResponse.redirect(new URL("/?verify=invalid", request.url))
+  }
+
+  if (result.status === "verified") {
+    await sendConfirmationEmail({
+      dashboardToken: result.dashboardToken,
+      email: result.email,
+      referralCode: result.referralCode,
+    })
   }
 
   if (
