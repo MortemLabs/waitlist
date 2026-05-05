@@ -183,8 +183,11 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
 
           <div className="mt-10 grid gap-px bg-line lg:grid-cols-3">
             {diagnosisSteps.map((item, index) => (
-              <Reveal key={item.step} delay={index * 0.05}>
-                <article className="relative overflow-hidden bg-ink-2 p-6 md:p-8">
+              <article
+                key={item.step}
+                className="relative overflow-hidden bg-ink-2 p-6 md:p-8"
+              >
+                <Reveal delay={index * 0.05}>
                   <div
                     className="pointer-events-none absolute -right-2 -top-6 select-none font-mono text-[9rem] font-bold leading-none text-ink-3"
                     aria-hidden="true"
@@ -197,8 +200,8 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
                     <h3 className="mt-3 font-display text-3xl leading-tight">{item.title}</h3>
                     <p className="mt-4 text-sm leading-7 text-muted-foreground">{item.body}</p>
                   </div>
-                </article>
-              </Reveal>
+                </Reveal>
+              </article>
             ))}
           </div>
         </section>
