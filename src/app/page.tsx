@@ -223,8 +223,8 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
           </div>
         </section>
 
-        <footer className="border-t border-line py-8">
-          <div className="death-stamp mx-auto w-fit" style={{ transform: "none" }}>
+        <footer className="flex justify-center border-t border-line py-8">
+          <div className="death-stamp w-fit" style={{ transform: "none" }}>
             ☩ Ship · Learn · Bury · Repeat ☩
           </div>
         </footer>
