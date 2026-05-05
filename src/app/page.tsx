@@ -112,7 +112,7 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
         ) : null}
 
         {/* Hero */}
-        <section className="py-16 md:py-24 lg:py-28">
+        <section className="pb-16 pt-8 md:pb-24 md:pt-12 lg:pb-28 lg:pt-14">
           <div>
             <Reveal>
               <div className="death-stamp mb-10 w-fit" style={{ transform: "none" }}>
@@ -198,34 +198,6 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
               </article>
             ))}
           </div>
-        </section>
-
-        {/* Beta access */}
-        <section id="beta-access" className="py-12 md:py-16">
-          <Reveal>
-            <div className="border border-line">
-              <div className="grid lg:grid-cols-[0.85fr_1.15fr]">
-                <div className="border-b border-line p-6 md:p-8 lg:border-b-0 lg:border-r">
-                  <p className="eyebrow">Beta access</p>
-                  <h2 className="mt-3 font-display text-4xl leading-tight">
-                    A simple queue with one fast path.
-                  </h2>
-                  <p className="mt-5 text-base leading-7 text-muted-foreground">
-                    Join, verify, and refer three other real operators if you want priority review.
-                  </p>
-                  <div className="mt-8">
-                    <WaitlistModal referredByCode={referredByCode} triggerLabel="Join the queue" />
-                  </div>
-                </div>
-
-                <div className="divide-y divide-line">
-                  {queueSteps.map((item, index) => (
-                    <QueueStep key={item.title} index={index} title={item.title} body={item.body} />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </Reveal>
         </section>
 
         {/* Final CTA */}
