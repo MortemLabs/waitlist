@@ -136,9 +136,6 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
                   <Link href="#how-it-works">How it works</Link>
                 </Button>
               </div>
-              <p className="mt-5 text-sm leading-6 text-muted-foreground">
-                Three verified referrals move you into the priority queue.
-              </p>
             </Reveal>
           </div>
 
@@ -175,9 +172,6 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
                 Prove the cause.<br />
                 Fix the branch.
               </h2>
-              <p className="mt-4 text-base leading-7 text-muted-foreground">
-                The product is simple: catch the mistake, show the evidence, and point to the fix.
-              </p>
             </div>
           </Reveal>
 
