@@ -1,6 +1,7 @@
 import { cookies } from "next/headers"
 import Link from "next/link"
 import { Wordmark } from "@/components/mortem/mark"
+import { XUpdatesLink } from "@/components/mortem/x-updates-link"
 import { WaitlistModal } from "@/components/landing/waitlist-modal"
 import { Button } from "@/components/ui/button"
 import { Reveal } from "@/components/landing/reveal"
@@ -38,6 +39,9 @@ const queueSteps = [
     title: "Move up",
   },
 ] as const
+
+const MORTEM_X_HANDLE = "mortemlabs"
+const MORTEM_X_URL = `https://x.com/${MORTEM_X_HANDLE}`
 
 const exhibits = [
   {
@@ -80,9 +84,7 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
         >
           <Wordmark />
           <div className="flex flex-wrap items-center gap-2">
-            <Button asChild variant="ghost">
-              <Link href="#how-it-works">How it works</Link>
-            </Button>
+            <XUpdatesLink density="header" handle={MORTEM_X_HANDLE} href={MORTEM_X_URL} />
             <WaitlistModal referredByCode={referredByCode} triggerLabel="Join the queue" triggerSize="default" />
           </div>
         </nav>
@@ -167,7 +169,7 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
           <Reveal>
             <div className="max-w-2xl">
               <p className="eyebrow">The process</p>
-              <h2 className="mt-3 font-display text-4xl leading-tight md:text-5xl">
+              <h2 className="mt-3 font-display text-5xl leading-tight md:text-5xl">
                 Diagnose the trade.<br />
                 Prove the cause.<br />
                 Fix the branch.
@@ -191,7 +193,7 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
                   <div className="relative">
                     <div className="mb-5 h-px w-10 bg-signal" aria-hidden="true" />
                     <p className="case-meta text-signal">{item.step}</p>
-                    <h3 className="mt-3 font-display text-3xl leading-tight">{item.title}</h3>
+                    <h3 className="mt-5 font-display text-4xl leading-tight">{item.title}</h3>
                     <p className="mt-4 text-sm leading-7 text-muted-foreground">{item.body}</p>
                   </div>
                 </Reveal>
@@ -223,9 +225,15 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
           </div>
         </section>
 
-        <footer className="flex justify-center border-t border-line py-8">
-          <div className="death-stamp w-fit" style={{ transform: "none" }}>
-            ☩ Ship · Learn · Bury · Repeat ☩
+        <footer className="border-t border-line py-10">
+          <div className="flex flex-col items-center gap-8">
+            <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-stretch sm:justify-center sm:gap-10">
+              <div className="death-stamp w-fit self-center sm:self-auto" style={{ transform: "none" }}>
+                ☩ Ship · Learn · Bury · Repeat ☩
+              </div>
+              <span className="hidden w-px shrink-0 bg-line sm:block" aria-hidden />
+              <XUpdatesLink density="footer" handle={MORTEM_X_HANDLE} href={MORTEM_X_URL} />
+            </div>
           </div>
         </footer>
       </div>

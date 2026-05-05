@@ -10,8 +10,12 @@ import {
   ROLE_OPTIONS,
   TEAM_TYPE_OPTIONS,
 } from "@/lib/waitlist/options"
-import { AlertCircle, Loader2 } from "lucide-react"
+import { AlertCircle, Loader2, Mail } from "lucide-react"
 import { useMemo, useState } from "react"
+
+type SubmitSuccessPayload =
+  | { awaitingVerification: true }
+  | { awaitingVerification: false; redirectTo: string }
 
 type WaitlistFormProps = {
   autoFocusEmail?: boolean
@@ -36,6 +40,7 @@ export function WaitlistForm({
   )
   const [formError, setFormError] = useState<string | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [emailSentTo, setEmailSentTo] = useState<string | null>(null)
 
   const referredLabel = useMemo(
     () =>
@@ -79,10 +84,21 @@ export function WaitlistForm({
         method: "POST",
       })
 
-      const payload = (await response.json()) as { error?: string; redirectTo?: string }
+      const payload = (await response.json()) as
+        | { error?: string }
+        | SubmitSuccessPayload
 
-      if (!response.ok || payload.redirectTo === undefined) {
-        setFormError(payload.error ?? "We could not file your request. Try again.")
+      if (!response.ok || !("awaitingVerification" in payload)) {
+        setFormError(
+          "error" in payload && payload.error
+            ? payload.error
+            : "We could not file your request. Try again.",
+        )
+        return
+      }
+
+      if (payload.awaitingVerification) {
+        setEmailSentTo(parsed.data.email.trim().toLowerCase())
         return
       }
 
@@ -92,6 +108,31 @@ export function WaitlistForm({
     } finally {
       setIsSubmitting(false)
     }
+  }
+
+  if (emailSentTo !== null) {
+    return (
+      <div
+        className={cn("border border-line bg-ink-2 p-5 md:p-6", className)}
+        role="status"
+        aria-live="polite"
+      >
+        <div className="flex items-start justify-between gap-4 border-b border-line pb-4">
+          <div>
+            <p className="eyebrow">Check your inbox</p>
+            <h2 className="mt-2 font-display text-3xl leading-tight">Verification link sent.</h2>
+          </div>
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-line bg-ink">
+            <Mail className="h-5 w-5 text-signal" aria-hidden="true" />
+          </div>
+        </div>
+        <p className="mt-5 text-sm leading-7 text-muted-foreground">
+          We emailed a secure link to <span className="font-mono text-foreground">{emailSentTo}</span>.
+          Open it to confirm your address — then we will take you to your referral page. If it does not
+          arrive in a minute, check spam or promotions.
+        </p>
+      </div>
+    )
   }
 
   return (

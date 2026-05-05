@@ -25,10 +25,11 @@ export async function POST(request: Request) {
         email: parsed.data.email.trim().toLowerCase(),
         verificationToken: result.verificationToken,
       })
+      return NextResponse.json({ awaitingVerification: true as const })
     }
 
     return NextResponse.json({
-      alreadyVerified: result.alreadyVerified,
+      awaitingVerification: false as const,
       redirectTo: `/queue/${result.dashboardToken}`,
     })
   } catch (error) {

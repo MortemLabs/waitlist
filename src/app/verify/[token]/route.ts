@@ -1,7 +1,13 @@
+import { cookies } from "next/headers"
 import { NextResponse } from "next/server"
 import { getDb } from "@/db/client"
+import {
+  MORTEM_DASHBOARD_COOKIE,
+  mortemDashboardCookieOptions,
+} from "@/lib/waitlist/dashboard-cookie"
 import { sendConfirmationEmail, sendPriorityUnlockedEmail } from "@/lib/waitlist/mailer"
 import {
+  findEntryByDashboardToken,
   markPriorityNotificationSent,
   verifyWaitlistEntry,
 } from "@/lib/waitlist/service"
@@ -17,6 +23,22 @@ export async function GET(
   const result = await verifyWaitlistEntry(db, token)
 
   if (result.status === "invalid") {
+    const cookieStore = await cookies()
+    const savedDashboard = cookieStore.get(MORTEM_DASHBOARD_COOKIE)?.value
+    if (savedDashboard !== undefined && savedDashboard.length > 0) {
+      const entry = await findEntryByDashboardToken(db, savedDashboard)
+      if (entry !== undefined && entry.emailVerifiedAt !== null) {
+        const res = NextResponse.redirect(
+          new URL(`/queue/${savedDashboard}?verify=already_verified`, request.url),
+        )
+        res.cookies.set(
+          MORTEM_DASHBOARD_COOKIE,
+          savedDashboard,
+          mortemDashboardCookieOptions(request.url),
+        )
+        return res
+      }
+    }
     return NextResponse.redirect(new URL("/?verify=invalid", request.url))
   }
 
@@ -42,7 +64,13 @@ export async function GET(
     await markPriorityNotificationSent(db, result.priorityUnlockedEntryId)
   }
 
-  return NextResponse.redirect(
+  const res = NextResponse.redirect(
     new URL(`/queue/${result.dashboardToken}?verify=${result.status}`, request.url),
   )
+  res.cookies.set(
+    MORTEM_DASHBOARD_COOKIE,
+    result.dashboardToken,
+    mortemDashboardCookieOptions(request.url),
+  )
+  return res
 }
