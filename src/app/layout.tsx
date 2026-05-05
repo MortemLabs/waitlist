@@ -23,7 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Mortem — Early Access",
+  title: "Mortem",
   description:
     "Catch bad trading decisions in time, explain why with evidence, and help fix the strategy before more capital gets buried.",
 }
