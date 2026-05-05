@@ -1,6 +1,26 @@
 import { Resend } from "resend"
 import { getAppUrl, getResendApiKey, getResendFromEmail } from "@/lib/env"
 
+const EMAIL_SIGN_OFF_TEXT = "\n\nBest,\nMortem Labs Team"
+
+function emailWordmarkHeader(appUrl: string): string {
+  const src = `${appUrl}/mortem-wordmark.png`
+  return `
+    <div style="margin:0 0 28px">
+      <a href="${appUrl}" style="text-decoration:none;display:inline-block;line-height:0">
+        <img src="${src}" alt="Mortem" width="220" style="display:block;border:0;outline:none;max-width:100%;height:auto" />
+      </a>
+    </div>`
+}
+
+function emailSignOffHtml(): string {
+  return `
+    <p style="font-size:15px;line-height:1.65;color:#C3BFB9;margin:32px 0 0">
+      Best,<br />
+      <span style="color:#EDEEE9">mortem team</span>
+    </p>`
+}
+
 let resendClient: Resend | null = null
 
 function getResendClient(): Resend {
@@ -26,7 +46,8 @@ export async function sendVerificationEmail({
     from: getResendFromEmail(),
     html: `
       <div style="background:#0E0D0C;color:#EDEEE9;padding:32px;font-family:Inter Tight,Arial,sans-serif">
-        <p style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#A39C95;margin:0 0 16px">Mortem · Early Access</p>
+        ${emailWordmarkHeader(appUrl)}
+        <p style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#A39C95;margin:0 0 16px">Early access</p>
         <h1 style="font-family:Instrument Serif,Georgia,serif;font-size:36px;line-height:1.05;margin:0 0 16px">Verify the operator.</h1>
         <p style="font-size:16px;line-height:1.7;color:#C3BFB9;margin:0 0 24px">
           Your place in line is filed. Verify the email below so referral credit and queue position count.
@@ -42,10 +63,11 @@ export async function sendVerificationEmail({
         <p style="font-size:14px;line-height:1.7;color:#EDEEE9;word-break:break-all;margin:8px 0 0">
           ${verificationUrl}
         </p>
+        ${emailSignOffHtml()}
       </div>
     `,
     subject: "Mortem early access — verify your email",
-    text: `Verify your Mortem early-access request: ${verificationUrl}`,
+    text: `Verify your Mortem early-access request: ${verificationUrl}${EMAIL_SIGN_OFF_TEXT}`,
     to: email,
   })
 }
@@ -67,7 +89,8 @@ export async function sendConfirmationEmail({
     from: getResendFromEmail(),
     html: `
       <div style="background:#0E0D0C;color:#EDEEE9;padding:32px;font-family:Inter Tight,Arial,sans-serif">
-        <p style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#A39C95;margin:0 0 16px">Mortem · Early Access</p>
+        ${emailWordmarkHeader(appUrl)}
+        <p style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#A39C95;margin:0 0 16px">Early access</p>
         <h1 style="font-family:Instrument Serif,Georgia,serif;font-size:36px;line-height:1.05;margin:0 0 16px">Filed. Verified. Case open.</h1>
         <p style="font-size:16px;line-height:1.7;color:#C3BFB9;margin:0 0 8px">
           Your place in the early-access queue is confirmed.
@@ -84,11 +107,12 @@ export async function sendConfirmationEmail({
             View your queue position
           </a>
         </p>
-        <p style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#3A3530;margin:0;font-family:JetBrains Mono,monospace">☩ Ship · Learn · Bury · Repeat ☩</p>
+        <p style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#3A3530;margin:0 0 28px;font-family:JetBrains Mono,monospace">☩ Ship · Learn · Bury · Repeat ☩</p>
+        ${emailSignOffHtml()}
       </div>
     `,
     subject: "Mortem early access — you're in the file",
-    text: `Your Mortem early-access place is confirmed.\n\nShare your referral link to move up: ${referralUrl}\n\nView your dashboard: ${dashboardUrl}`,
+    text: `Your Mortem early-access place is confirmed.\n\nShare your referral link to move up: ${referralUrl}\n\nView your dashboard: ${dashboardUrl}${EMAIL_SIGN_OFF_TEXT}`,
     to: email,
   })
 }
@@ -106,7 +130,8 @@ export async function sendPriorityUnlockedEmail({
     from: getResendFromEmail(),
     html: `
       <div style="background:#0E0D0C;color:#EDEEE9;padding:32px;font-family:Inter Tight,Arial,sans-serif">
-        <p style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#A39C95;margin:0 0 16px">Mortem · Priority Queue</p>
+        ${emailWordmarkHeader(appUrl)}
+        <p style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#A39C95;margin:0 0 16px">Priority queue</p>
         <h1 style="font-family:Instrument Serif,Georgia,serif;font-size:36px;line-height:1.05;margin:0 0 16px">You moved up the file.</h1>
         <p style="font-size:16px;line-height:1.7;color:#C3BFB9;margin:0 0 16px">
           ${referralCount} verified referrals have been filed under your link. Your request is now marked for priority beta review.
@@ -114,15 +139,16 @@ export async function sendPriorityUnlockedEmail({
         <p style="font-size:14px;line-height:1.7;color:#A39C95;margin:0 0 24px">
           This does not mean instant access. It does move your case higher in the review queue.
         </p>
-        <p style="margin:0">
+        <p style="margin:0 0 28px">
           <a href="${appUrl}" style="display:inline-block;background:#DC2626;color:#EDEEE9;padding:14px 20px;text-decoration:none;font-family:JetBrains Mono,monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase">
             Open Mortem
           </a>
         </p>
+        ${emailSignOffHtml()}
       </div>
     `,
     subject: "Mortem early access — priority queue unlocked",
-    text: `Your Mortem request is now in the priority queue after ${referralCount} verified referrals.`,
+    text: `Your Mortem request is now in the priority queue after ${referralCount} verified referrals.${EMAIL_SIGN_OFF_TEXT}`,
     to: email,
   })
 }
