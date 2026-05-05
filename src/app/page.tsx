@@ -1,11 +1,15 @@
 import { cookies } from "next/headers"
 import Link from "next/link"
+import { redirect } from "next/navigation"
+import { getDb } from "@/db/client"
 import { Wordmark } from "@/components/mortem/mark"
 import { XUpdatesLink } from "@/components/mortem/x-updates-link"
 import { WaitlistModal } from "@/components/landing/waitlist-modal"
 import { Button } from "@/components/ui/button"
 import { Reveal } from "@/components/landing/reveal"
 import { TiltCard } from "@/components/landing/tilt-card"
+import { MORTEM_DASHBOARD_COOKIE } from "@/lib/waitlist/dashboard-cookie"
+import { findEntryByDashboardToken } from "@/lib/waitlist/service"
 
 const diagnosisSteps = [
   {
@@ -72,6 +76,14 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
   const cookieStore = await cookies()
   const referredByCode = cookieStore.get("mortem-ref")?.value ?? null
   const resolvedSearch = (await searchParams) ?? {}
+
+  const dashboardToken = cookieStore.get(MORTEM_DASHBOARD_COOKIE)?.value
+  if (dashboardToken !== undefined && dashboardToken.length > 0) {
+    const entry = await findEntryByDashboardToken(getDb(), dashboardToken)
+    if (entry !== undefined && entry.emailVerifiedAt !== null) {
+      redirect(`/queue/${dashboardToken}`)
+    }
+  }
 
   return (
     <main className="min-h-screen bg-background text-foreground">
