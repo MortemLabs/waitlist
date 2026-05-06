@@ -193,20 +193,27 @@ export default async function HomePage({ searchParams }: LandingPageProps) {
             {diagnosisSteps.map((item, index) => (
               <article
                 key={item.step}
-                className="relative overflow-hidden bg-ink-2 p-6 md:p-8"
+                className="group relative overflow-hidden bg-ink-2 p-6 md:p-8 transition-colors duration-200 ease-out hover:bg-signal-soft"
               >
                 <Reveal delay={index * 0.05}>
                   <div
-                    className="pointer-events-none absolute -right-2 -top-6 select-none font-mono text-[9rem] font-bold leading-none text-ink-3"
+                    className="pointer-events-none absolute -right-2 -top-6 select-none font-mono text-[9rem] font-bold leading-none text-ink-3 transition-colors duration-200 ease-out group-hover:text-signal/25"
                     aria-hidden="true"
                   >
                     {item.step}
                   </div>
                   <div className="relative">
-                    <div className="mb-5 h-px w-10 bg-signal" aria-hidden="true" />
-                    <p className="case-meta text-signal">{item.step}</p>
+                    <div
+                      className="mb-5 h-px w-10 bg-signal transition-colors duration-200 ease-out group-hover:bg-foreground/85"
+                      aria-hidden="true"
+                    />
+                    <p className="case-meta text-signal transition-colors duration-200 ease-out group-hover:text-foreground">
+                      {item.step}
+                    </p>
                     <h3 className="mt-5 font-display text-4xl leading-tight">{item.title}</h3>
-                    <p className="mt-4 text-sm leading-7 text-muted-foreground">{item.body}</p>
+                    <p className="mt-4 text-sm leading-7 text-muted-foreground transition-colors duration-200 ease-out group-hover:text-foreground/75">
+                      {item.body}
+                    </p>
                   </div>
                 </Reveal>
               </article>

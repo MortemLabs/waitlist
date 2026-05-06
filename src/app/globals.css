@@ -30,6 +30,7 @@
   --color-ink-3: hsl(var(--ink-3));
   --color-paper: hsl(var(--paper));
   --color-signal: hsl(var(--signal));
+  --color-signal-soft: hsl(var(--signal-soft));
   --color-line: hsl(var(--line));
   --color-line-dim: hsl(var(--line-dim));
   --color-fg-faint: hsl(var(--fg-faint));
@@ -47,6 +48,8 @@
   --ink-3: 30 8% 14%;
   --paper: 60 10% 92%;
   --signal: 0 72% 51%;
+  /* Same hue as signal, low saturation — hover wash on dark cards */
+  --signal-soft: 0 38% 12%;
   --line: 30 8% 21%;
   --line-dim: 30 8% 14%;
   --fg-faint: 30 5% 34%;
