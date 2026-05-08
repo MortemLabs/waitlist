@@ -31,6 +31,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
+      <meta property="og:site_name" content="Mortem."></meta>
+      <meta property="og:url" content="https://x.com/mortemlabs"></meta>
       <body
         className={`${interTight.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} antialiased`}
       >
