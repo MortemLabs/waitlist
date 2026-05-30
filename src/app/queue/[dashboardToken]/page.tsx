@@ -52,9 +52,6 @@ export default async function QueuePage({ params, searchParams }: QueuePageProps
       <div className="mx-auto max-w-2xl px-4 pb-14 pt-6 md:px-6 md:pb-16 lg:pt-10">
         <div className="flex flex-wrap items-start justify-between gap-4 border-b border-line pb-6">
           <Wordmark />
-          <Button asChild variant="outline" size="sm">
-            <Link href="/">Back to site</Link>
-          </Button>
         </div>
 
         {verificationState === "verified" ? (
