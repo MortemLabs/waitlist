@@ -1,4 +1,6 @@
 import { describe, expect, it } from "vitest"
+import { FAILURE_MODE_OPTIONS, ROLE_OPTIONS, TEAM_TYPE_OPTIONS } from "./options"
+import { waitlistFormSchema } from "./schema"
 import {
   createVerificationExpiry,
   getNextPriorityState,
@@ -13,6 +15,17 @@ describe("waitlist service rules", () => {
   it("normalizes and de-dupes email addresses", () => {
     expect(normalizeEmail("  Sam@Mortem.dev ")).toBe("sam@mortem.dev")
     expect(isDuplicateEmail("Sam@Mortem.dev", " sam@mortem.dev ")).toBe(true)
+  })
+
+  it("accepts email-only submissions and fills default metadata", () => {
+    const parsed = waitlistFormSchema.parse({
+      email: "ops@desk.xyz",
+    })
+
+    expect(parsed.email).toBe("ops@desk.xyz")
+    expect(parsed.role).toBe(ROLE_OPTIONS[0].value)
+    expect(parsed.teamType).toBe(TEAM_TYPE_OPTIONS[0].value)
+    expect(parsed.biggestFailureMode).toBe(FAILURE_MODE_OPTIONS[0].value)
   })
 
   it("blocks self-referrals after normalization", () => {

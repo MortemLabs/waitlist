@@ -41,141 +41,98 @@ export function ReferralDashboard({
     }
   }
 
+  const verificationHint = verificationHintLine(verificationState)
+
   return (
-    <div className="space-y-4">
-      <section className="border border-line bg-ink-2 p-5 md:p-6">
-        <div className="flex flex-wrap items-start justify-between gap-3 border-b border-line pb-4">
-          <div>
-            <p className="eyebrow">Queue dashboard</p>
-            <h1 className="mt-2 font-display text-4xl leading-tight">Your case is on file.</h1>
-            <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">{email}</p>
-          </div>
+    <div className="space-y-8">
+      <header className="space-y-3">
+        <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
+          <h1 className="font-display text-3xl leading-tight md:text-[2.125rem]">Your case is on file.</h1>
           <Badge variant={status === "priority" ? "error" : "outline"}>
             {status === "priority" ? "Priority queue" : "Waitlist"}
           </Badge>
         </div>
+        <p className="text-sm text-muted-foreground">{email}</p>
+        {verificationHint ? (
+          <p className="text-sm leading-relaxed text-fg-muted">{verificationHint}</p>
+        ) : null}
+      </header>
 
-        <div className="mt-5 grid gap-4 md:grid-cols-3">
-          <StatCard
-            label="Verification"
-            value={verificationLabel(verificationState)}
-            detail="Referral credit only counts after verification."
-          />
-          <StatCard
-            label="Verified referrals"
-            value={`${referralCount} / ${TARGET_REFERRALS}`}
-            detail="Only verified signups move the count."
-          />
-          <StatCard
-            label="Queue status"
-            value={status === "priority" ? "Moved up" : "Still filing"}
-            detail="Three verified referrals move you higher in review."
-          />
-        </div>
-      </section>
-
-      <section className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
-        <article className="border border-line bg-ink-2 p-5 md:p-6">
-          <p className="eyebrow">Referral progress</p>
-          <h2 className="mt-2 font-display text-3xl leading-tight">
-            Bring three verified operators into the file.
-          </h2>
-          <p className="mt-4 max-w-2xl text-sm leading-6 text-muted-foreground">
-            Share your link. We only count referred operators after they submit and verify their
-            email. The goal is quality signal, not vanity traffic.
-          </p>
-
-          <div className="mt-6 border border-line bg-ink p-4">
-            <div className="flex items-center justify-between gap-4">
-              <span className="case-meta">Progress</span>
-              <span className="font-mono text-sm text-foreground">
-                {clampedCount} / {TARGET_REFERRALS}
-              </span>
+      <section className="border border-line bg-ink-2 px-5 py-8 md:px-8 md:py-10">
+        <div className="space-y-8 md:space-y-10">
+          <div className="space-y-4">
+            <div>
+              <h2 className="case-meta text-fg-muted">Referral link</h2>
+              <p className="mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
+                Share this URL only. Invited sign-ups count toward your total after they verify email.
+              </p>
             </div>
-            <div className="mt-3 h-3 border border-line bg-ink-2">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-stretch">
+              <div className="min-w-0 flex-1 border border-line bg-ink px-3 py-3 font-mono text-[0.75rem] leading-relaxed tracking-tight text-foreground [overflow-wrap:anywhere]">
+                {referralLink}
+              </div>
+              <Button
+                className="h-auto shrink-0 px-6 py-3 sm:self-stretch sm:py-3"
+                disabled={copying}
+                type="button"
+                onClick={onCopy}
+              >
+                {copying ? <Loader2 className="size-4 shrink-0 animate-spin" aria-hidden /> : null}
+                {copied ? <Check className="size-4 shrink-0" aria-hidden /> : null}
+                {!copying && !copied ? <Copy className="size-4 shrink-0" aria-hidden /> : null}
+                <span>{copied ? "Copied" : copying ? "Copying…" : "Copy"}</span>
+              </Button>
+            </div>
+          </div>
+
+          <hr className="border-0 border-t border-line" />
+
+          <div className="space-y-4">
+            <div className="flex flex-wrap items-end justify-between gap-2 gap-y-3">
+              <div>
+                <h2 className="case-meta text-fg-muted">Verified referrals</h2>
+                <p className="mt-2 font-display text-2xl tabular-nums leading-none md:text-[1.625rem]">
+                  {clampedCount} / {TARGET_REFERRALS}
+                </p>
+              </div>
+            </div>
+            <div className="h-2 border border-line bg-ink">
               {reduceMotion ? (
                 <div className="h-full bg-signal" style={{ width: progress }} />
               ) : (
                 <motion.div
+                  animate={{ width: progress }}
                   className="h-full bg-signal"
                   initial={{ width: 0 }}
-                  animate={{ width: progress }}
                   transition={{ duration: 0.28, ease: [0.2, 0.8, 0.2, 1] }}
                 />
               )}
             </div>
-            <div className="mt-4 grid gap-3 md:grid-cols-3">
-              {Array.from({ length: TARGET_REFERRALS }).map((_, index) => {
-                const unlocked = index < referralCount
-                return (
-                  <div
-                    key={index}
-                    className="border border-line bg-ink-2 px-4 py-3 text-center"
-                  >
-                    <p className="case-meta text-fg-muted">Referral 0{index + 1}</p>
-                    <p className="mt-2 font-display text-2xl leading-none">
-                      {unlocked ? "Filed" : "Pending"}
-                    </p>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-        </article>
-
-        <article className="border border-line bg-ink-2 p-5 md:p-6">
-          <p className="eyebrow">Share link</p>
-          <h2 className="mt-2 font-display text-3xl leading-tight">
-            Send people here, not to the homepage.
-          </h2>
-          <div className="mt-5 border border-line bg-ink p-4">
-            <p className="break-all font-mono text-xs leading-6 text-muted-foreground">
-              {referralLink}
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              {status === "priority"
+                ? "You’re in the priority queue. Spots are still reviewed manually."
+                : `${TARGET_REFERRALS} verified referrals unlock priority placement in review.`}
             </p>
           </div>
-          <div className="mt-4 flex flex-wrap gap-3">
-            <Button type="button" onClick={onCopy} disabled={copying}>
-              {copying ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" /> : null}
-              {copied ? <Check className="h-4 w-4" aria-hidden="true" /> : <Copy className="h-4 w-4" aria-hidden="true" />}
-              {copied ? "Copied" : "Copy link"}
-            </Button>
-          </div>
-          <p className="mt-4 text-sm leading-6 text-muted-foreground">
-            Priority queue unlocks at three verified referrals. Access is still reviewed manually.
-          </p>
-        </article>
+        </div>
       </section>
     </div>
   )
 }
 
-function verificationLabel(
-  state: "already_verified" | "expired" | "idle" | "invalid" | "verified",
-) {
+function verificationHintLine(state: ReferralDashboardProps["verificationState"]) {
   switch (state) {
-    case "already_verified":
-      return "Already verified"
+    case "idle":
+      return "Confirm your email from the signup message — referral credits only apply after verification."
     case "expired":
-      return "Link expired"
+      return null
     case "invalid":
-      return "Link invalid"
+      return null
+    case "already_verified":
+      return null
     case "verified":
-      return "Verified now"
+      return null
     default:
-      return "Pending"
+      return null
   }
-}
-
-function StatCard({
-  detail,
-  label,
-  value,
-}: Readonly<{ detail: string; label: string; value: string }>) {
-  return (
-    <div className="border border-line bg-ink p-4">
-      <p className="eyebrow">{label}</p>
-      <p className="mt-3 font-display text-3xl leading-none">{value}</p>
-      <p className="mt-3 text-sm leading-6 text-muted-foreground">{detail}</p>
-    </div>
-  )
 }

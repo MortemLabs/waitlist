@@ -2,14 +2,8 @@
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Select } from "@/components/ui/select"
 import { cn } from "@/lib/utils"
-import { waitlistFormSchema, type WaitlistFormInput } from "@/lib/waitlist/schema"
-import {
-  FAILURE_MODE_OPTIONS,
-  ROLE_OPTIONS,
-  TEAM_TYPE_OPTIONS,
-} from "@/lib/waitlist/options"
+import { waitlistFormSchema } from "@/lib/waitlist/schema"
 import { AlertCircle, Loader2, Mail } from "lucide-react"
 import { useMemo, useState } from "react"
 
@@ -28,16 +22,8 @@ export function WaitlistForm({
   className,
   referredByCode,
 }: WaitlistFormProps) {
-  const [form, setForm] = useState<WaitlistFormInput>({
-    biggestFailureMode: FAILURE_MODE_OPTIONS[0].value,
-    email: "",
-    referredByCode: referredByCode ?? undefined,
-    role: ROLE_OPTIONS[0].value,
-    teamType: TEAM_TYPE_OPTIONS[0].value,
-  })
-  const [fieldErrors, setFieldErrors] = useState<Partial<Record<keyof WaitlistFormInput, string>>>(
-    {},
-  )
+  const [email, setEmail] = useState("")
+  const [fieldErrors, setFieldErrors] = useState<{ email?: string }>({})
   const [formError, setFormError] = useState<string | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [emailSentTo, setEmailSentTo] = useState<string | null>(null)
@@ -50,25 +36,19 @@ export function WaitlistForm({
     [referredByCode],
   )
 
-  const updateField = <Key extends keyof WaitlistFormInput>(key: Key, value: WaitlistFormInput[Key]) => {
-    setForm((current) => ({ ...current, [key]: value }))
-    setFieldErrors((current) => ({ ...current, [key]: undefined }))
-    setFormError(null)
-  }
-
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setFormError(null)
 
-    const parsed = waitlistFormSchema.safeParse(form)
+    const parsed = waitlistFormSchema.safeParse({
+      email,
+      referredByCode: referredByCode ?? undefined,
+    })
 
     if (!parsed.success) {
       const flattened = parsed.error.flatten().fieldErrors
       setFieldErrors({
-        biggestFailureMode: flattened.biggestFailureMode?.[0],
         email: flattened.email?.[0],
-        role: flattened.role?.[0],
-        teamType: flattened.teamType?.[0],
       })
       return
     }
@@ -153,11 +133,15 @@ export function WaitlistForm({
       </div>
 
       <div className="mt-5 space-y-4">
+        <p className="max-w-lg text-sm leading-6 text-muted-foreground">
+          File your email. We send one verification link, then open your referral page after you confirm it.
+        </p>
+
         <Field
           error={fieldErrors.email}
           helper="Verification required."
           id="email"
-          label="Work email"
+          label="Email"
         >
           <Input
             id="email"
@@ -167,80 +151,15 @@ export function WaitlistForm({
             inputMode="email"
             spellCheck={false}
             placeholder="you@desk.xyz"
-            value={form.email}
-            onChange={(event) => updateField("email", event.currentTarget.value)}
+            value={email}
+            onChange={(event) => {
+              setEmail(event.currentTarget.value)
+              setFieldErrors({})
+              setFormError(null)
+            }}
             aria-invalid={fieldErrors.email ? "true" : undefined}
             aria-describedby={fieldErrors.email ? "email-error" : "email-helper"}
           />
-        </Field>
-
-        <div className="grid gap-4 md:grid-cols-2">
-          <Field
-            error={fieldErrors.role}
-            helper="Who will use the product?"
-            id="role"
-            label="Role"
-          >
-            <Select
-              id="role"
-              value={form.role}
-              onChange={(event) => updateField("role", event.currentTarget.value)}
-              aria-invalid={fieldErrors.role ? "true" : undefined}
-              aria-describedby={fieldErrors.role ? "role-error" : "role-helper"}
-            >
-              {ROLE_OPTIONS.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </Select>
-          </Field>
-
-          <Field
-            error={fieldErrors.teamType}
-            helper="Choose the setup you run today."
-            id="teamType"
-            label="Setup"
-          >
-            <Select
-              id="teamType"
-              value={form.teamType}
-              onChange={(event) => updateField("teamType", event.currentTarget.value)}
-              aria-invalid={fieldErrors.teamType ? "true" : undefined}
-              aria-describedby={fieldErrors.teamType ? "teamType-error" : "teamType-helper"}
-            >
-              {TEAM_TYPE_OPTIONS.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </Select>
-          </Field>
-        </div>
-
-        <Field
-          error={fieldErrors.biggestFailureMode}
-          helper="Pick the main thing you want to catch sooner."
-          id="biggestFailureMode"
-          label="Primary failure mode"
-        >
-          <Select
-            id="biggestFailureMode"
-            value={form.biggestFailureMode}
-            onChange={(event) => updateField("biggestFailureMode", event.currentTarget.value)}
-            aria-invalid={fieldErrors.biggestFailureMode ? "true" : undefined}
-            aria-describedby={
-              fieldErrors.biggestFailureMode
-                ? "biggestFailureMode-error"
-                : "biggestFailureMode-helper"
-            }
-          >
-            {FAILURE_MODE_OPTIONS.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </Select>
         </Field>
 
         {referredLabel ? (
