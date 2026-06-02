@@ -7,3 +7,4 @@ coverage
 dist
 drizzle/*.sqlite
 *.tsbuildinfo
+.DS_Store
