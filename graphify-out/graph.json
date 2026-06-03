@@ -1,0 +1,4311 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "id": "postcss_config_mjs",
+      "community": 14,
+      "norm_label": "postcss.config.mjs"
+    },
+    {
+      "label": "next-env.d.ts",
+      "file_type": "code",
+      "source_file": "next-env.d.ts",
+      "source_location": "L1",
+      "id": "next_env_d_ts",
+      "community": 15,
+      "norm_label": "next-env.d.ts"
+    },
+    {
+      "label": "drizzle.config.ts",
+      "file_type": "code",
+      "source_file": "drizzle.config.ts",
+      "source_location": "L1",
+      "id": "drizzle_config_ts",
+      "community": 16,
+      "norm_label": "drizzle.config.ts"
+    },
+    {
+      "label": "vitest.config.ts",
+      "file_type": "code",
+      "source_file": "vitest.config.ts",
+      "source_location": "L1",
+      "id": "vitest_config_ts",
+      "community": 17,
+      "norm_label": "vitest.config.ts"
+    },
+    {
+      "label": "next.config.ts",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L1",
+      "id": "next_config_ts",
+      "community": 12,
+      "norm_label": "next.config.ts"
+    },
+    {
+      "label": "nextConfig",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L3",
+      "id": "waitlist_next_config_nextconfig",
+      "community": 12,
+      "norm_label": "nextconfig"
+    },
+    {
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L1",
+      "id": "src_app_layout_tsx",
+      "community": 6,
+      "norm_label": "layout.tsx"
+    },
+    {
+      "label": "getMetadataBase()",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L9",
+      "id": "app_layout_getmetadatabase",
+      "community": 6,
+      "norm_label": "getmetadatabase()"
+    },
+    {
+      "label": "interTight",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L28",
+      "id": "app_layout_intertight",
+      "community": 6,
+      "norm_label": "intertight"
+    },
+    {
+      "label": "instrumentSerif",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L34",
+      "id": "app_layout_instrumentserif",
+      "community": 6,
+      "norm_label": "instrumentserif"
+    },
+    {
+      "label": "jetbrainsMono",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L41",
+      "id": "app_layout_jetbrainsmono",
+      "community": 6,
+      "norm_label": "jetbrainsmono"
+    },
+    {
+      "label": "metadata",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L47",
+      "id": "app_layout_metadata",
+      "community": 6,
+      "norm_label": "metadata"
+    },
+    {
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L74",
+      "id": "app_layout_rootlayout",
+      "community": 6,
+      "norm_label": "rootlayout()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L1",
+      "id": "src_app_page_tsx",
+      "community": 5,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "diagnosisSteps",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L14",
+      "id": "app_page_diagnosissteps",
+      "community": 5,
+      "norm_label": "diagnosissteps"
+    },
+    {
+      "label": "queueSteps",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L32",
+      "id": "app_page_queuesteps",
+      "community": 5,
+      "norm_label": "queuesteps"
+    },
+    {
+      "label": "exhibits",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L50",
+      "id": "app_page_exhibits",
+      "community": 5,
+      "norm_label": "exhibits"
+    },
+    {
+      "label": "LandingPageProps",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L71",
+      "id": "app_page_landingpageprops",
+      "community": 5,
+      "norm_label": "landingpageprops"
+    },
+    {
+      "label": "HomePage()",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L75",
+      "id": "app_page_homepage",
+      "community": 5,
+      "norm_label": "homepage()"
+    },
+    {
+      "label": "ExhibitCard()",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L263",
+      "id": "app_page_exhibitcard",
+      "community": 5,
+      "norm_label": "exhibitcard()"
+    },
+    {
+      "label": "QueueStep()",
+      "file_type": "code",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L284",
+      "id": "app_page_queuestep",
+      "community": 5,
+      "norm_label": "queuestep()"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L1",
+      "id": "src_app_verify_token_route_ts",
+      "community": 0,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L17",
+      "id": "token_route_get",
+      "community": 0,
+      "norm_label": "get()"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "src/app/r/[referralCode]/route.ts",
+      "source_location": "L1",
+      "id": "src_app_r_referralcode_route_ts",
+      "community": 13,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "src/app/r/[referralCode]/route.ts",
+      "source_location": "L4",
+      "id": "referralcode_route_get",
+      "community": 13,
+      "norm_label": "get()"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L1",
+      "id": "src_app_queue_dashboardtoken_page_tsx",
+      "community": 3,
+      "norm_label": "page.tsx"
+    },
+    {
+      "label": "QueuePageProps",
+      "file_type": "code",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L10",
+      "id": "dashboardtoken_page_queuepageprops",
+      "community": 3,
+      "norm_label": "queuepageprops"
+    },
+    {
+      "label": "QueuePage()",
+      "file_type": "code",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L17",
+      "id": "dashboardtoken_page_queuepage",
+      "community": 3,
+      "norm_label": "queuepage()"
+    },
+    {
+      "label": "Banner()",
+      "file_type": "code",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L87",
+      "id": "dashboardtoken_page_banner",
+      "community": 3,
+      "norm_label": "banner()"
+    },
+    {
+      "label": "toVerificationState()",
+      "file_type": "code",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L118",
+      "id": "dashboardtoken_page_toverificationstate",
+      "community": 3,
+      "norm_label": "toverificationstate()"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L1",
+      "id": "src_app_api_waitlist_submit_route_ts",
+      "community": 0,
+      "norm_label": "route.ts"
+    },
+    {
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L9",
+      "id": "submit_route_post",
+      "community": 0,
+      "norm_label": "post()"
+    },
+    {
+      "label": "badge.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/badge.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_badge_tsx",
+      "community": 3,
+      "norm_label": "badge.tsx"
+    },
+    {
+      "label": "badgeVariants",
+      "file_type": "code",
+      "source_file": "src/components/ui/badge.tsx",
+      "source_location": "L5",
+      "id": "ui_badge_badgevariants",
+      "community": 3,
+      "norm_label": "badgevariants"
+    },
+    {
+      "label": "BadgeProps",
+      "file_type": "code",
+      "source_file": "src/components/ui/badge.tsx",
+      "source_location": "L24",
+      "id": "ui_badge_badgeprops",
+      "community": 3,
+      "norm_label": "badgeprops"
+    },
+    {
+      "label": "Badge()",
+      "file_type": "code",
+      "source_file": "src/components/ui/badge.tsx",
+      "source_location": "L28",
+      "id": "ui_badge_badge",
+      "community": 3,
+      "norm_label": "badge()"
+    },
+    {
+      "label": "button.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_button_tsx",
+      "community": 9,
+      "norm_label": "button.tsx"
+    },
+    {
+      "label": "buttonVariants",
+      "file_type": "code",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L6",
+      "id": "ui_button_buttonvariants",
+      "community": 11,
+      "norm_label": "buttonvariants"
+    },
+    {
+      "label": "ButtonProps",
+      "file_type": "code",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L30",
+      "id": "ui_button_buttonprops",
+      "community": 9,
+      "norm_label": "buttonprops"
+    },
+    {
+      "label": "Button()",
+      "file_type": "code",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L36",
+      "id": "ui_button_button",
+      "community": 9,
+      "norm_label": "button()"
+    },
+    {
+      "label": "select.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/select.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_select_tsx",
+      "community": 4,
+      "norm_label": "select.tsx"
+    },
+    {
+      "label": "Select",
+      "file_type": "code",
+      "source_file": "src/components/ui/select.tsx",
+      "source_location": "L4",
+      "id": "ui_select_select",
+      "community": 4,
+      "norm_label": "select"
+    },
+    {
+      "label": "textarea.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/textarea.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_textarea_tsx",
+      "community": 4,
+      "norm_label": "textarea.tsx"
+    },
+    {
+      "label": "Textarea",
+      "file_type": "code",
+      "source_file": "src/components/ui/textarea.tsx",
+      "source_location": "L4",
+      "id": "ui_textarea_textarea",
+      "community": 4,
+      "norm_label": "textarea"
+    },
+    {
+      "label": "input.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/input.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_input_tsx",
+      "community": 7,
+      "norm_label": "input.tsx"
+    },
+    {
+      "label": "Input",
+      "file_type": "code",
+      "source_file": "src/components/ui/input.tsx",
+      "source_location": "L4",
+      "id": "ui_input_input",
+      "community": 7,
+      "norm_label": "input"
+    },
+    {
+      "label": "waitlist-form.tsx",
+      "file_type": "code",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L1",
+      "id": "src_components_landing_waitlist_form_tsx",
+      "community": 7,
+      "norm_label": "waitlist-form.tsx"
+    },
+    {
+      "label": "SubmitSuccessPayload",
+      "file_type": "code",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L10",
+      "id": "landing_waitlist_form_submitsuccesspayload",
+      "community": 7,
+      "norm_label": "submitsuccesspayload"
+    },
+    {
+      "label": "WaitlistFormProps",
+      "file_type": "code",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L14",
+      "id": "landing_waitlist_form_waitlistformprops",
+      "community": 7,
+      "norm_label": "waitlistformprops"
+    },
+    {
+      "label": "WaitlistForm()",
+      "file_type": "code",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L20",
+      "id": "landing_waitlist_form_waitlistform",
+      "community": 7,
+      "norm_label": "waitlistform()"
+    },
+    {
+      "label": "Field()",
+      "file_type": "code",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L194",
+      "id": "landing_waitlist_form_field",
+      "community": 7,
+      "norm_label": "field()"
+    },
+    {
+      "label": "waitlist-modal.tsx",
+      "file_type": "code",
+      "source_file": "src/components/landing/waitlist-modal.tsx",
+      "source_location": "L1",
+      "id": "src_components_landing_waitlist_modal_tsx",
+      "community": 9,
+      "norm_label": "waitlist-modal.tsx"
+    },
+    {
+      "label": "WaitlistModalProps",
+      "file_type": "code",
+      "source_file": "src/components/landing/waitlist-modal.tsx",
+      "source_location": "L9",
+      "id": "landing_waitlist_modal_waitlistmodalprops",
+      "community": 9,
+      "norm_label": "waitlistmodalprops"
+    },
+    {
+      "label": "WaitlistModal()",
+      "file_type": "code",
+      "source_file": "src/components/landing/waitlist-modal.tsx",
+      "source_location": "L16",
+      "id": "landing_waitlist_modal_waitlistmodal",
+      "community": 9,
+      "norm_label": "waitlistmodal()"
+    },
+    {
+      "label": "tilt-card.tsx",
+      "file_type": "code",
+      "source_file": "src/components/landing/tilt-card.tsx",
+      "source_location": "L1",
+      "id": "src_components_landing_tilt_card_tsx",
+      "community": 4,
+      "norm_label": "tilt-card.tsx"
+    },
+    {
+      "label": "TiltCard()",
+      "file_type": "code",
+      "source_file": "src/components/landing/tilt-card.tsx",
+      "source_location": "L7",
+      "id": "landing_tilt_card_tiltcard",
+      "community": 4,
+      "norm_label": "tiltcard()"
+    },
+    {
+      "label": "reveal.tsx",
+      "file_type": "code",
+      "source_file": "src/components/landing/reveal.tsx",
+      "source_location": "L1",
+      "id": "src_components_landing_reveal_tsx",
+      "community": 5,
+      "norm_label": "reveal.tsx"
+    },
+    {
+      "label": "Reveal()",
+      "file_type": "code",
+      "source_file": "src/components/landing/reveal.tsx",
+      "source_location": "L6",
+      "id": "landing_reveal_reveal",
+      "community": 5,
+      "norm_label": "reveal()"
+    },
+    {
+      "label": "referral-dashboard.tsx",
+      "file_type": "code",
+      "source_file": "src/components/queue/referral-dashboard.tsx",
+      "source_location": "L1",
+      "id": "src_components_queue_referral_dashboard_tsx",
+      "community": 3,
+      "norm_label": "referral-dashboard.tsx"
+    },
+    {
+      "label": "ReferralDashboardProps",
+      "file_type": "code",
+      "source_file": "src/components/queue/referral-dashboard.tsx",
+      "source_location": "L9",
+      "id": "queue_referral_dashboard_referraldashboardprops",
+      "community": 3,
+      "norm_label": "referraldashboardprops"
+    },
+    {
+      "label": "ReferralDashboard()",
+      "file_type": "code",
+      "source_file": "src/components/queue/referral-dashboard.tsx",
+      "source_location": "L19",
+      "id": "queue_referral_dashboard_referraldashboard",
+      "community": 3,
+      "norm_label": "referraldashboard()"
+    },
+    {
+      "label": "verificationHintLine()",
+      "file_type": "code",
+      "source_file": "src/components/queue/referral-dashboard.tsx",
+      "source_location": "L123",
+      "id": "queue_referral_dashboard_verificationhintline",
+      "community": 3,
+      "norm_label": "verificationhintline()"
+    },
+    {
+      "label": "mark.tsx",
+      "file_type": "code",
+      "source_file": "src/components/mortem/mark.tsx",
+      "source_location": "L1",
+      "id": "src_components_mortem_mark_tsx",
+      "community": 4,
+      "norm_label": "mark.tsx"
+    },
+    {
+      "label": "MarkProps",
+      "file_type": "code",
+      "source_file": "src/components/mortem/mark.tsx",
+      "source_location": "L3",
+      "id": "mortem_mark_markprops",
+      "community": 4,
+      "norm_label": "markprops"
+    },
+    {
+      "label": "Mark()",
+      "file_type": "code",
+      "source_file": "src/components/mortem/mark.tsx",
+      "source_location": "L9",
+      "id": "mortem_mark_mark",
+      "community": 4,
+      "norm_label": "mark()"
+    },
+    {
+      "label": "Wordmark()",
+      "file_type": "code",
+      "source_file": "src/components/mortem/mark.tsx",
+      "source_location": "L22",
+      "id": "mortem_mark_wordmark",
+      "community": 4,
+      "norm_label": "wordmark()"
+    },
+    {
+      "label": "x-updates-link.tsx",
+      "file_type": "code",
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L1",
+      "id": "src_components_mortem_x_updates_link_tsx",
+      "community": 11,
+      "norm_label": "x-updates-link.tsx"
+    },
+    {
+      "label": "XLogo()",
+      "file_type": "code",
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L4",
+      "id": "mortem_x_updates_link_xlogo",
+      "community": 11,
+      "norm_label": "xlogo()"
+    },
+    {
+      "label": "XUpdatesLinkProps",
+      "file_type": "code",
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L18",
+      "id": "mortem_x_updates_link_xupdateslinkprops",
+      "community": 11,
+      "norm_label": "xupdateslinkprops"
+    },
+    {
+      "label": "XUpdatesLink()",
+      "file_type": "code",
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L26",
+      "id": "mortem_x_updates_link_xupdateslink",
+      "community": 11,
+      "norm_label": "xupdateslink()"
+    },
+    {
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L1",
+      "id": "src_lib_utils_ts",
+      "community": 4,
+      "norm_label": "utils.ts"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L4",
+      "id": "lib_utils_cn",
+      "community": 4,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "env.ts",
+      "file_type": "code",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L1",
+      "id": "src_lib_env_ts",
+      "community": 2,
+      "norm_label": "env.ts"
+    },
+    {
+      "label": "requireEnv()",
+      "file_type": "code",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L1",
+      "id": "lib_env_requireenv",
+      "community": 2,
+      "norm_label": "requireenv()"
+    },
+    {
+      "label": "getDatabaseUrl()",
+      "file_type": "code",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L11",
+      "id": "lib_env_getdatabaseurl",
+      "community": 2,
+      "norm_label": "getdatabaseurl()"
+    },
+    {
+      "label": "getResendApiKey()",
+      "file_type": "code",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L15",
+      "id": "lib_env_getresendapikey",
+      "community": 2,
+      "norm_label": "getresendapikey()"
+    },
+    {
+      "label": "getResendFromEmail()",
+      "file_type": "code",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L19",
+      "id": "lib_env_getresendfromemail",
+      "community": 2,
+      "norm_label": "getresendfromemail()"
+    },
+    {
+      "label": "getAppUrl()",
+      "file_type": "code",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L23",
+      "id": "lib_env_getappurl",
+      "community": 2,
+      "norm_label": "getappurl()"
+    },
+    {
+      "label": "schema.ts",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L1",
+      "id": "src_lib_waitlist_schema_ts",
+      "community": 1,
+      "norm_label": "schema.ts"
+    },
+    {
+      "label": "roleValues",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L8",
+      "id": "waitlist_schema_rolevalues",
+      "community": 1,
+      "norm_label": "rolevalues"
+    },
+    {
+      "label": "teamTypeValues",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L9",
+      "id": "waitlist_schema_teamtypevalues",
+      "community": 1,
+      "norm_label": "teamtypevalues"
+    },
+    {
+      "label": "failureModeValues",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L10",
+      "id": "waitlist_schema_failuremodevalues",
+      "community": 1,
+      "norm_label": "failuremodevalues"
+    },
+    {
+      "label": "inOptions()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L15",
+      "id": "waitlist_schema_inoptions",
+      "community": 1,
+      "norm_label": "inoptions()"
+    },
+    {
+      "label": "waitlistFormSchema",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L17",
+      "id": "waitlist_schema_waitlistformschema",
+      "community": 1,
+      "norm_label": "waitlistformschema"
+    },
+    {
+      "label": "WaitlistFormInput",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L34",
+      "id": "waitlist_schema_waitlistforminput",
+      "community": 1,
+      "norm_label": "waitlistforminput"
+    },
+    {
+      "label": "mailer.ts",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L1",
+      "id": "src_lib_waitlist_mailer_ts",
+      "community": 2,
+      "norm_label": "mailer.ts"
+    },
+    {
+      "label": "emailWordmarkHeader()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L6",
+      "id": "waitlist_mailer_emailwordmarkheader",
+      "community": 2,
+      "norm_label": "emailwordmarkheader()"
+    },
+    {
+      "label": "emailSignOffHtml()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L16",
+      "id": "waitlist_mailer_emailsignoffhtml",
+      "community": 2,
+      "norm_label": "emailsignoffhtml()"
+    },
+    {
+      "label": "getResendClient()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L26",
+      "id": "waitlist_mailer_getresendclient",
+      "community": 2,
+      "norm_label": "getresendclient()"
+    },
+    {
+      "label": "sendVerificationEmail()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L35",
+      "id": "waitlist_mailer_sendverificationemail",
+      "community": 2,
+      "norm_label": "sendverificationemail()"
+    },
+    {
+      "label": "sendConfirmationEmail()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L75",
+      "id": "waitlist_mailer_sendconfirmationemail",
+      "community": 2,
+      "norm_label": "sendconfirmationemail()"
+    },
+    {
+      "label": "sendPriorityUnlockedEmail()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L120",
+      "id": "waitlist_mailer_sendpriorityunlockedemail",
+      "community": 2,
+      "norm_label": "sendpriorityunlockedemail()"
+    },
+    {
+      "label": "service.test.ts",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L1",
+      "id": "src_lib_waitlist_service_test_ts",
+      "community": 1,
+      "norm_label": "service.test.ts"
+    },
+    {
+      "label": "parsed",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L21",
+      "id": "waitlist_service_test_parsed",
+      "community": 1,
+      "norm_label": "parsed"
+    },
+    {
+      "label": "now",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L42",
+      "id": "waitlist_service_test_now",
+      "community": 1,
+      "norm_label": "now"
+    },
+    {
+      "label": "expiry",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L43",
+      "id": "waitlist_service_test_expiry",
+      "community": 1,
+      "norm_label": "expiry"
+    },
+    {
+      "label": "beforeThreshold",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L78",
+      "id": "waitlist_service_test_beforethreshold",
+      "community": 1,
+      "norm_label": "beforethreshold"
+    },
+    {
+      "label": "atThreshold",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L79",
+      "id": "waitlist_service_test_atthreshold",
+      "community": 1,
+      "norm_label": "atthreshold"
+    },
+    {
+      "label": "afterUnlocked",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L80",
+      "id": "waitlist_service_test_afterunlocked",
+      "community": 1,
+      "norm_label": "afterunlocked"
+    },
+    {
+      "label": "dashboard-cookie.ts",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/dashboard-cookie.ts",
+      "source_location": "L1",
+      "id": "src_lib_waitlist_dashboard_cookie_ts",
+      "community": 0,
+      "norm_label": "dashboard-cookie.ts"
+    },
+    {
+      "label": "mortemDashboardCookieOptions()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/dashboard-cookie.ts",
+      "source_location": "L4",
+      "id": "waitlist_dashboard_cookie_mortemdashboardcookieoptions",
+      "community": 0,
+      "norm_label": "mortemdashboardcookieoptions()"
+    },
+    {
+      "label": "service.ts",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L1",
+      "id": "src_lib_waitlist_service_ts",
+      "community": 0,
+      "norm_label": "service.ts"
+    },
+    {
+      "label": "DatabaseExecutor",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L9",
+      "id": "waitlist_service_databaseexecutor",
+      "community": 0,
+      "norm_label": "databaseexecutor"
+    },
+    {
+      "label": "SubmitWaitlistResult",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L11",
+      "id": "waitlist_service_submitwaitlistresult",
+      "community": 0,
+      "norm_label": "submitwaitlistresult"
+    },
+    {
+      "label": "VerifyWaitlistResult",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L17",
+      "id": "waitlist_service_verifywaitlistresult",
+      "community": 0,
+      "norm_label": "verifywaitlistresult"
+    },
+    {
+      "label": "normalizeEmail()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L32",
+      "id": "waitlist_service_normalizeemail",
+      "community": 1,
+      "norm_label": "normalizeemail()"
+    },
+    {
+      "label": "isDuplicateEmail()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L36",
+      "id": "waitlist_service_isduplicateemail",
+      "community": 1,
+      "norm_label": "isduplicateemail()"
+    },
+    {
+      "label": "hashVerificationToken()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L40",
+      "id": "waitlist_service_hashverificationtoken",
+      "community": 0,
+      "norm_label": "hashverificationtoken()"
+    },
+    {
+      "label": "createReferralCode()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L44",
+      "id": "waitlist_service_createreferralcode",
+      "community": 0,
+      "norm_label": "createreferralcode()"
+    },
+    {
+      "label": "createDashboardToken()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L48",
+      "id": "waitlist_service_createdashboardtoken",
+      "community": 0,
+      "norm_label": "createdashboardtoken()"
+    },
+    {
+      "label": "createVerificationToken()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L52",
+      "id": "waitlist_service_createverificationtoken",
+      "community": 0,
+      "norm_label": "createverificationtoken()"
+    },
+    {
+      "label": "createVerificationExpiry()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L56",
+      "id": "waitlist_service_createverificationexpiry",
+      "community": 0,
+      "norm_label": "createverificationexpiry()"
+    },
+    {
+      "label": "shouldIgnoreSelfReferral()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L60",
+      "id": "waitlist_service_shouldignoreselfreferral",
+      "community": 1,
+      "norm_label": "shouldignoreselfreferral()"
+    },
+    {
+      "label": "getVerificationStatus()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L64",
+      "id": "waitlist_service_getverificationstatus",
+      "community": 0,
+      "norm_label": "getverificationstatus()"
+    },
+    {
+      "label": "getNextPriorityState()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L82",
+      "id": "waitlist_service_getnextprioritystate",
+      "community": 1,
+      "norm_label": "getnextprioritystate()"
+    },
+    {
+      "label": "submitWaitlistEntry()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L97",
+      "id": "waitlist_service_submitwaitlistentry",
+      "community": 0,
+      "norm_label": "submitwaitlistentry()"
+    },
+    {
+      "label": "findEntryByDashboardToken()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L174",
+      "id": "waitlist_service_findentrybydashboardtoken",
+      "community": 3,
+      "norm_label": "findentrybydashboardtoken()"
+    },
+    {
+      "label": "findEntryByVerificationHash()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L183",
+      "id": "waitlist_service_findentrybyverificationhash",
+      "community": 0,
+      "norm_label": "findentrybyverificationhash()"
+    },
+    {
+      "label": "verifyWaitlistEntry()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L192",
+      "id": "waitlist_service_verifywaitlistentry",
+      "community": 0,
+      "norm_label": "verifywaitlistentry()"
+    },
+    {
+      "label": "markPriorityNotificationSent()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L281",
+      "id": "waitlist_service_markprioritynotificationsent",
+      "community": 0,
+      "norm_label": "markprioritynotificationsent()"
+    },
+    {
+      "label": "options.ts",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/options.ts",
+      "source_location": "L1",
+      "id": "src_lib_waitlist_options_ts",
+      "community": 1,
+      "norm_label": "options.ts"
+    },
+    {
+      "label": "ROLE_OPTIONS",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/options.ts",
+      "source_location": "L1",
+      "id": "waitlist_options_role_options",
+      "community": 1,
+      "norm_label": "role_options"
+    },
+    {
+      "label": "TEAM_TYPE_OPTIONS",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/options.ts",
+      "source_location": "L20",
+      "id": "waitlist_options_team_type_options",
+      "community": 1,
+      "norm_label": "team_type_options"
+    },
+    {
+      "label": "FAILURE_MODE_OPTIONS",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/options.ts",
+      "source_location": "L39",
+      "id": "waitlist_options_failure_mode_options",
+      "community": 1,
+      "norm_label": "failure_mode_options"
+    },
+    {
+      "label": "schema.ts",
+      "file_type": "code",
+      "source_file": "src/db/schema.ts",
+      "source_location": "L1",
+      "id": "src_db_schema_ts",
+      "community": 0,
+      "norm_label": "schema.ts"
+    },
+    {
+      "label": "waitlistEntries",
+      "file_type": "code",
+      "source_file": "src/db/schema.ts",
+      "source_location": "L11",
+      "id": "db_schema_waitlistentries",
+      "community": 0,
+      "norm_label": "waitlistentries"
+    },
+    {
+      "label": "waitlistEntryRelations",
+      "file_type": "code",
+      "source_file": "src/db/schema.ts",
+      "source_location": "L66",
+      "id": "db_schema_waitlistentryrelations",
+      "community": 0,
+      "norm_label": "waitlistentryrelations"
+    },
+    {
+      "label": "WaitlistEntry",
+      "file_type": "code",
+      "source_file": "src/db/schema.ts",
+      "source_location": "L74",
+      "id": "db_schema_waitlistentry",
+      "community": 0,
+      "norm_label": "waitlistentry"
+    },
+    {
+      "label": "NewWaitlistEntry",
+      "file_type": "code",
+      "source_file": "src/db/schema.ts",
+      "source_location": "L75",
+      "id": "db_schema_newwaitlistentry",
+      "community": 0,
+      "norm_label": "newwaitlistentry"
+    },
+    {
+      "label": "client.ts",
+      "file_type": "code",
+      "source_file": "src/db/client.ts",
+      "source_location": "L1",
+      "id": "src_db_client_ts",
+      "community": 2,
+      "norm_label": "client.ts"
+    },
+    {
+      "label": "Database",
+      "file_type": "code",
+      "source_file": "src/db/client.ts",
+      "source_location": "L6",
+      "id": "db_client_database",
+      "community": 2,
+      "norm_label": "database"
+    },
+    {
+      "label": "getDb()",
+      "file_type": "code",
+      "source_file": "src/db/client.ts",
+      "source_location": "L11",
+      "id": "db_client_getdb",
+      "community": 0,
+      "norm_label": "getdb()"
+    },
+    {
+      "label": "brand.md",
+      "file_type": "document",
+      "source_file": "brand.md",
+      "source_location": "L1",
+      "id": "brand_md",
+      "community": 10,
+      "norm_label": "brand.md"
+    },
+    {
+      "label": "Brand \u2014 Mortem",
+      "file_type": "document",
+      "source_file": "brand.md",
+      "source_location": "L1",
+      "id": "waitlist_brand_brand_mortem",
+      "community": 10,
+      "norm_label": "brand \u2014 mortem"
+    },
+    {
+      "label": "1 \u00b7 Voice",
+      "file_type": "document",
+      "source_file": "brand.md",
+      "source_location": "L9",
+      "id": "waitlist_brand_1_voice",
+      "community": 10,
+      "norm_label": "1 \u00b7 voice"
+    },
+    {
+      "label": "2 \u00b7 Color",
+      "file_type": "document",
+      "source_file": "brand.md",
+      "source_location": "L20",
+      "id": "waitlist_brand_2_color",
+      "community": 10,
+      "norm_label": "2 \u00b7 color"
+    },
+    {
+      "label": "3 \u00b7 Typography",
+      "file_type": "document",
+      "source_file": "brand.md",
+      "source_location": "L28",
+      "id": "waitlist_brand_3_typography",
+      "community": 10,
+      "norm_label": "3 \u00b7 typography"
+    },
+    {
+      "label": "4 \u00b7 Layout",
+      "file_type": "document",
+      "source_file": "brand.md",
+      "source_location": "L34",
+      "id": "waitlist_brand_4_layout",
+      "community": 10,
+      "norm_label": "4 \u00b7 layout"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 8,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Mortem Early Access Landing",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "waitlist_readme_mortem_early_access_landing",
+      "community": 8,
+      "norm_label": "mortem early access landing"
+    },
+    {
+      "label": "Stack",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "id": "waitlist_readme_stack",
+      "community": 8,
+      "norm_label": "stack"
+    },
+    {
+      "label": "Scripts",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "id": "waitlist_readme_scripts",
+      "community": 8,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "code:bash (pnpm install)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L15",
+      "id": "waitlist_readme_codeblock_1",
+      "community": 8,
+      "norm_label": "code:bash (pnpm install)"
+    },
+    {
+      "label": "Environment",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L24",
+      "id": "waitlist_readme_environment",
+      "community": 8,
+      "norm_label": "environment"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "next.config.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "next_config_ts",
+      "target": "waitlist_next_config_nextconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_app_layout_tsx",
+      "target": "app_layout_getmetadatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "src_app_layout_tsx",
+      "target": "app_layout_intertight",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "src_app_layout_tsx",
+      "target": "app_layout_instrumentserif",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "src_app_layout_tsx",
+      "target": "app_layout_jetbrainsmono",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "src_app_layout_tsx",
+      "target": "app_layout_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "src_app_layout_tsx",
+      "target": "app_layout_rootlayout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_db_client_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "db_client_getdb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_components_mortem_mark_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "mortem_mark_wordmark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_components_mortem_x_updates_link_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "mortem_x_updates_link_xupdateslink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_components_landing_waitlist_modal_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "landing_waitlist_modal_waitlistmodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_components_ui_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_components_landing_reveal_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "landing_reveal_reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_components_landing_tilt_card_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "landing_tilt_card_tiltcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_lib_waitlist_dashboard_cookie_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "src_lib_waitlist_service_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "waitlist_service_findentrybydashboardtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "app_page_diagnosissteps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "app_page_queuesteps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "app_page_exhibits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "app_page_landingpageprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "app_page_homepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L263",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "app_page_exhibitcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/page.tsx",
+      "source_location": "L284",
+      "weight": 1.0,
+      "source": "src_app_page_tsx",
+      "target": "app_page_queuestep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/page.tsx",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "app_page_homepage",
+      "target": "waitlist_service_findentrybydashboardtoken"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/page.tsx",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "app_page_homepage",
+      "target": "db_client_getdb"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app_verify_token_route_ts",
+      "target": "src_db_client_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app_verify_token_route_ts",
+      "target": "db_client_getdb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_verify_token_route_ts",
+      "target": "src_lib_waitlist_dashboard_cookie_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_verify_token_route_ts",
+      "target": "waitlist_dashboard_cookie_mortemdashboardcookieoptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_app_verify_token_route_ts",
+      "target": "src_lib_waitlist_mailer_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_app_verify_token_route_ts",
+      "target": "waitlist_mailer_sendconfirmationemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_app_verify_token_route_ts",
+      "target": "waitlist_mailer_sendpriorityunlockedemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_app_verify_token_route_ts",
+      "target": "src_lib_waitlist_service_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_app_verify_token_route_ts",
+      "target": "waitlist_service_findentrybydashboardtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_app_verify_token_route_ts",
+      "target": "waitlist_service_markprioritynotificationsent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_app_verify_token_route_ts",
+      "target": "waitlist_service_verifywaitlistentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_app_verify_token_route_ts",
+      "target": "token_route_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "token_route_get",
+      "target": "db_client_getdb"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "token_route_get",
+      "target": "waitlist_service_verifywaitlistentry"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "token_route_get",
+      "target": "waitlist_service_findentrybydashboardtoken"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "token_route_get",
+      "target": "waitlist_dashboard_cookie_mortemdashboardcookieoptions"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "token_route_get",
+      "target": "waitlist_mailer_sendconfirmationemail"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "token_route_get",
+      "target": "waitlist_mailer_sendpriorityunlockedemail"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/verify/[token]/route.ts",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "token_route_get",
+      "target": "waitlist_service_markprioritynotificationsent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/r/[referralCode]/route.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_r_referralcode_route_ts",
+      "target": "referralcode_route_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "src_components_mortem_mark_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "mortem_mark_wordmark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "src_components_queue_referral_dashboard_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "queue_referral_dashboard_referraldashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "src_components_ui_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "src_db_client_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "db_client_getdb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "src_lib_env_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "lib_env_getappurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "src_lib_waitlist_service_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "waitlist_service_findentrybydashboardtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "dashboardtoken_page_queuepageprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "dashboardtoken_page_queuepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "dashboardtoken_page_banner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "src_app_queue_dashboardtoken_page_tsx",
+      "target": "dashboardtoken_page_toverificationstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "dashboardtoken_page_queuepage",
+      "target": "dashboardtoken_page_toverificationstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "dashboardtoken_page_queuepage",
+      "target": "waitlist_service_findentrybydashboardtoken"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "dashboardtoken_page_queuepage",
+      "target": "db_client_getdb"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "dashboardtoken_page_queuepage",
+      "target": "lib_env_getappurl"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/queue/[dashboardToken]/page.tsx",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "dashboardtoken_page_banner",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_app_api_waitlist_submit_route_ts",
+      "target": "src_db_client_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_app_api_waitlist_submit_route_ts",
+      "target": "db_client_getdb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app_api_waitlist_submit_route_ts",
+      "target": "src_lib_waitlist_mailer_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app_api_waitlist_submit_route_ts",
+      "target": "waitlist_mailer_sendverificationemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_api_waitlist_submit_route_ts",
+      "target": "src_lib_waitlist_service_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app_api_waitlist_submit_route_ts",
+      "target": "waitlist_service_submitwaitlistentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_api_waitlist_submit_route_ts",
+      "target": "src_lib_waitlist_schema_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_app_api_waitlist_submit_route_ts",
+      "target": "waitlist_schema_waitlistformschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_app_api_waitlist_submit_route_ts",
+      "target": "submit_route_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "submit_route_post",
+      "target": "waitlist_service_submitwaitlistentry"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "submit_route_post",
+      "target": "db_client_getdb"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/waitlist/submit/route.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "submit_route_post",
+      "target": "waitlist_mailer_sendverificationemail"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/badge.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_ui_badge_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/badge.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_ui_badge_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/badge.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_ui_badge_tsx",
+      "target": "ui_badge_badgevariants",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/badge.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_components_ui_badge_tsx",
+      "target": "ui_badge_badgeprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/badge.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "src_components_ui_badge_tsx",
+      "target": "ui_badge_badge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/queue/referral-dashboard.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_queue_referral_dashboard_tsx",
+      "target": "src_components_ui_badge_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/badge.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "ui_badge_badge",
+      "target": "ui_badge_badgevariants",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/queue/referral-dashboard.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_queue_referral_dashboard_tsx",
+      "target": "ui_badge_badge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/badge.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "ui_badge_badge",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_ui_button_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_ui_button_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_ui_button_tsx",
+      "target": "ui_button_buttonvariants",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_components_ui_button_tsx",
+      "target": "ui_button_buttonprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "src_components_ui_button_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_form_tsx",
+      "target": "src_components_ui_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-modal.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_modal_tsx",
+      "target": "src_components_ui_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/queue/referral-dashboard.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_components_queue_referral_dashboard_tsx",
+      "target": "src_components_ui_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_components_mortem_x_updates_link_tsx",
+      "target": "src_components_ui_button_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "ui_button_button",
+      "target": "ui_button_buttonvariants",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_components_mortem_x_updates_link_tsx",
+      "target": "ui_button_buttonvariants",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "mortem_x_updates_link_xupdateslink",
+      "target": "ui_button_buttonvariants"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-modal.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_modal_tsx",
+      "target": "ui_button_buttonprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_form_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-modal.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_modal_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/queue/referral-dashboard.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_components_queue_referral_dashboard_tsx",
+      "target": "ui_button_button",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/button.tsx",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "ui_button_button",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/select.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_select_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/select.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_select_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/select.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_ui_select_tsx",
+      "target": "ui_select_select",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/textarea.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_textarea_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/textarea.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_textarea_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/textarea.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_ui_textarea_tsx",
+      "target": "ui_textarea_textarea",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/input.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_input_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/input.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_ui_input_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/input.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_ui_input_tsx",
+      "target": "ui_input_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_form_tsx",
+      "target": "src_components_ui_input_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_form_tsx",
+      "target": "ui_input_input",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_form_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_form_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_form_tsx",
+      "target": "src_lib_waitlist_schema_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_form_tsx",
+      "target": "waitlist_schema_waitlistformschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_form_tsx",
+      "target": "landing_waitlist_form_submitsuccesspayload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_form_tsx",
+      "target": "landing_waitlist_form_waitlistformprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_form_tsx",
+      "target": "landing_waitlist_form_waitlistform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_form_tsx",
+      "target": "landing_waitlist_form_field",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-modal.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_modal_tsx",
+      "target": "src_components_landing_waitlist_form_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-modal.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_modal_tsx",
+      "target": "landing_waitlist_form_waitlistform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/landing/waitlist-form.tsx",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "landing_waitlist_form_waitlistform",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-modal.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_modal_tsx",
+      "target": "landing_waitlist_modal_waitlistmodalprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/waitlist-modal.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_components_landing_waitlist_modal_tsx",
+      "target": "landing_waitlist_modal_waitlistmodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/tilt-card.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_landing_tilt_card_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/tilt-card.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_landing_tilt_card_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/tilt-card.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_components_landing_tilt_card_tsx",
+      "target": "landing_tilt_card_tiltcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/landing/tilt-card.tsx",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "landing_tilt_card_tiltcard",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/landing/reveal.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_components_landing_reveal_tsx",
+      "target": "landing_reveal_reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/queue/referral-dashboard.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_components_queue_referral_dashboard_tsx",
+      "target": "queue_referral_dashboard_referraldashboardprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/queue/referral-dashboard.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_components_queue_referral_dashboard_tsx",
+      "target": "queue_referral_dashboard_referraldashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/queue/referral-dashboard.tsx",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "src_components_queue_referral_dashboard_tsx",
+      "target": "queue_referral_dashboard_verificationhintline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/queue/referral-dashboard.tsx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "queue_referral_dashboard_referraldashboard",
+      "target": "queue_referral_dashboard_verificationhintline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/mortem/mark.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_components_mortem_mark_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/mortem/mark.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_components_mortem_mark_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/mortem/mark.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_mortem_mark_tsx",
+      "target": "mortem_mark_markprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/mortem/mark.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_components_mortem_mark_tsx",
+      "target": "mortem_mark_mark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/mortem/mark.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_components_mortem_mark_tsx",
+      "target": "mortem_mark_wordmark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/mortem/mark.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "mortem_mark_mark",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/mortem/mark.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "mortem_mark_wordmark",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_mortem_x_updates_link_tsx",
+      "target": "src_lib_utils_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_components_mortem_x_updates_link_tsx",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_mortem_x_updates_link_tsx",
+      "target": "mortem_x_updates_link_xlogo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_components_mortem_x_updates_link_tsx",
+      "target": "mortem_x_updates_link_xupdateslinkprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "src_components_mortem_x_updates_link_tsx",
+      "target": "mortem_x_updates_link_xupdateslink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "mortem_x_updates_link_xlogo",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/mortem/x-updates-link.tsx",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "mortem_x_updates_link_xupdateslink",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_utils_ts",
+      "target": "lib_utils_cn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_env_ts",
+      "target": "lib_env_requireenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_lib_env_ts",
+      "target": "lib_env_getdatabaseurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_lib_env_ts",
+      "target": "lib_env_getresendapikey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_lib_env_ts",
+      "target": "lib_env_getresendfromemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_lib_env_ts",
+      "target": "lib_env_getappurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "src_lib_env_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/db/client.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_db_client_ts",
+      "target": "src_lib_env_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "lib_env_getdatabaseurl",
+      "target": "lib_env_requireenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "lib_env_getresendapikey",
+      "target": "lib_env_requireenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "lib_env_getresendfromemail",
+      "target": "lib_env_requireenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/env.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "lib_env_getappurl",
+      "target": "lib_env_requireenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/db/client.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_db_client_ts",
+      "target": "lib_env_getdatabaseurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/db/client.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "db_client_getdb",
+      "target": "lib_env_getdatabaseurl"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "lib_env_getresendapikey",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "waitlist_mailer_getresendclient",
+      "target": "lib_env_getresendapikey"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "lib_env_getresendfromemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendverificationemail",
+      "target": "lib_env_getresendfromemail"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendconfirmationemail",
+      "target": "lib_env_getresendfromemail"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendpriorityunlockedemail",
+      "target": "lib_env_getresendfromemail"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "lib_env_getappurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendverificationemail",
+      "target": "lib_env_getappurl"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendconfirmationemail",
+      "target": "lib_env_getappurl"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendpriorityunlockedemail",
+      "target": "lib_env_getappurl"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_schema_ts",
+      "target": "src_lib_waitlist_options_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_schema_ts",
+      "target": "waitlist_options_failure_mode_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_schema_ts",
+      "target": "waitlist_options_role_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_schema_ts",
+      "target": "waitlist_options_team_type_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_schema_ts",
+      "target": "waitlist_schema_rolevalues",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_schema_ts",
+      "target": "waitlist_schema_teamtypevalues",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_schema_ts",
+      "target": "waitlist_schema_failuremodevalues",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_schema_ts",
+      "target": "waitlist_schema_inoptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_schema_ts",
+      "target": "waitlist_schema_waitlistformschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/schema.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_schema_ts",
+      "target": "waitlist_schema_waitlistforminput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "src_lib_waitlist_schema_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "src_lib_waitlist_schema_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_schema_waitlistformschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_schema_waitlistforminput",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "waitlist_mailer_emailwordmarkheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "waitlist_mailer_emailsignoffhtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "waitlist_mailer_getresendclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "waitlist_mailer_sendverificationemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "waitlist_mailer_sendconfirmationemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "waitlist_mailer_sendpriorityunlockedemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendverificationemail",
+      "target": "waitlist_mailer_emailwordmarkheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendconfirmationemail",
+      "target": "waitlist_mailer_emailwordmarkheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendpriorityunlockedemail",
+      "target": "waitlist_mailer_emailwordmarkheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendverificationemail",
+      "target": "waitlist_mailer_emailsignoffhtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendconfirmationemail",
+      "target": "waitlist_mailer_emailsignoffhtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendpriorityunlockedemail",
+      "target": "waitlist_mailer_emailsignoffhtml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendverificationemail",
+      "target": "waitlist_mailer_getresendclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendconfirmationemail",
+      "target": "waitlist_mailer_getresendclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendpriorityunlockedemail",
+      "target": "waitlist_mailer_getresendclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "src_lib_waitlist_options_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_options_failure_mode_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_options_role_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_options_team_type_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "src_lib_waitlist_service_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_service_createverificationexpiry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_service_getnextprioritystate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_service_getverificationstatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_service_hashverificationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_service_isduplicateemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_service_normalizeemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_service_shouldignoreselfreferral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_service_test_parsed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_service_test_now",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_service_test_expiry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_service_test_beforethreshold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_service_test_atthreshold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.test.ts",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_test_ts",
+      "target": "waitlist_service_test_afterunlocked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/dashboard-cookie.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_dashboard_cookie_ts",
+      "target": "waitlist_dashboard_cookie_mortemdashboardcookieoptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "src_db_client_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "db_client_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "src_db_schema_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "db_schema_waitlistentries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "db_schema_waitlistentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_databaseexecutor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_submitwaitlistresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_verifywaitlistresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_normalizeemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_isduplicateemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_hashverificationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_createreferralcode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_createdashboardtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_createverificationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_createverificationexpiry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_shouldignoreselfreferral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_getverificationstatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_getnextprioritystate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_submitwaitlistentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L174",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_findentrybydashboardtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_findentrybyverificationhash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L192",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_verifywaitlistentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L281",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_service_ts",
+      "target": "waitlist_service_markprioritynotificationsent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "waitlist_service_isduplicateemail",
+      "target": "waitlist_service_normalizeemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "waitlist_service_submitwaitlistentry",
+      "target": "waitlist_service_normalizeemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "waitlist_service_shouldignoreselfreferral",
+      "target": "waitlist_service_isduplicateemail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "waitlist_service_submitwaitlistentry",
+      "target": "waitlist_service_hashverificationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L197",
+      "weight": 1.0,
+      "source": "waitlist_service_verifywaitlistentry",
+      "target": "waitlist_service_hashverificationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "waitlist_service_submitwaitlistentry",
+      "target": "waitlist_service_createverificationtoken",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/service.ts",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "waitlist_service_submitwaitlistentry",
+      "target": "waitlist_service_createverificationexpiry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/options.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_options_ts",
+      "target": "waitlist_options_role_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/options.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_options_ts",
+      "target": "waitlist_options_team_type_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/options.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_options_ts",
+      "target": "waitlist_options_failure_mode_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/db/schema.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_db_schema_ts",
+      "target": "db_schema_waitlistentries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/db/schema.ts",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "src_db_schema_ts",
+      "target": "db_schema_waitlistentryrelations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/db/schema.ts",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "src_db_schema_ts",
+      "target": "db_schema_waitlistentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/db/schema.ts",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "src_db_schema_ts",
+      "target": "db_schema_newwaitlistentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/db/client.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_db_client_ts",
+      "target": "src_db_schema_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/db/client.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_db_client_ts",
+      "target": "db_client_database",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/db/client.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_db_client_ts",
+      "target": "db_client_getdb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brand.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "brand_md",
+      "target": "waitlist_brand_brand_mortem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brand.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "waitlist_brand_brand_mortem",
+      "target": "waitlist_brand_1_voice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brand.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "waitlist_brand_brand_mortem",
+      "target": "waitlist_brand_2_color",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brand.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "waitlist_brand_brand_mortem",
+      "target": "waitlist_brand_3_typography",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "brand.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "waitlist_brand_brand_mortem",
+      "target": "waitlist_brand_4_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "waitlist_readme_mortem_early_access_landing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "waitlist_readme_mortem_early_access_landing",
+      "target": "waitlist_readme_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "waitlist_readme_mortem_early_access_landing",
+      "target": "waitlist_readme_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "waitlist_readme_mortem_early_access_landing",
+      "target": "waitlist_readme_environment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "waitlist_readme_scripts",
+      "target": "waitlist_readme_codeblock_1",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "d10a08b655d37b8cfe9ebaccd13bbca42c91c041"
+}
