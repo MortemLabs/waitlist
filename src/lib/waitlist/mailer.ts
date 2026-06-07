@@ -31,6 +31,28 @@ type ResendTemplateEmailPayload = {
   to: string
 }
 
+async function sendResendTemplateEmail(payload: ResendTemplateEmailPayload) {
+  const response = await fetch("https://api.resend.com/emails", {
+    body: JSON.stringify({
+      from: payload.from,
+      subject: payload.subject,
+      template: payload.template,
+      to: [payload.to],
+    }),
+    headers: {
+      Authorization: `Bearer ${getResendApiKey()}`,
+      "Content-Type": "application/json",
+    },
+    method: "POST",
+  })
+
+  const body = (await response.json()) as { message?: string }
+
+  if (!response.ok) {
+    throw new Error(body.message ?? "Failed to send email")
+  }
+}
+
 let resendClient: Resend | null = null
 
 function getResendClient(): Resend {
@@ -52,7 +74,7 @@ export async function sendVerificationEmail({
   const appUrl = getAppUrl()
   const verificationUrl = `${appUrl}/verify/${verificationToken}`
 
-  const verificationEmail: ResendTemplateEmailPayload = {
+  await sendResendTemplateEmail({
     from: getResendFromEmail(),
     subject: "Mortem early access — verify your email",
     template: {
@@ -64,13 +86,7 @@ export async function sendVerificationEmail({
       },
     },
     to: email,
-  }
-
-  await getResendClient().emails.send(
-    verificationEmail as unknown as Parameters<
-      ReturnType<typeof getResendClient>["emails"]["send"]
-    >[0],
-  )
+  })
 }
 
 export async function sendConfirmationEmail({
