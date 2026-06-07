@@ -64,7 +64,7 @@ export function buildVerificationEmailHtml({
         <!-- BODY START -->
         <tr><td class="m-px" style="padding:40px 28px 8px 28px;">
           <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="border:2px solid #DC2626;padding:5px 9px;"><span style="font-family:'JetBrains Mono',Courier,monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#DC2626;">Verify &middot; Account</span></td></tr></table>
-          <h1 class="m-h1" style="margin:26px 0 0 0;font-family:'Instrument Serif',Georgia,serif;color:#EDEEE9;font-weight:400;font-size:44px;line-height:1.04;letter-spacing:-0.01em;">Confirm your email to file your request<span style="color:#DC2626;">.</span></h1>
+          <h1 class="m-h1" style="margin:26px 0 0 0;font-family:'Instrument Serif',Georgia,serif;color:#EDEEE9;font-weight:400;font-size:44px;line-height:1.04;letter-spacing:-0.01em;">Confirm your email<span style="color:#DC2626;">.</span></h1>
           <p style="margin:22px 0 0 0;font-family:'Inter Tight',Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#898379;">One click verifies the address and moves your request into the queue. This link expires in 30 minutes and can only be used once.</p>
         </td></tr>
         <tr><td class="m-px" style="padding:30px 28px 4px 28px;">
