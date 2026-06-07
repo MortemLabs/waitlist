@@ -85,6 +85,10 @@ export function buildVerificationEmailHtml({
 
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="padding-top:26px;text-align:center;">
             <a href="https://docs.mortemlabs.com" class="m-link" style="font-family:'JetBrains Mono',Courier,monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#EDEEE9;text-decoration:none;">Docs</a>
+            <!-- <span style="font-family:'JetBrains Mono',Courier,monospace;font-size:11px;color:#3a3631;padding:0 10px;">&middot;</span> -->
+            <!-- <a href="https://mortem.sh/app" class="m-link" style="font-family:'JetBrains Mono',Courier,monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#EDEEE9;text-decoration:none;">App</a> -->
+            <!-- <span style="font-family:'JetBrains Mono',Courier,monospace;font-size:11px;color:#3a3631;padding:0 10px;">&middot;</span> -->
+            <!-- <a href="https://mortem.sh/pricing" class="m-link" style="font-family:'JetBrains Mono',Courier,monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#EDEEE9;text-decoration:none;">Pricing</a> -->
           </td></tr></table>
 
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="padding-top:22px;text-align:center;">
