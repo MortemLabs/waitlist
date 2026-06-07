@@ -297,7 +297,7 @@
       "source_file": "src/components/ui/badge.tsx",
       "source_location": "L1",
       "id": "src_components_ui_badge_tsx",
-      "community": 3,
+      "community": 9,
       "norm_label": "badge.tsx"
     },
     {
@@ -306,7 +306,7 @@
       "source_file": "src/components/ui/badge.tsx",
       "source_location": "L5",
       "id": "ui_badge_badgevariants",
-      "community": 3,
+      "community": 9,
       "norm_label": "badgevariants"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "src/components/ui/badge.tsx",
       "source_location": "L24",
       "id": "ui_badge_badgeprops",
-      "community": 3,
+      "community": 9,
       "norm_label": "badgeprops"
     },
     {
@@ -324,7 +324,7 @@
       "source_file": "src/components/ui/badge.tsx",
       "source_location": "L28",
       "id": "ui_badge_badge",
-      "community": 3,
+      "community": 9,
       "norm_label": "badge()"
     },
     {
@@ -333,7 +333,7 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L1",
       "id": "src_components_ui_button_tsx",
-      "community": 9,
+      "community": 11,
       "norm_label": "button.tsx"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L30",
       "id": "ui_button_buttonprops",
-      "community": 9,
+      "community": 7,
       "norm_label": "buttonprops"
     },
     {
@@ -360,7 +360,7 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L36",
       "id": "ui_button_button",
-      "community": 9,
+      "community": 11,
       "norm_label": "button()"
     },
     {
@@ -468,7 +468,7 @@
       "source_file": "src/components/landing/waitlist-modal.tsx",
       "source_location": "L1",
       "id": "src_components_landing_waitlist_modal_tsx",
-      "community": 9,
+      "community": 7,
       "norm_label": "waitlist-modal.tsx"
     },
     {
@@ -477,7 +477,7 @@
       "source_file": "src/components/landing/waitlist-modal.tsx",
       "source_location": "L9",
       "id": "landing_waitlist_modal_waitlistmodalprops",
-      "community": 9,
+      "community": 7,
       "norm_label": "waitlistmodalprops"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "src/components/landing/waitlist-modal.tsx",
       "source_location": "L16",
       "id": "landing_waitlist_modal_waitlistmodal",
-      "community": 9,
+      "community": 7,
       "norm_label": "waitlistmodal()"
     },
     {
@@ -612,7 +612,7 @@
       "source_file": "src/components/mortem/x-updates-link.tsx",
       "source_location": "L4",
       "id": "mortem_x_updates_link_xlogo",
-      "community": 11,
+      "community": 4,
       "norm_label": "xlogo()"
     },
     {
@@ -796,10 +796,19 @@
       "norm_label": "emailsignoffhtml()"
     },
     {
+      "label": "ResendTemplateEmailPayload",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L24",
+      "id": "waitlist_mailer_resendtemplateemailpayload",
+      "community": 2,
+      "norm_label": "resendtemplateemailpayload"
+    },
+    {
       "label": "getResendClient()",
       "file_type": "code",
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L26",
+      "source_location": "L36",
       "id": "waitlist_mailer_getresendclient",
       "community": 2,
       "norm_label": "getresendclient()"
@@ -808,7 +817,7 @@
       "label": "sendVerificationEmail()",
       "file_type": "code",
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L35",
+      "source_location": "L45",
       "id": "waitlist_mailer_sendverificationemail",
       "community": 2,
       "norm_label": "sendverificationemail()"
@@ -817,7 +826,7 @@
       "label": "sendConfirmationEmail()",
       "file_type": "code",
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L75",
+      "source_location": "L76",
       "id": "waitlist_mailer_sendconfirmationemail",
       "community": 2,
       "norm_label": "sendconfirmationemail()"
@@ -826,7 +835,7 @@
       "label": "sendPriorityUnlockedEmail()",
       "file_type": "code",
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L120",
+      "source_location": "L121",
       "id": "waitlist_mailer_sendpriorityunlockedemail",
       "community": 2,
       "norm_label": "sendpriorityunlockedemail()"
@@ -1307,9 +1316,9 @@
       "source_file": "next.config.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "next_config_ts",
-      "target": "waitlist_next_config_nextconfig",
-      "confidence_score": 1.0
+      "target": "waitlist_next_config_nextconfig"
     },
     {
       "relation": "contains",
@@ -1317,9 +1326,9 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_layout_tsx",
-      "target": "app_layout_getmetadatabase",
-      "confidence_score": 1.0
+      "target": "app_layout_getmetadatabase"
     },
     {
       "relation": "contains",
@@ -1327,9 +1336,9 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_layout_tsx",
-      "target": "app_layout_intertight",
-      "confidence_score": 1.0
+      "target": "app_layout_intertight"
     },
     {
       "relation": "contains",
@@ -1337,9 +1346,9 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_layout_tsx",
-      "target": "app_layout_instrumentserif",
-      "confidence_score": 1.0
+      "target": "app_layout_instrumentserif"
     },
     {
       "relation": "contains",
@@ -1347,9 +1356,9 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_layout_tsx",
-      "target": "app_layout_jetbrainsmono",
-      "confidence_score": 1.0
+      "target": "app_layout_jetbrainsmono"
     },
     {
       "relation": "contains",
@@ -1357,9 +1366,9 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_layout_tsx",
-      "target": "app_layout_metadata",
-      "confidence_score": 1.0
+      "target": "app_layout_metadata"
     },
     {
       "relation": "contains",
@@ -1367,9 +1376,9 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_layout_tsx",
-      "target": "app_layout_rootlayout",
-      "confidence_score": 1.0
+      "target": "app_layout_rootlayout"
     },
     {
       "relation": "imports_from",
@@ -1378,9 +1387,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "src_db_client_ts",
-      "confidence_score": 1.0
+      "target": "src_db_client_ts"
     },
     {
       "relation": "imports",
@@ -1389,9 +1398,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "db_client_getdb",
-      "confidence_score": 1.0
+      "target": "db_client_getdb"
     },
     {
       "relation": "imports_from",
@@ -1400,9 +1409,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "src_components_mortem_mark_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_mortem_mark_tsx"
     },
     {
       "relation": "imports",
@@ -1411,9 +1420,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "mortem_mark_wordmark",
-      "confidence_score": 1.0
+      "target": "mortem_mark_wordmark"
     },
     {
       "relation": "imports_from",
@@ -1422,9 +1431,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "src_components_mortem_x_updates_link_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_mortem_x_updates_link_tsx"
     },
     {
       "relation": "imports",
@@ -1433,9 +1442,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "mortem_x_updates_link_xupdateslink",
-      "confidence_score": 1.0
+      "target": "mortem_x_updates_link_xupdateslink"
     },
     {
       "relation": "imports_from",
@@ -1444,9 +1453,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "src_components_landing_waitlist_modal_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_landing_waitlist_modal_tsx"
     },
     {
       "relation": "imports",
@@ -1455,9 +1464,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "landing_waitlist_modal_waitlistmodal",
-      "confidence_score": 1.0
+      "target": "landing_waitlist_modal_waitlistmodal"
     },
     {
       "relation": "imports_from",
@@ -1466,9 +1475,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "src_components_ui_button_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_ui_button_tsx"
     },
     {
       "relation": "imports",
@@ -1477,9 +1486,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "ui_button_button",
-      "confidence_score": 1.0
+      "target": "ui_button_button"
     },
     {
       "relation": "imports_from",
@@ -1488,9 +1497,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "src_components_landing_reveal_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_landing_reveal_tsx"
     },
     {
       "relation": "imports",
@@ -1499,9 +1508,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "landing_reveal_reveal",
-      "confidence_score": 1.0
+      "target": "landing_reveal_reveal"
     },
     {
       "relation": "imports_from",
@@ -1510,9 +1519,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "src_components_landing_tilt_card_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_landing_tilt_card_tsx"
     },
     {
       "relation": "imports",
@@ -1521,9 +1530,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "landing_tilt_card_tiltcard",
-      "confidence_score": 1.0
+      "target": "landing_tilt_card_tiltcard"
     },
     {
       "relation": "imports_from",
@@ -1532,9 +1541,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "src_lib_waitlist_dashboard_cookie_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_dashboard_cookie_ts"
     },
     {
       "relation": "imports_from",
@@ -1543,9 +1552,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "src_lib_waitlist_service_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_service_ts"
     },
     {
       "relation": "imports",
@@ -1554,9 +1563,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "waitlist_service_findentrybydashboardtoken",
-      "confidence_score": 1.0
+      "target": "waitlist_service_findentrybydashboardtoken"
     },
     {
       "relation": "contains",
@@ -1564,9 +1573,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "app_page_diagnosissteps",
-      "confidence_score": 1.0
+      "target": "app_page_diagnosissteps"
     },
     {
       "relation": "contains",
@@ -1574,9 +1583,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "app_page_queuesteps",
-      "confidence_score": 1.0
+      "target": "app_page_queuesteps"
     },
     {
       "relation": "contains",
@@ -1584,9 +1593,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "app_page_exhibits",
-      "confidence_score": 1.0
+      "target": "app_page_exhibits"
     },
     {
       "relation": "contains",
@@ -1594,9 +1603,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "app_page_landingpageprops",
-      "confidence_score": 1.0
+      "target": "app_page_landingpageprops"
     },
     {
       "relation": "contains",
@@ -1604,9 +1613,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "app_page_homepage",
-      "confidence_score": 1.0
+      "target": "app_page_homepage"
     },
     {
       "relation": "contains",
@@ -1614,9 +1623,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L263",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "app_page_exhibitcard",
-      "confidence_score": 1.0
+      "target": "app_page_exhibitcard"
     },
     {
       "relation": "contains",
@@ -1624,9 +1633,9 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L284",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_page_tsx",
-      "target": "app_page_queuestep",
-      "confidence_score": 1.0
+      "target": "app_page_queuestep"
     },
     {
       "relation": "calls",
@@ -1657,9 +1666,9 @@
       "source_file": "src/app/verify/[token]/route.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_verify_token_route_ts",
-      "target": "src_db_client_ts",
-      "confidence_score": 1.0
+      "target": "src_db_client_ts"
     },
     {
       "relation": "imports",
@@ -1668,9 +1677,9 @@
       "source_file": "src/app/verify/[token]/route.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_verify_token_route_ts",
-      "target": "db_client_getdb",
-      "confidence_score": 1.0
+      "target": "db_client_getdb"
     },
     {
       "relation": "imports_from",
@@ -1679,9 +1688,9 @@
       "source_file": "src/app/verify/[token]/route.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_verify_token_route_ts",
-      "target": "src_lib_waitlist_dashboard_cookie_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_dashboard_cookie_ts"
     },
     {
       "relation": "imports",
@@ -1690,9 +1699,9 @@
       "source_file": "src/app/verify/[token]/route.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_verify_token_route_ts",
-      "target": "waitlist_dashboard_cookie_mortemdashboardcookieoptions",
-      "confidence_score": 1.0
+      "target": "waitlist_dashboard_cookie_mortemdashboardcookieoptions"
     },
     {
       "relation": "imports_from",
@@ -1701,9 +1710,9 @@
       "source_file": "src/app/verify/[token]/route.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_verify_token_route_ts",
-      "target": "src_lib_waitlist_mailer_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_mailer_ts"
     },
     {
       "relation": "imports",
@@ -1712,9 +1721,9 @@
       "source_file": "src/app/verify/[token]/route.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_verify_token_route_ts",
-      "target": "waitlist_mailer_sendconfirmationemail",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_sendconfirmationemail"
     },
     {
       "relation": "imports",
@@ -1723,9 +1732,9 @@
       "source_file": "src/app/verify/[token]/route.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_verify_token_route_ts",
-      "target": "waitlist_mailer_sendpriorityunlockedemail",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_sendpriorityunlockedemail"
     },
     {
       "relation": "imports_from",
@@ -1734,9 +1743,9 @@
       "source_file": "src/app/verify/[token]/route.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_verify_token_route_ts",
-      "target": "src_lib_waitlist_service_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_service_ts"
     },
     {
       "relation": "imports",
@@ -1745,9 +1754,9 @@
       "source_file": "src/app/verify/[token]/route.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_verify_token_route_ts",
-      "target": "waitlist_service_findentrybydashboardtoken",
-      "confidence_score": 1.0
+      "target": "waitlist_service_findentrybydashboardtoken"
     },
     {
       "relation": "imports",
@@ -1756,9 +1765,9 @@
       "source_file": "src/app/verify/[token]/route.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_verify_token_route_ts",
-      "target": "waitlist_service_markprioritynotificationsent",
-      "confidence_score": 1.0
+      "target": "waitlist_service_markprioritynotificationsent"
     },
     {
       "relation": "imports",
@@ -1767,9 +1776,9 @@
       "source_file": "src/app/verify/[token]/route.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_verify_token_route_ts",
-      "target": "waitlist_service_verifywaitlistentry",
-      "confidence_score": 1.0
+      "target": "waitlist_service_verifywaitlistentry"
     },
     {
       "relation": "contains",
@@ -1777,9 +1786,9 @@
       "source_file": "src/app/verify/[token]/route.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_verify_token_route_ts",
-      "target": "token_route_get",
-      "confidence_score": 1.0
+      "target": "token_route_get"
     },
     {
       "relation": "calls",
@@ -1864,9 +1873,9 @@
       "source_file": "src/app/r/[referralCode]/route.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_r_referralcode_route_ts",
-      "target": "referralcode_route_get",
-      "confidence_score": 1.0
+      "target": "referralcode_route_get"
     },
     {
       "relation": "imports_from",
@@ -1875,9 +1884,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "src_components_mortem_mark_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_mortem_mark_tsx"
     },
     {
       "relation": "imports",
@@ -1886,9 +1895,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "mortem_mark_wordmark",
-      "confidence_score": 1.0
+      "target": "mortem_mark_wordmark"
     },
     {
       "relation": "imports_from",
@@ -1897,9 +1906,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "src_components_queue_referral_dashboard_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_queue_referral_dashboard_tsx"
     },
     {
       "relation": "imports",
@@ -1908,9 +1917,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "queue_referral_dashboard_referraldashboard",
-      "confidence_score": 1.0
+      "target": "queue_referral_dashboard_referraldashboard"
     },
     {
       "relation": "imports_from",
@@ -1919,9 +1928,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "src_components_ui_button_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_ui_button_tsx"
     },
     {
       "relation": "imports",
@@ -1930,9 +1939,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "ui_button_button",
-      "confidence_score": 1.0
+      "target": "ui_button_button"
     },
     {
       "relation": "imports_from",
@@ -1941,9 +1950,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "src_db_client_ts",
-      "confidence_score": 1.0
+      "target": "src_db_client_ts"
     },
     {
       "relation": "imports",
@@ -1952,9 +1961,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "db_client_getdb",
-      "confidence_score": 1.0
+      "target": "db_client_getdb"
     },
     {
       "relation": "imports_from",
@@ -1963,9 +1972,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "src_lib_env_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_env_ts"
     },
     {
       "relation": "imports",
@@ -1974,9 +1983,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "lib_env_getappurl",
-      "confidence_score": 1.0
+      "target": "lib_env_getappurl"
     },
     {
       "relation": "imports_from",
@@ -1985,9 +1994,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "src_lib_waitlist_service_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_service_ts"
     },
     {
       "relation": "imports",
@@ -1996,9 +2005,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "waitlist_service_findentrybydashboardtoken",
-      "confidence_score": 1.0
+      "target": "waitlist_service_findentrybydashboardtoken"
     },
     {
       "relation": "imports_from",
@@ -2007,9 +2016,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "src_lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -2018,9 +2027,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -2028,9 +2037,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "dashboardtoken_page_queuepageprops",
-      "confidence_score": 1.0
+      "target": "dashboardtoken_page_queuepageprops"
     },
     {
       "relation": "contains",
@@ -2038,9 +2047,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "dashboardtoken_page_queuepage",
-      "confidence_score": 1.0
+      "target": "dashboardtoken_page_queuepage"
     },
     {
       "relation": "contains",
@@ -2048,9 +2057,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "dashboardtoken_page_banner",
-      "confidence_score": 1.0
+      "target": "dashboardtoken_page_banner"
     },
     {
       "relation": "contains",
@@ -2058,9 +2067,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_queue_dashboardtoken_page_tsx",
-      "target": "dashboardtoken_page_toverificationstate",
-      "confidence_score": 1.0
+      "target": "dashboardtoken_page_toverificationstate"
     },
     {
       "relation": "calls",
@@ -2069,9 +2078,9 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dashboardtoken_page_queuepage",
-      "target": "dashboardtoken_page_toverificationstate",
-      "confidence_score": 1.0
+      "target": "dashboardtoken_page_toverificationstate"
     },
     {
       "relation": "calls",
@@ -2124,9 +2133,9 @@
       "source_file": "src/app/api/waitlist/submit/route.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_api_waitlist_submit_route_ts",
-      "target": "src_db_client_ts",
-      "confidence_score": 1.0
+      "target": "src_db_client_ts"
     },
     {
       "relation": "imports",
@@ -2135,9 +2144,9 @@
       "source_file": "src/app/api/waitlist/submit/route.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_api_waitlist_submit_route_ts",
-      "target": "db_client_getdb",
-      "confidence_score": 1.0
+      "target": "db_client_getdb"
     },
     {
       "relation": "imports_from",
@@ -2146,9 +2155,9 @@
       "source_file": "src/app/api/waitlist/submit/route.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_api_waitlist_submit_route_ts",
-      "target": "src_lib_waitlist_mailer_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_mailer_ts"
     },
     {
       "relation": "imports",
@@ -2157,9 +2166,9 @@
       "source_file": "src/app/api/waitlist/submit/route.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_api_waitlist_submit_route_ts",
-      "target": "waitlist_mailer_sendverificationemail",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_sendverificationemail"
     },
     {
       "relation": "imports_from",
@@ -2168,9 +2177,9 @@
       "source_file": "src/app/api/waitlist/submit/route.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_api_waitlist_submit_route_ts",
-      "target": "src_lib_waitlist_service_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_service_ts"
     },
     {
       "relation": "imports",
@@ -2179,9 +2188,9 @@
       "source_file": "src/app/api/waitlist/submit/route.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_api_waitlist_submit_route_ts",
-      "target": "waitlist_service_submitwaitlistentry",
-      "confidence_score": 1.0
+      "target": "waitlist_service_submitwaitlistentry"
     },
     {
       "relation": "imports_from",
@@ -2190,9 +2199,9 @@
       "source_file": "src/app/api/waitlist/submit/route.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_api_waitlist_submit_route_ts",
-      "target": "src_lib_waitlist_schema_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_schema_ts"
     },
     {
       "relation": "imports",
@@ -2201,9 +2210,9 @@
       "source_file": "src/app/api/waitlist/submit/route.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_api_waitlist_submit_route_ts",
-      "target": "waitlist_schema_waitlistformschema",
-      "confidence_score": 1.0
+      "target": "waitlist_schema_waitlistformschema"
     },
     {
       "relation": "contains",
@@ -2211,9 +2220,9 @@
       "source_file": "src/app/api/waitlist/submit/route.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_api_waitlist_submit_route_ts",
-      "target": "submit_route_post",
-      "confidence_score": 1.0
+      "target": "submit_route_post"
     },
     {
       "relation": "calls",
@@ -2255,9 +2264,9 @@
       "source_file": "src/components/ui/badge.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_badge_tsx",
-      "target": "src_lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -2266,9 +2275,9 @@
       "source_file": "src/components/ui/badge.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_badge_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -2276,9 +2285,9 @@
       "source_file": "src/components/ui/badge.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_badge_tsx",
-      "target": "ui_badge_badgevariants",
-      "confidence_score": 1.0
+      "target": "ui_badge_badgevariants"
     },
     {
       "relation": "contains",
@@ -2286,9 +2295,9 @@
       "source_file": "src/components/ui/badge.tsx",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_badge_tsx",
-      "target": "ui_badge_badgeprops",
-      "confidence_score": 1.0
+      "target": "ui_badge_badgeprops"
     },
     {
       "relation": "contains",
@@ -2296,9 +2305,9 @@
       "source_file": "src/components/ui/badge.tsx",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_badge_tsx",
-      "target": "ui_badge_badge",
-      "confidence_score": 1.0
+      "target": "ui_badge_badge"
     },
     {
       "relation": "imports_from",
@@ -2307,9 +2316,9 @@
       "source_file": "src/components/queue/referral-dashboard.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_queue_referral_dashboard_tsx",
-      "target": "src_components_ui_badge_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_ui_badge_tsx"
     },
     {
       "relation": "calls",
@@ -2318,9 +2327,9 @@
       "source_file": "src/components/ui/badge.tsx",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_badge_badge",
-      "target": "ui_badge_badgevariants",
-      "confidence_score": 1.0
+      "target": "ui_badge_badgevariants"
     },
     {
       "relation": "imports",
@@ -2329,9 +2338,9 @@
       "source_file": "src/components/queue/referral-dashboard.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_queue_referral_dashboard_tsx",
-      "target": "ui_badge_badge",
-      "confidence_score": 1.0
+      "target": "ui_badge_badge"
     },
     {
       "relation": "calls",
@@ -2351,9 +2360,9 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_button_tsx",
-      "target": "src_lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -2362,9 +2371,9 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_button_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -2372,9 +2381,9 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_button_tsx",
-      "target": "ui_button_buttonvariants",
-      "confidence_score": 1.0
+      "target": "ui_button_buttonvariants"
     },
     {
       "relation": "contains",
@@ -2382,9 +2391,9 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_button_tsx",
-      "target": "ui_button_buttonprops",
-      "confidence_score": 1.0
+      "target": "ui_button_buttonprops"
     },
     {
       "relation": "contains",
@@ -2392,9 +2401,9 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_button_tsx",
-      "target": "ui_button_button",
-      "confidence_score": 1.0
+      "target": "ui_button_button"
     },
     {
       "relation": "imports_from",
@@ -2403,9 +2412,9 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_form_tsx",
-      "target": "src_components_ui_button_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_ui_button_tsx"
     },
     {
       "relation": "imports_from",
@@ -2414,9 +2423,9 @@
       "source_file": "src/components/landing/waitlist-modal.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_modal_tsx",
-      "target": "src_components_ui_button_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_ui_button_tsx"
     },
     {
       "relation": "imports_from",
@@ -2425,9 +2434,9 @@
       "source_file": "src/components/queue/referral-dashboard.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_queue_referral_dashboard_tsx",
-      "target": "src_components_ui_button_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_ui_button_tsx"
     },
     {
       "relation": "imports_from",
@@ -2436,9 +2445,9 @@
       "source_file": "src/components/mortem/x-updates-link.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_mortem_x_updates_link_tsx",
-      "target": "src_components_ui_button_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_ui_button_tsx"
     },
     {
       "relation": "calls",
@@ -2447,9 +2456,9 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ui_button_button",
-      "target": "ui_button_buttonvariants",
-      "confidence_score": 1.0
+      "target": "ui_button_buttonvariants"
     },
     {
       "relation": "imports",
@@ -2458,9 +2467,9 @@
       "source_file": "src/components/mortem/x-updates-link.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_mortem_x_updates_link_tsx",
-      "target": "ui_button_buttonvariants",
-      "confidence_score": 1.0
+      "target": "ui_button_buttonvariants"
     },
     {
       "relation": "calls",
@@ -2480,9 +2489,9 @@
       "source_file": "src/components/landing/waitlist-modal.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_modal_tsx",
-      "target": "ui_button_buttonprops",
-      "confidence_score": 1.0
+      "target": "ui_button_buttonprops"
     },
     {
       "relation": "imports",
@@ -2491,9 +2500,9 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_form_tsx",
-      "target": "ui_button_button",
-      "confidence_score": 1.0
+      "target": "ui_button_button"
     },
     {
       "relation": "imports",
@@ -2502,9 +2511,9 @@
       "source_file": "src/components/landing/waitlist-modal.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_modal_tsx",
-      "target": "ui_button_button",
-      "confidence_score": 1.0
+      "target": "ui_button_button"
     },
     {
       "relation": "imports",
@@ -2513,9 +2522,9 @@
       "source_file": "src/components/queue/referral-dashboard.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_queue_referral_dashboard_tsx",
-      "target": "ui_button_button",
-      "confidence_score": 1.0
+      "target": "ui_button_button"
     },
     {
       "relation": "calls",
@@ -2535,9 +2544,9 @@
       "source_file": "src/components/ui/select.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_select_tsx",
-      "target": "src_lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -2546,9 +2555,9 @@
       "source_file": "src/components/ui/select.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_select_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -2556,9 +2565,9 @@
       "source_file": "src/components/ui/select.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_select_tsx",
-      "target": "ui_select_select",
-      "confidence_score": 1.0
+      "target": "ui_select_select"
     },
     {
       "relation": "imports_from",
@@ -2567,9 +2576,9 @@
       "source_file": "src/components/ui/textarea.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_textarea_tsx",
-      "target": "src_lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -2578,9 +2587,9 @@
       "source_file": "src/components/ui/textarea.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_textarea_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -2588,9 +2597,9 @@
       "source_file": "src/components/ui/textarea.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_textarea_tsx",
-      "target": "ui_textarea_textarea",
-      "confidence_score": 1.0
+      "target": "ui_textarea_textarea"
     },
     {
       "relation": "imports_from",
@@ -2599,9 +2608,9 @@
       "source_file": "src/components/ui/input.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_input_tsx",
-      "target": "src_lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -2610,9 +2619,9 @@
       "source_file": "src/components/ui/input.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_input_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -2620,9 +2629,9 @@
       "source_file": "src/components/ui/input.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_ui_input_tsx",
-      "target": "ui_input_input",
-      "confidence_score": 1.0
+      "target": "ui_input_input"
     },
     {
       "relation": "imports_from",
@@ -2631,9 +2640,9 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_form_tsx",
-      "target": "src_components_ui_input_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_ui_input_tsx"
     },
     {
       "relation": "imports",
@@ -2642,9 +2651,9 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_form_tsx",
-      "target": "ui_input_input",
-      "confidence_score": 1.0
+      "target": "ui_input_input"
     },
     {
       "relation": "imports_from",
@@ -2653,9 +2662,9 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_form_tsx",
-      "target": "src_lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -2664,9 +2673,9 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_form_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "imports_from",
@@ -2675,9 +2684,9 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_form_tsx",
-      "target": "src_lib_waitlist_schema_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_schema_ts"
     },
     {
       "relation": "imports",
@@ -2686,9 +2695,9 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_form_tsx",
-      "target": "waitlist_schema_waitlistformschema",
-      "confidence_score": 1.0
+      "target": "waitlist_schema_waitlistformschema"
     },
     {
       "relation": "contains",
@@ -2696,9 +2705,9 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_form_tsx",
-      "target": "landing_waitlist_form_submitsuccesspayload",
-      "confidence_score": 1.0
+      "target": "landing_waitlist_form_submitsuccesspayload"
     },
     {
       "relation": "contains",
@@ -2706,9 +2715,9 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_form_tsx",
-      "target": "landing_waitlist_form_waitlistformprops",
-      "confidence_score": 1.0
+      "target": "landing_waitlist_form_waitlistformprops"
     },
     {
       "relation": "contains",
@@ -2716,9 +2725,9 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_form_tsx",
-      "target": "landing_waitlist_form_waitlistform",
-      "confidence_score": 1.0
+      "target": "landing_waitlist_form_waitlistform"
     },
     {
       "relation": "contains",
@@ -2726,9 +2735,9 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L194",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_form_tsx",
-      "target": "landing_waitlist_form_field",
-      "confidence_score": 1.0
+      "target": "landing_waitlist_form_field"
     },
     {
       "relation": "imports_from",
@@ -2737,9 +2746,9 @@
       "source_file": "src/components/landing/waitlist-modal.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_modal_tsx",
-      "target": "src_components_landing_waitlist_form_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_landing_waitlist_form_tsx"
     },
     {
       "relation": "imports",
@@ -2748,9 +2757,9 @@
       "source_file": "src/components/landing/waitlist-modal.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_modal_tsx",
-      "target": "landing_waitlist_form_waitlistform",
-      "confidence_score": 1.0
+      "target": "landing_waitlist_form_waitlistform"
     },
     {
       "relation": "calls",
@@ -2769,9 +2778,9 @@
       "source_file": "src/components/landing/waitlist-modal.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_modal_tsx",
-      "target": "landing_waitlist_modal_waitlistmodalprops",
-      "confidence_score": 1.0
+      "target": "landing_waitlist_modal_waitlistmodalprops"
     },
     {
       "relation": "contains",
@@ -2779,9 +2788,9 @@
       "source_file": "src/components/landing/waitlist-modal.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_waitlist_modal_tsx",
-      "target": "landing_waitlist_modal_waitlistmodal",
-      "confidence_score": 1.0
+      "target": "landing_waitlist_modal_waitlistmodal"
     },
     {
       "relation": "imports_from",
@@ -2790,9 +2799,9 @@
       "source_file": "src/components/landing/tilt-card.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_tilt_card_tsx",
-      "target": "src_lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -2801,9 +2810,9 @@
       "source_file": "src/components/landing/tilt-card.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_tilt_card_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -2811,9 +2820,9 @@
       "source_file": "src/components/landing/tilt-card.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_tilt_card_tsx",
-      "target": "landing_tilt_card_tiltcard",
-      "confidence_score": 1.0
+      "target": "landing_tilt_card_tiltcard"
     },
     {
       "relation": "calls",
@@ -2832,9 +2841,9 @@
       "source_file": "src/components/landing/reveal.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_landing_reveal_tsx",
-      "target": "landing_reveal_reveal",
-      "confidence_score": 1.0
+      "target": "landing_reveal_reveal"
     },
     {
       "relation": "contains",
@@ -2842,9 +2851,9 @@
       "source_file": "src/components/queue/referral-dashboard.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_queue_referral_dashboard_tsx",
-      "target": "queue_referral_dashboard_referraldashboardprops",
-      "confidence_score": 1.0
+      "target": "queue_referral_dashboard_referraldashboardprops"
     },
     {
       "relation": "contains",
@@ -2852,9 +2861,9 @@
       "source_file": "src/components/queue/referral-dashboard.tsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_queue_referral_dashboard_tsx",
-      "target": "queue_referral_dashboard_referraldashboard",
-      "confidence_score": 1.0
+      "target": "queue_referral_dashboard_referraldashboard"
     },
     {
       "relation": "contains",
@@ -2862,9 +2871,9 @@
       "source_file": "src/components/queue/referral-dashboard.tsx",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_queue_referral_dashboard_tsx",
-      "target": "queue_referral_dashboard_verificationhintline",
-      "confidence_score": 1.0
+      "target": "queue_referral_dashboard_verificationhintline"
     },
     {
       "relation": "calls",
@@ -2873,9 +2882,9 @@
       "source_file": "src/components/queue/referral-dashboard.tsx",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "queue_referral_dashboard_referraldashboard",
-      "target": "queue_referral_dashboard_verificationhintline",
-      "confidence_score": 1.0
+      "target": "queue_referral_dashboard_verificationhintline"
     },
     {
       "relation": "imports_from",
@@ -2884,9 +2893,9 @@
       "source_file": "src/components/mortem/mark.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_mortem_mark_tsx",
-      "target": "src_lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -2895,9 +2904,9 @@
       "source_file": "src/components/mortem/mark.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_mortem_mark_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -2905,9 +2914,9 @@
       "source_file": "src/components/mortem/mark.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_mortem_mark_tsx",
-      "target": "mortem_mark_markprops",
-      "confidence_score": 1.0
+      "target": "mortem_mark_markprops"
     },
     {
       "relation": "contains",
@@ -2915,9 +2924,9 @@
       "source_file": "src/components/mortem/mark.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_mortem_mark_tsx",
-      "target": "mortem_mark_mark",
-      "confidence_score": 1.0
+      "target": "mortem_mark_mark"
     },
     {
       "relation": "contains",
@@ -2925,9 +2934,9 @@
       "source_file": "src/components/mortem/mark.tsx",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_mortem_mark_tsx",
-      "target": "mortem_mark_wordmark",
-      "confidence_score": 1.0
+      "target": "mortem_mark_wordmark"
     },
     {
       "relation": "calls",
@@ -2958,9 +2967,9 @@
       "source_file": "src/components/mortem/x-updates-link.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_mortem_x_updates_link_tsx",
-      "target": "src_lib_utils_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_utils_ts"
     },
     {
       "relation": "imports",
@@ -2969,9 +2978,9 @@
       "source_file": "src/components/mortem/x-updates-link.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_mortem_x_updates_link_tsx",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -2979,9 +2988,9 @@
       "source_file": "src/components/mortem/x-updates-link.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_mortem_x_updates_link_tsx",
-      "target": "mortem_x_updates_link_xlogo",
-      "confidence_score": 1.0
+      "target": "mortem_x_updates_link_xlogo"
     },
     {
       "relation": "contains",
@@ -2989,9 +2998,9 @@
       "source_file": "src/components/mortem/x-updates-link.tsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_mortem_x_updates_link_tsx",
-      "target": "mortem_x_updates_link_xupdateslinkprops",
-      "confidence_score": 1.0
+      "target": "mortem_x_updates_link_xupdateslinkprops"
     },
     {
       "relation": "contains",
@@ -2999,9 +3008,9 @@
       "source_file": "src/components/mortem/x-updates-link.tsx",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_mortem_x_updates_link_tsx",
-      "target": "mortem_x_updates_link_xupdateslink",
-      "confidence_score": 1.0
+      "target": "mortem_x_updates_link_xupdateslink"
     },
     {
       "relation": "calls",
@@ -3031,9 +3040,9 @@
       "source_file": "src/lib/utils.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_utils_ts",
-      "target": "lib_utils_cn",
-      "confidence_score": 1.0
+      "target": "lib_utils_cn"
     },
     {
       "relation": "contains",
@@ -3041,9 +3050,9 @@
       "source_file": "src/lib/env.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_env_ts",
-      "target": "lib_env_requireenv",
-      "confidence_score": 1.0
+      "target": "lib_env_requireenv"
     },
     {
       "relation": "contains",
@@ -3051,9 +3060,9 @@
       "source_file": "src/lib/env.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_env_ts",
-      "target": "lib_env_getdatabaseurl",
-      "confidence_score": 1.0
+      "target": "lib_env_getdatabaseurl"
     },
     {
       "relation": "contains",
@@ -3061,9 +3070,9 @@
       "source_file": "src/lib/env.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_env_ts",
-      "target": "lib_env_getresendapikey",
-      "confidence_score": 1.0
+      "target": "lib_env_getresendapikey"
     },
     {
       "relation": "contains",
@@ -3071,9 +3080,9 @@
       "source_file": "src/lib/env.ts",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_env_ts",
-      "target": "lib_env_getresendfromemail",
-      "confidence_score": 1.0
+      "target": "lib_env_getresendfromemail"
     },
     {
       "relation": "contains",
@@ -3081,9 +3090,9 @@
       "source_file": "src/lib/env.ts",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_env_ts",
-      "target": "lib_env_getappurl",
-      "confidence_score": 1.0
+      "target": "lib_env_getappurl"
     },
     {
       "relation": "imports_from",
@@ -3092,9 +3101,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_mailer_ts",
-      "target": "src_lib_env_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_env_ts"
     },
     {
       "relation": "imports_from",
@@ -3103,9 +3112,9 @@
       "source_file": "src/db/client.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_db_client_ts",
-      "target": "src_lib_env_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_env_ts"
     },
     {
       "relation": "calls",
@@ -3114,9 +3123,9 @@
       "source_file": "src/lib/env.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_env_getdatabaseurl",
-      "target": "lib_env_requireenv",
-      "confidence_score": 1.0
+      "target": "lib_env_requireenv"
     },
     {
       "relation": "calls",
@@ -3125,9 +3134,9 @@
       "source_file": "src/lib/env.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_env_getresendapikey",
-      "target": "lib_env_requireenv",
-      "confidence_score": 1.0
+      "target": "lib_env_requireenv"
     },
     {
       "relation": "calls",
@@ -3136,9 +3145,9 @@
       "source_file": "src/lib/env.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_env_getresendfromemail",
-      "target": "lib_env_requireenv",
-      "confidence_score": 1.0
+      "target": "lib_env_requireenv"
     },
     {
       "relation": "calls",
@@ -3147,9 +3156,9 @@
       "source_file": "src/lib/env.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "lib_env_getappurl",
-      "target": "lib_env_requireenv",
-      "confidence_score": 1.0
+      "target": "lib_env_requireenv"
     },
     {
       "relation": "imports",
@@ -3158,9 +3167,9 @@
       "source_file": "src/db/client.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_db_client_ts",
-      "target": "lib_env_getdatabaseurl",
-      "confidence_score": 1.0
+      "target": "lib_env_getdatabaseurl"
     },
     {
       "relation": "calls",
@@ -3180,9 +3189,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_mailer_ts",
-      "target": "lib_env_getresendapikey",
-      "confidence_score": 1.0
+      "target": "lib_env_getresendapikey"
     },
     {
       "relation": "calls",
@@ -3202,9 +3211,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_mailer_ts",
-      "target": "lib_env_getresendfromemail",
-      "confidence_score": 1.0
+      "target": "lib_env_getresendfromemail"
     },
     {
       "relation": "calls",
@@ -3246,9 +3255,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_mailer_ts",
-      "target": "lib_env_getappurl",
-      "confidence_score": 1.0
+      "target": "lib_env_getappurl"
     },
     {
       "relation": "calls",
@@ -3290,9 +3299,9 @@
       "source_file": "src/lib/waitlist/schema.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_schema_ts",
-      "target": "src_lib_waitlist_options_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_options_ts"
     },
     {
       "relation": "imports",
@@ -3301,9 +3310,9 @@
       "source_file": "src/lib/waitlist/schema.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_schema_ts",
-      "target": "waitlist_options_failure_mode_options",
-      "confidence_score": 1.0
+      "target": "waitlist_options_failure_mode_options"
     },
     {
       "relation": "imports",
@@ -3312,9 +3321,9 @@
       "source_file": "src/lib/waitlist/schema.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_schema_ts",
-      "target": "waitlist_options_role_options",
-      "confidence_score": 1.0
+      "target": "waitlist_options_role_options"
     },
     {
       "relation": "imports",
@@ -3323,9 +3332,9 @@
       "source_file": "src/lib/waitlist/schema.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_schema_ts",
-      "target": "waitlist_options_team_type_options",
-      "confidence_score": 1.0
+      "target": "waitlist_options_team_type_options"
     },
     {
       "relation": "contains",
@@ -3333,9 +3342,9 @@
       "source_file": "src/lib/waitlist/schema.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_schema_ts",
-      "target": "waitlist_schema_rolevalues",
-      "confidence_score": 1.0
+      "target": "waitlist_schema_rolevalues"
     },
     {
       "relation": "contains",
@@ -3343,9 +3352,9 @@
       "source_file": "src/lib/waitlist/schema.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_schema_ts",
-      "target": "waitlist_schema_teamtypevalues",
-      "confidence_score": 1.0
+      "target": "waitlist_schema_teamtypevalues"
     },
     {
       "relation": "contains",
@@ -3353,9 +3362,9 @@
       "source_file": "src/lib/waitlist/schema.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_schema_ts",
-      "target": "waitlist_schema_failuremodevalues",
-      "confidence_score": 1.0
+      "target": "waitlist_schema_failuremodevalues"
     },
     {
       "relation": "contains",
@@ -3363,9 +3372,9 @@
       "source_file": "src/lib/waitlist/schema.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_schema_ts",
-      "target": "waitlist_schema_inoptions",
-      "confidence_score": 1.0
+      "target": "waitlist_schema_inoptions"
     },
     {
       "relation": "contains",
@@ -3373,9 +3382,9 @@
       "source_file": "src/lib/waitlist/schema.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_schema_ts",
-      "target": "waitlist_schema_waitlistformschema",
-      "confidence_score": 1.0
+      "target": "waitlist_schema_waitlistformschema"
     },
     {
       "relation": "contains",
@@ -3383,9 +3392,9 @@
       "source_file": "src/lib/waitlist/schema.ts",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_schema_ts",
-      "target": "waitlist_schema_waitlistforminput",
-      "confidence_score": 1.0
+      "target": "waitlist_schema_waitlistforminput"
     },
     {
       "relation": "imports_from",
@@ -3394,9 +3403,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "src_lib_waitlist_schema_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_schema_ts"
     },
     {
       "relation": "imports_from",
@@ -3405,9 +3414,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "src_lib_waitlist_schema_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_schema_ts"
     },
     {
       "relation": "imports",
@@ -3416,9 +3425,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_schema_waitlistformschema",
-      "confidence_score": 1.0
+      "target": "waitlist_schema_waitlistformschema"
     },
     {
       "relation": "imports",
@@ -3427,9 +3436,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_schema_waitlistforminput",
-      "confidence_score": 1.0
+      "target": "waitlist_schema_waitlistforminput"
     },
     {
       "relation": "contains",
@@ -3437,9 +3446,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_mailer_ts",
-      "target": "waitlist_mailer_emailwordmarkheader",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_emailwordmarkheader"
     },
     {
       "relation": "contains",
@@ -3447,8 +3456,18 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_mailer_ts",
-      "target": "waitlist_mailer_emailsignoffhtml",
+      "target": "waitlist_mailer_emailsignoffhtml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "waitlist_mailer_resendtemplateemailpayload",
       "confidence_score": 1.0
     },
     {
@@ -3457,9 +3476,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_mailer_ts",
-      "target": "waitlist_mailer_getresendclient",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_getresendclient"
     },
     {
       "relation": "contains",
@@ -3467,9 +3486,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_mailer_ts",
-      "target": "waitlist_mailer_sendverificationemail",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_sendverificationemail"
     },
     {
       "relation": "contains",
@@ -3477,9 +3496,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_mailer_ts",
-      "target": "waitlist_mailer_sendconfirmationemail",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_sendconfirmationemail"
     },
     {
       "relation": "contains",
@@ -3487,20 +3506,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_mailer_ts",
-      "target": "waitlist_mailer_sendpriorityunlockedemail",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L49",
-      "weight": 1.0,
-      "source": "waitlist_mailer_sendverificationemail",
-      "target": "waitlist_mailer_emailwordmarkheader",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_sendpriorityunlockedemail"
     },
     {
       "relation": "calls",
@@ -3509,9 +3517,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_mailer_sendconfirmationemail",
-      "target": "waitlist_mailer_emailwordmarkheader",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_emailwordmarkheader"
     },
     {
       "relation": "calls",
@@ -3520,20 +3528,20 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L133",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_mailer_sendpriorityunlockedemail",
-      "target": "waitlist_mailer_emailwordmarkheader",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_emailwordmarkheader"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L66",
+      "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_mailer_sendverificationemail",
-      "target": "waitlist_mailer_emailsignoffhtml",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_emailwordmarkheader"
     },
     {
       "relation": "calls",
@@ -3542,9 +3550,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_mailer_sendconfirmationemail",
-      "target": "waitlist_mailer_emailsignoffhtml",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_emailsignoffhtml"
     },
     {
       "relation": "calls",
@@ -3553,9 +3561,20 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_mailer_sendpriorityunlockedemail",
-      "target": "waitlist_mailer_emailsignoffhtml",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_emailsignoffhtml"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "waitlist_mailer_sendverificationemail",
+      "target": "waitlist_mailer_emailsignoffhtml"
     },
     {
       "relation": "calls",
@@ -3564,9 +3583,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_mailer_sendverificationemail",
-      "target": "waitlist_mailer_getresendclient",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_getresendclient"
     },
     {
       "relation": "calls",
@@ -3575,9 +3594,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_mailer_sendconfirmationemail",
-      "target": "waitlist_mailer_getresendclient",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_getresendclient"
     },
     {
       "relation": "calls",
@@ -3586,9 +3605,9 @@
       "source_file": "src/lib/waitlist/mailer.ts",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_mailer_sendpriorityunlockedemail",
-      "target": "waitlist_mailer_getresendclient",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_getresendclient"
     },
     {
       "relation": "imports_from",
@@ -3597,9 +3616,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "src_lib_waitlist_options_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_options_ts"
     },
     {
       "relation": "imports",
@@ -3608,9 +3627,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_options_failure_mode_options",
-      "confidence_score": 1.0
+      "target": "waitlist_options_failure_mode_options"
     },
     {
       "relation": "imports",
@@ -3619,9 +3638,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_options_role_options",
-      "confidence_score": 1.0
+      "target": "waitlist_options_role_options"
     },
     {
       "relation": "imports",
@@ -3630,9 +3649,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_options_team_type_options",
-      "confidence_score": 1.0
+      "target": "waitlist_options_team_type_options"
     },
     {
       "relation": "imports_from",
@@ -3641,9 +3660,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "src_lib_waitlist_service_ts",
-      "confidence_score": 1.0
+      "target": "src_lib_waitlist_service_ts"
     },
     {
       "relation": "imports",
@@ -3652,9 +3671,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_service_createverificationexpiry",
-      "confidence_score": 1.0
+      "target": "waitlist_service_createverificationexpiry"
     },
     {
       "relation": "imports",
@@ -3663,9 +3682,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_service_getnextprioritystate",
-      "confidence_score": 1.0
+      "target": "waitlist_service_getnextprioritystate"
     },
     {
       "relation": "imports",
@@ -3674,9 +3693,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_service_getverificationstatus",
-      "confidence_score": 1.0
+      "target": "waitlist_service_getverificationstatus"
     },
     {
       "relation": "imports",
@@ -3685,9 +3704,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_service_hashverificationtoken",
-      "confidence_score": 1.0
+      "target": "waitlist_service_hashverificationtoken"
     },
     {
       "relation": "imports",
@@ -3696,9 +3715,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_service_isduplicateemail",
-      "confidence_score": 1.0
+      "target": "waitlist_service_isduplicateemail"
     },
     {
       "relation": "imports",
@@ -3707,9 +3726,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_service_normalizeemail",
-      "confidence_score": 1.0
+      "target": "waitlist_service_normalizeemail"
     },
     {
       "relation": "imports",
@@ -3718,9 +3737,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_service_shouldignoreselfreferral",
-      "confidence_score": 1.0
+      "target": "waitlist_service_shouldignoreselfreferral"
     },
     {
       "relation": "contains",
@@ -3728,9 +3747,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_service_test_parsed",
-      "confidence_score": 1.0
+      "target": "waitlist_service_test_parsed"
     },
     {
       "relation": "contains",
@@ -3738,9 +3757,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_service_test_now",
-      "confidence_score": 1.0
+      "target": "waitlist_service_test_now"
     },
     {
       "relation": "contains",
@@ -3748,9 +3767,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_service_test_expiry",
-      "confidence_score": 1.0
+      "target": "waitlist_service_test_expiry"
     },
     {
       "relation": "contains",
@@ -3758,9 +3777,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_service_test_beforethreshold",
-      "confidence_score": 1.0
+      "target": "waitlist_service_test_beforethreshold"
     },
     {
       "relation": "contains",
@@ -3768,9 +3787,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_service_test_atthreshold",
-      "confidence_score": 1.0
+      "target": "waitlist_service_test_atthreshold"
     },
     {
       "relation": "contains",
@@ -3778,9 +3797,9 @@
       "source_file": "src/lib/waitlist/service.test.ts",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
-      "target": "waitlist_service_test_afterunlocked",
-      "confidence_score": 1.0
+      "target": "waitlist_service_test_afterunlocked"
     },
     {
       "relation": "contains",
@@ -3788,9 +3807,9 @@
       "source_file": "src/lib/waitlist/dashboard-cookie.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_dashboard_cookie_ts",
-      "target": "waitlist_dashboard_cookie_mortemdashboardcookieoptions",
-      "confidence_score": 1.0
+      "target": "waitlist_dashboard_cookie_mortemdashboardcookieoptions"
     },
     {
       "relation": "imports_from",
@@ -3799,9 +3818,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "src_db_client_ts",
-      "confidence_score": 1.0
+      "target": "src_db_client_ts"
     },
     {
       "relation": "imports",
@@ -3810,9 +3829,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "db_client_database",
-      "confidence_score": 1.0
+      "target": "db_client_database"
     },
     {
       "relation": "imports_from",
@@ -3821,9 +3840,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "src_db_schema_ts",
-      "confidence_score": 1.0
+      "target": "src_db_schema_ts"
     },
     {
       "relation": "imports",
@@ -3832,9 +3851,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "db_schema_waitlistentries",
-      "confidence_score": 1.0
+      "target": "db_schema_waitlistentries"
     },
     {
       "relation": "imports",
@@ -3843,9 +3862,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "db_schema_waitlistentry",
-      "confidence_score": 1.0
+      "target": "db_schema_waitlistentry"
     },
     {
       "relation": "contains",
@@ -3853,9 +3872,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_databaseexecutor",
-      "confidence_score": 1.0
+      "target": "waitlist_service_databaseexecutor"
     },
     {
       "relation": "contains",
@@ -3863,9 +3882,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_submitwaitlistresult",
-      "confidence_score": 1.0
+      "target": "waitlist_service_submitwaitlistresult"
     },
     {
       "relation": "contains",
@@ -3873,9 +3892,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_verifywaitlistresult",
-      "confidence_score": 1.0
+      "target": "waitlist_service_verifywaitlistresult"
     },
     {
       "relation": "contains",
@@ -3883,9 +3902,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_normalizeemail",
-      "confidence_score": 1.0
+      "target": "waitlist_service_normalizeemail"
     },
     {
       "relation": "contains",
@@ -3893,9 +3912,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_isduplicateemail",
-      "confidence_score": 1.0
+      "target": "waitlist_service_isduplicateemail"
     },
     {
       "relation": "contains",
@@ -3903,9 +3922,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_hashverificationtoken",
-      "confidence_score": 1.0
+      "target": "waitlist_service_hashverificationtoken"
     },
     {
       "relation": "contains",
@@ -3913,9 +3932,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_createreferralcode",
-      "confidence_score": 1.0
+      "target": "waitlist_service_createreferralcode"
     },
     {
       "relation": "contains",
@@ -3923,9 +3942,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_createdashboardtoken",
-      "confidence_score": 1.0
+      "target": "waitlist_service_createdashboardtoken"
     },
     {
       "relation": "contains",
@@ -3933,9 +3952,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_createverificationtoken",
-      "confidence_score": 1.0
+      "target": "waitlist_service_createverificationtoken"
     },
     {
       "relation": "contains",
@@ -3943,9 +3962,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_createverificationexpiry",
-      "confidence_score": 1.0
+      "target": "waitlist_service_createverificationexpiry"
     },
     {
       "relation": "contains",
@@ -3953,9 +3972,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_shouldignoreselfreferral",
-      "confidence_score": 1.0
+      "target": "waitlist_service_shouldignoreselfreferral"
     },
     {
       "relation": "contains",
@@ -3963,9 +3982,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_getverificationstatus",
-      "confidence_score": 1.0
+      "target": "waitlist_service_getverificationstatus"
     },
     {
       "relation": "contains",
@@ -3973,9 +3992,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_getnextprioritystate",
-      "confidence_score": 1.0
+      "target": "waitlist_service_getnextprioritystate"
     },
     {
       "relation": "contains",
@@ -3983,9 +4002,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_submitwaitlistentry",
-      "confidence_score": 1.0
+      "target": "waitlist_service_submitwaitlistentry"
     },
     {
       "relation": "contains",
@@ -3993,9 +4012,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_findentrybydashboardtoken",
-      "confidence_score": 1.0
+      "target": "waitlist_service_findentrybydashboardtoken"
     },
     {
       "relation": "contains",
@@ -4003,9 +4022,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L183",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_findentrybyverificationhash",
-      "confidence_score": 1.0
+      "target": "waitlist_service_findentrybyverificationhash"
     },
     {
       "relation": "contains",
@@ -4013,9 +4032,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_verifywaitlistentry",
-      "confidence_score": 1.0
+      "target": "waitlist_service_verifywaitlistentry"
     },
     {
       "relation": "contains",
@@ -4023,9 +4042,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L281",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_ts",
-      "target": "waitlist_service_markprioritynotificationsent",
-      "confidence_score": 1.0
+      "target": "waitlist_service_markprioritynotificationsent"
     },
     {
       "relation": "calls",
@@ -4034,9 +4053,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_service_isduplicateemail",
-      "target": "waitlist_service_normalizeemail",
-      "confidence_score": 1.0
+      "target": "waitlist_service_normalizeemail"
     },
     {
       "relation": "calls",
@@ -4045,9 +4064,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_service_submitwaitlistentry",
-      "target": "waitlist_service_normalizeemail",
-      "confidence_score": 1.0
+      "target": "waitlist_service_normalizeemail"
     },
     {
       "relation": "calls",
@@ -4056,9 +4075,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_service_shouldignoreselfreferral",
-      "target": "waitlist_service_isduplicateemail",
-      "confidence_score": 1.0
+      "target": "waitlist_service_isduplicateemail"
     },
     {
       "relation": "calls",
@@ -4067,9 +4086,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_service_submitwaitlistentry",
-      "target": "waitlist_service_hashverificationtoken",
-      "confidence_score": 1.0
+      "target": "waitlist_service_hashverificationtoken"
     },
     {
       "relation": "calls",
@@ -4078,9 +4097,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L197",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_service_verifywaitlistentry",
-      "target": "waitlist_service_hashverificationtoken",
-      "confidence_score": 1.0
+      "target": "waitlist_service_hashverificationtoken"
     },
     {
       "relation": "calls",
@@ -4089,9 +4108,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_service_submitwaitlistentry",
-      "target": "waitlist_service_createverificationtoken",
-      "confidence_score": 1.0
+      "target": "waitlist_service_createverificationtoken"
     },
     {
       "relation": "calls",
@@ -4100,9 +4119,9 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_service_submitwaitlistentry",
-      "target": "waitlist_service_createverificationexpiry",
-      "confidence_score": 1.0
+      "target": "waitlist_service_createverificationexpiry"
     },
     {
       "relation": "contains",
@@ -4110,9 +4129,9 @@
       "source_file": "src/lib/waitlist/options.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_options_ts",
-      "target": "waitlist_options_role_options",
-      "confidence_score": 1.0
+      "target": "waitlist_options_role_options"
     },
     {
       "relation": "contains",
@@ -4120,9 +4139,9 @@
       "source_file": "src/lib/waitlist/options.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_options_ts",
-      "target": "waitlist_options_team_type_options",
-      "confidence_score": 1.0
+      "target": "waitlist_options_team_type_options"
     },
     {
       "relation": "contains",
@@ -4130,9 +4149,9 @@
       "source_file": "src/lib/waitlist/options.ts",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_lib_waitlist_options_ts",
-      "target": "waitlist_options_failure_mode_options",
-      "confidence_score": 1.0
+      "target": "waitlist_options_failure_mode_options"
     },
     {
       "relation": "contains",
@@ -4140,9 +4159,9 @@
       "source_file": "src/db/schema.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_db_schema_ts",
-      "target": "db_schema_waitlistentries",
-      "confidence_score": 1.0
+      "target": "db_schema_waitlistentries"
     },
     {
       "relation": "contains",
@@ -4150,9 +4169,9 @@
       "source_file": "src/db/schema.ts",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_db_schema_ts",
-      "target": "db_schema_waitlistentryrelations",
-      "confidence_score": 1.0
+      "target": "db_schema_waitlistentryrelations"
     },
     {
       "relation": "contains",
@@ -4160,9 +4179,9 @@
       "source_file": "src/db/schema.ts",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_db_schema_ts",
-      "target": "db_schema_waitlistentry",
-      "confidence_score": 1.0
+      "target": "db_schema_waitlistentry"
     },
     {
       "relation": "contains",
@@ -4170,9 +4189,9 @@
       "source_file": "src/db/schema.ts",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_db_schema_ts",
-      "target": "db_schema_newwaitlistentry",
-      "confidence_score": 1.0
+      "target": "db_schema_newwaitlistentry"
     },
     {
       "relation": "imports_from",
@@ -4181,9 +4200,9 @@
       "source_file": "src/db/client.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_db_client_ts",
-      "target": "src_db_schema_ts",
-      "confidence_score": 1.0
+      "target": "src_db_schema_ts"
     },
     {
       "relation": "contains",
@@ -4191,9 +4210,9 @@
       "source_file": "src/db/client.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_db_client_ts",
-      "target": "db_client_database",
-      "confidence_score": 1.0
+      "target": "db_client_database"
     },
     {
       "relation": "contains",
@@ -4201,9 +4220,9 @@
       "source_file": "src/db/client.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_db_client_ts",
-      "target": "db_client_getdb",
-      "confidence_score": 1.0
+      "target": "db_client_getdb"
     },
     {
       "relation": "contains",
@@ -4211,9 +4230,9 @@
       "source_file": "brand.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "brand_md",
-      "target": "waitlist_brand_brand_mortem",
-      "confidence_score": 1.0
+      "target": "waitlist_brand_brand_mortem"
     },
     {
       "relation": "contains",
@@ -4221,9 +4240,9 @@
       "source_file": "brand.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_brand_brand_mortem",
-      "target": "waitlist_brand_1_voice",
-      "confidence_score": 1.0
+      "target": "waitlist_brand_1_voice"
     },
     {
       "relation": "contains",
@@ -4231,9 +4250,9 @@
       "source_file": "brand.md",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_brand_brand_mortem",
-      "target": "waitlist_brand_2_color",
-      "confidence_score": 1.0
+      "target": "waitlist_brand_2_color"
     },
     {
       "relation": "contains",
@@ -4241,9 +4260,9 @@
       "source_file": "brand.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_brand_brand_mortem",
-      "target": "waitlist_brand_3_typography",
-      "confidence_score": 1.0
+      "target": "waitlist_brand_3_typography"
     },
     {
       "relation": "contains",
@@ -4251,9 +4270,9 @@
       "source_file": "brand.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_brand_brand_mortem",
-      "target": "waitlist_brand_4_layout",
-      "confidence_score": 1.0
+      "target": "waitlist_brand_4_layout"
     },
     {
       "relation": "contains",
@@ -4261,9 +4280,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "waitlist_readme_mortem_early_access_landing",
-      "confidence_score": 1.0
+      "target": "waitlist_readme_mortem_early_access_landing"
     },
     {
       "relation": "contains",
@@ -4271,9 +4290,9 @@
       "source_file": "README.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_readme_mortem_early_access_landing",
-      "target": "waitlist_readme_stack",
-      "confidence_score": 1.0
+      "target": "waitlist_readme_stack"
     },
     {
       "relation": "contains",
@@ -4281,9 +4300,9 @@
       "source_file": "README.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_readme_mortem_early_access_landing",
-      "target": "waitlist_readme_scripts",
-      "confidence_score": 1.0
+      "target": "waitlist_readme_scripts"
     },
     {
       "relation": "contains",
@@ -4291,9 +4310,9 @@
       "source_file": "README.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_readme_mortem_early_access_landing",
-      "target": "waitlist_readme_environment",
-      "confidence_score": 1.0
+      "target": "waitlist_readme_environment"
     },
     {
       "relation": "contains",
@@ -4301,11 +4320,11 @@
       "source_file": "README.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_readme_scripts",
-      "target": "waitlist_readme_codeblock_1",
-      "confidence_score": 1.0
+      "target": "waitlist_readme_codeblock_1"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d10a08b655d37b8cfe9ebaccd13bbca42c91c041"
+  "built_at_commit": "3afe424afaee09baed1c07b7eb88732993626e4e"
 }

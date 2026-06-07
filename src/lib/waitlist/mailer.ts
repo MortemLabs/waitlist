@@ -1,6 +1,5 @@
 import { Resend } from "resend"
 import { getAppUrl, getResendApiKey, getResendFromEmail } from "@/lib/env"
-import { buildVerificationEmailHtml } from "@/lib/waitlist/verification-email-template"
 
 const EMAIL_SIGN_OFF_TEXT = "\n\nBest,\nMortem Labs Team"
 
@@ -20,6 +19,16 @@ function emailSignOffHtml(): string {
       Best,<br />
       <span style="color:#EDEEE9">mortem team</span>
     </p>`
+}
+
+type ResendTemplateEmailPayload = {
+  from: string
+  subject: string
+  template: {
+    id: string
+    variables: Record<string, string>
+  }
+  to: string
 }
 
 let resendClient: Resend | null = null
@@ -43,17 +52,25 @@ export async function sendVerificationEmail({
   const appUrl = getAppUrl()
   const verificationUrl = `${appUrl}/verify/${verificationToken}`
 
-  await getResendClient().emails.send({
+  const verificationEmail: ResendTemplateEmailPayload = {
     from: getResendFromEmail(),
-    html: buildVerificationEmailHtml({
-      preferencesUrl: `${appUrl}/preferences`,
-      unsubscribeUrl: `${appUrl}/unsubscribe`,
-      verificationUrl,
-    }),
     subject: "Mortem early access — verify your email",
-    text: `Confirm your email.\n\nOne click verifies the address and moves your request into the queue. This link expires in 30 minutes and can only be used once.\n\n${verificationUrl}\n\nDidn't request this? No action is needed — the link expires on its own and nothing was filed.`,
+    template: {
+      id: "email-verification",
+      variables: {
+        preferences_url: `${appUrl}/preferences`,
+        unsubscribe_url: `${appUrl}/unsubscribe`,
+        verify_url: verificationUrl,
+      },
+    },
     to: email,
-  })
+  }
+
+  await getResendClient().emails.send(
+    verificationEmail as unknown as Parameters<
+      ReturnType<typeof getResendClient>["emails"]["send"]
+    >[0],
+  )
 }
 
 export async function sendConfirmationEmail({

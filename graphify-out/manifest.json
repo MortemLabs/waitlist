@@ -20,7 +20,7 @@
     "hash": "237aa2d3e29792c275990f72bd0e0c48"
   },
   "/Users/sam/Projects/mortem-labs/waitlist/src/app/layout.tsx": {
-    "mtime": 1780436308.436913,
+    "mtime": 1780446876.850924,
     "hash": "45562da664a4c722a9fb145712a33039"
   },
   "/Users/sam/Projects/mortem-labs/waitlist/src/app/page.tsx": {
@@ -104,8 +104,8 @@
     "hash": "c57c8a41417644698fff0a857c4bd9f6"
   },
   "/Users/sam/Projects/mortem-labs/waitlist/src/lib/waitlist/mailer.ts": {
-    "mtime": 1777975074.847824,
-    "hash": "35f543909156e30a68b79892d9061802"
+    "mtime": 1780793383.52363,
+    "hash": "da2b5d3e7a320914a32ad08b159ba50a"
   },
   "/Users/sam/Projects/mortem-labs/waitlist/src/lib/waitlist/service.test.ts": {
     "mtime": 1780116844.287488,
