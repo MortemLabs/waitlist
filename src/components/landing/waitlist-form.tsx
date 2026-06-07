@@ -122,16 +122,6 @@ export function WaitlistForm({
       className={cn("border border-line bg-ink-2 p-5 md:p-6", className)}
       noValidate
     >
-      <div className="flex items-start justify-between gap-4 border-b border-line pb-4">
-        <div>
-          <p className="eyebrow">Early access request</p>
-          <h2 className="mt-2 font-display text-3xl leading-tight">
-            Join the queue.
-          </h2>
-        </div>
-        <span className="case-meta text-signal">3 referrals = priority</span>
-      </div>
-
       <div className="mt-5 space-y-4">
         <p className="max-w-lg text-sm leading-6 text-muted-foreground">
           File your email. We send one verification link, then open your referral page after you confirm it.
