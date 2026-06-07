@@ -1,5 +1,6 @@
 import { Resend } from "resend"
 import { getAppUrl, getResendApiKey, getResendFromEmail } from "@/lib/env"
+import { buildVerificationEmailHtml } from "@/lib/waitlist/verification-email-template"
 
 const EMAIL_SIGN_OFF_TEXT = "\n\nBest,\nMortem Labs Team"
 
@@ -19,38 +20,6 @@ function emailSignOffHtml(): string {
       Best,<br />
       <span style="color:#EDEEE9">mortem team</span>
     </p>`
-}
-
-type ResendTemplateEmailPayload = {
-  from: string
-  subject: string
-  template: {
-    id: string
-    variables: Record<string, string>
-  }
-  to: string
-}
-
-async function sendResendTemplateEmail(payload: ResendTemplateEmailPayload) {
-  const response = await fetch("https://api.resend.com/emails", {
-    body: JSON.stringify({
-      from: payload.from,
-      subject: payload.subject,
-      template: payload.template,
-      to: [payload.to],
-    }),
-    headers: {
-      Authorization: `Bearer ${getResendApiKey()}`,
-      "Content-Type": "application/json",
-    },
-    method: "POST",
-  })
-
-  const body = (await response.json()) as { message?: string }
-
-  if (!response.ok) {
-    throw new Error(body.message ?? "Failed to send email")
-  }
 }
 
 let resendClient: Resend | null = null
@@ -74,17 +43,15 @@ export async function sendVerificationEmail({
   const appUrl = getAppUrl()
   const verificationUrl = `${appUrl}/verify/${verificationToken}`
 
-  await sendResendTemplateEmail({
+  await getResendClient().emails.send({
     from: getResendFromEmail(),
+    html: buildVerificationEmailHtml({
+      preferencesUrl: `${appUrl}/preferences`,
+      unsubscribeUrl: `${appUrl}/unsubscribe`,
+      verificationUrl,
+    }),
     subject: "Mortem early access — verify your email",
-    template: {
-      id: "email-verification",
-      variables: {
-        preferences_url: `${appUrl}/preferences`,
-        unsubscribe_url: `${appUrl}/unsubscribe`,
-        verify_url: verificationUrl,
-      },
-    },
+    text: `Confirm your email.\n\nOne click verifies the address and moves your request into the queue. This link expires in 30 minutes and can only be used once.\n\n${verificationUrl}\n\nDidn't request this? No action is needed — the link expires on its own and nothing was filed.`,
     to: email,
   })
 }

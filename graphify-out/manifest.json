@@ -104,12 +104,16 @@
     "hash": "c57c8a41417644698fff0a857c4bd9f6"
   },
   "/Users/sam/Projects/mortem-labs/waitlist/src/lib/waitlist/mailer.ts": {
-    "mtime": 1780794033.7272549,
-    "hash": "a2046d389fcad40c9df9ffbfcadba52c"
+    "mtime": 1780794882.966347,
+    "hash": "4ab75def289568ea706b03953c2863e7"
   },
   "/Users/sam/Projects/mortem-labs/waitlist/src/lib/waitlist/service.test.ts": {
     "mtime": 1780116844.287488,
     "hash": "04df7eb3bdd9c5e833149d0f60ee8bf8"
+  },
+  "/Users/sam/Projects/mortem-labs/waitlist/src/lib/waitlist/verification-email-template.ts": {
+    "mtime": 1780794882.9665558,
+    "hash": "7b194ad923a869f738186682eb430969"
   },
   "/Users/sam/Projects/mortem-labs/waitlist/src/lib/waitlist/dashboard-cookie.ts": {
     "mtime": 1777973044.2556262,

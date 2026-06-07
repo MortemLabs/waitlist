@@ -171,7 +171,7 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L75",
       "id": "app_page_homepage",
-      "community": 3,
+      "community": 5,
       "norm_label": "homepage()"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L1",
       "id": "src_app_queue_dashboardtoken_page_tsx",
-      "community": 3,
+      "community": 5,
       "norm_label": "page.tsx"
     },
     {
@@ -243,7 +243,7 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L10",
       "id": "dashboardtoken_page_queuepageprops",
-      "community": 3,
+      "community": 5,
       "norm_label": "queuepageprops"
     },
     {
@@ -252,7 +252,7 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L17",
       "id": "dashboardtoken_page_queuepage",
-      "community": 3,
+      "community": 5,
       "norm_label": "queuepage()"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L87",
       "id": "dashboardtoken_page_banner",
-      "community": 3,
+      "community": 5,
       "norm_label": "banner()"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "src/app/queue/[dashboardToken]/page.tsx",
       "source_location": "L118",
       "id": "dashboardtoken_page_toverificationstate",
-      "community": 3,
+      "community": 5,
       "norm_label": "toverificationstate()"
     },
     {
@@ -333,7 +333,7 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L1",
       "id": "src_components_ui_button_tsx",
-      "community": 9,
+      "community": 4,
       "norm_label": "button.tsx"
     },
     {
@@ -342,7 +342,7 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L6",
       "id": "ui_button_buttonvariants",
-      "community": 11,
+      "community": 4,
       "norm_label": "buttonvariants"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L30",
       "id": "ui_button_buttonprops",
-      "community": 9,
+      "community": 4,
       "norm_label": "buttonprops"
     },
     {
@@ -360,7 +360,7 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L36",
       "id": "ui_button_button",
-      "community": 9,
+      "community": 4,
       "norm_label": "button()"
     },
     {
@@ -405,7 +405,7 @@
       "source_file": "src/components/ui/input.tsx",
       "source_location": "L1",
       "id": "src_components_ui_input_tsx",
-      "community": 7,
+      "community": 4,
       "norm_label": "input.tsx"
     },
     {
@@ -414,7 +414,7 @@
       "source_file": "src/components/ui/input.tsx",
       "source_location": "L4",
       "id": "ui_input_input",
-      "community": 7,
+      "community": 4,
       "norm_label": "input"
     },
     {
@@ -423,7 +423,7 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L1",
       "id": "src_components_landing_waitlist_form_tsx",
-      "community": 7,
+      "community": 4,
       "norm_label": "waitlist-form.tsx"
     },
     {
@@ -432,7 +432,7 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L10",
       "id": "landing_waitlist_form_submitsuccesspayload",
-      "community": 7,
+      "community": 4,
       "norm_label": "submitsuccesspayload"
     },
     {
@@ -441,7 +441,7 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L14",
       "id": "landing_waitlist_form_waitlistformprops",
-      "community": 7,
+      "community": 4,
       "norm_label": "waitlistformprops"
     },
     {
@@ -450,7 +450,7 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L20",
       "id": "landing_waitlist_form_waitlistform",
-      "community": 7,
+      "community": 4,
       "norm_label": "waitlistform()"
     },
     {
@@ -459,7 +459,7 @@
       "source_file": "src/components/landing/waitlist-form.tsx",
       "source_location": "L194",
       "id": "landing_waitlist_form_field",
-      "community": 7,
+      "community": 4,
       "norm_label": "field()"
     },
     {
@@ -468,7 +468,7 @@
       "source_file": "src/components/landing/waitlist-modal.tsx",
       "source_location": "L1",
       "id": "src_components_landing_waitlist_modal_tsx",
-      "community": 9,
+      "community": 4,
       "norm_label": "waitlist-modal.tsx"
     },
     {
@@ -477,7 +477,7 @@
       "source_file": "src/components/landing/waitlist-modal.tsx",
       "source_location": "L9",
       "id": "landing_waitlist_modal_waitlistmodalprops",
-      "community": 9,
+      "community": 4,
       "norm_label": "waitlistmodalprops"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "src/components/landing/waitlist-modal.tsx",
       "source_location": "L16",
       "id": "landing_waitlist_modal_waitlistmodal",
-      "community": 9,
+      "community": 4,
       "norm_label": "waitlistmodal()"
     },
     {
@@ -567,7 +567,7 @@
       "source_file": "src/components/mortem/mark.tsx",
       "source_location": "L1",
       "id": "src_components_mortem_mark_tsx",
-      "community": 4,
+      "community": 5,
       "norm_label": "mark.tsx"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "src/components/mortem/mark.tsx",
       "source_location": "L3",
       "id": "mortem_mark_markprops",
-      "community": 4,
+      "community": 5,
       "norm_label": "markprops"
     },
     {
@@ -585,7 +585,7 @@
       "source_file": "src/components/mortem/mark.tsx",
       "source_location": "L9",
       "id": "mortem_mark_mark",
-      "community": 4,
+      "community": 5,
       "norm_label": "mark()"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "src/components/mortem/mark.tsx",
       "source_location": "L22",
       "id": "mortem_mark_wordmark",
-      "community": 4,
+      "community": 5,
       "norm_label": "wordmark()"
     },
     {
@@ -603,7 +603,7 @@
       "source_file": "src/components/mortem/x-updates-link.tsx",
       "source_location": "L1",
       "id": "src_components_mortem_x_updates_link_tsx",
-      "community": 11,
+      "community": 4,
       "norm_label": "x-updates-link.tsx"
     },
     {
@@ -612,7 +612,7 @@
       "source_file": "src/components/mortem/x-updates-link.tsx",
       "source_location": "L4",
       "id": "mortem_x_updates_link_xlogo",
-      "community": 11,
+      "community": 4,
       "norm_label": "xlogo()"
     },
     {
@@ -621,7 +621,7 @@
       "source_file": "src/components/mortem/x-updates-link.tsx",
       "source_location": "L18",
       "id": "mortem_x_updates_link_xupdateslinkprops",
-      "community": 11,
+      "community": 4,
       "norm_label": "xupdateslinkprops"
     },
     {
@@ -630,7 +630,7 @@
       "source_file": "src/components/mortem/x-updates-link.tsx",
       "source_location": "L26",
       "id": "mortem_x_updates_link_xupdateslink",
-      "community": 11,
+      "community": 4,
       "norm_label": "xupdateslink()"
     },
     {
@@ -781,7 +781,7 @@
       "label": "emailWordmarkHeader()",
       "file_type": "code",
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L6",
+      "source_location": "L7",
       "id": "waitlist_mailer_emailwordmarkheader",
       "community": 2,
       "norm_label": "emailwordmarkheader()"
@@ -790,34 +790,16 @@
       "label": "emailSignOffHtml()",
       "file_type": "code",
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L16",
+      "source_location": "L17",
       "id": "waitlist_mailer_emailsignoffhtml",
       "community": 2,
       "norm_label": "emailsignoffhtml()"
     },
     {
-      "label": "ResendTemplateEmailPayload",
-      "file_type": "code",
-      "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L24",
-      "id": "waitlist_mailer_resendtemplateemailpayload",
-      "community": 2,
-      "norm_label": "resendtemplateemailpayload"
-    },
-    {
-      "label": "sendResendTemplateEmail()",
-      "file_type": "code",
-      "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L34",
-      "id": "waitlist_mailer_sendresendtemplateemail",
-      "community": 2,
-      "norm_label": "sendresendtemplateemail()"
-    },
-    {
       "label": "getResendClient()",
       "file_type": "code",
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L58",
+      "source_location": "L27",
       "id": "waitlist_mailer_getresendclient",
       "community": 2,
       "norm_label": "getresendclient()"
@@ -826,7 +808,7 @@
       "label": "sendVerificationEmail()",
       "file_type": "code",
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L67",
+      "source_location": "L36",
       "id": "waitlist_mailer_sendverificationemail",
       "community": 2,
       "norm_label": "sendverificationemail()"
@@ -835,7 +817,7 @@
       "label": "sendConfirmationEmail()",
       "file_type": "code",
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L92",
+      "source_location": "L59",
       "id": "waitlist_mailer_sendconfirmationemail",
       "community": 2,
       "norm_label": "sendconfirmationemail()"
@@ -844,7 +826,7 @@
       "label": "sendPriorityUnlockedEmail()",
       "file_type": "code",
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L137",
+      "source_location": "L104",
       "id": "waitlist_mailer_sendpriorityunlockedemail",
       "community": 2,
       "norm_label": "sendpriorityunlockedemail()"
@@ -911,6 +893,24 @@
       "id": "waitlist_service_test_afterunlocked",
       "community": 1,
       "norm_label": "afterunlocked"
+    },
+    {
+      "label": "verification-email-template.ts",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/verification-email-template.ts",
+      "source_location": "L1",
+      "id": "src_lib_waitlist_verification_email_template_ts",
+      "community": 2,
+      "norm_label": "verification-email-template.ts"
+    },
+    {
+      "label": "buildVerificationEmailHtml()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/verification-email-template.ts",
+      "source_location": "L1",
+      "id": "waitlist_verification_email_template_buildverificationemailhtml",
+      "community": 2,
+      "norm_label": "buildverificationemailhtml()"
     },
     {
       "label": "dashboard-cookie.ts",
@@ -1071,7 +1071,7 @@
       "source_file": "src/lib/waitlist/service.ts",
       "source_location": "L174",
       "id": "waitlist_service_findentrybydashboardtoken",
-      "community": 3,
+      "community": 5,
       "norm_label": "findentrybydashboardtoken()"
     },
     {
@@ -1316,6 +1316,24 @@
       "id": "waitlist_readme_environment",
       "community": 8,
       "norm_label": "environment"
+    },
+    {
+      "label": "ResendTemplateEmailPayload",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L24",
+      "community": 2,
+      "norm_label": "resendtemplateemailpayload",
+      "id": "waitlist_mailer_resendtemplateemailpayload"
+    },
+    {
+      "label": "sendResendTemplateEmail()",
+      "file_type": "code",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L34",
+      "community": 2,
+      "norm_label": "sendresendtemplateemail()",
+      "id": "waitlist_mailer_sendresendtemplateemail"
     }
   ],
   "links": [
@@ -3208,9 +3226,9 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L43",
+      "source_location": "L31",
       "weight": 1.0,
-      "source": "waitlist_mailer_sendresendtemplateemail",
+      "source": "waitlist_mailer_getresendclient",
       "target": "lib_env_getresendapikey"
     },
     {
@@ -3219,9 +3237,9 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L31",
+      "source_location": "L43",
       "weight": 1.0,
-      "source": "waitlist_mailer_getresendclient",
+      "source": "waitlist_mailer_sendresendtemplateemail",
       "target": "lib_env_getresendapikey"
     },
     {
@@ -3461,6 +3479,28 @@
       "target": "waitlist_schema_waitlistforminput"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "src_lib_waitlist_verification_email_template_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "waitlist_verification_email_template_buildverificationemailhtml",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/waitlist/mailer.ts",
@@ -3479,26 +3519,6 @@
       "confidence_score": 1.0,
       "source": "src_lib_waitlist_mailer_ts",
       "target": "waitlist_mailer_emailsignoffhtml"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_lib_waitlist_mailer_ts",
-      "target": "waitlist_mailer_resendtemplateemailpayload"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L34",
-      "weight": 1.0,
-      "source": "src_lib_waitlist_mailer_ts",
-      "target": "waitlist_mailer_sendresendtemplateemail",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3539,6 +3559,26 @@
       "confidence_score": 1.0,
       "source": "src_lib_waitlist_mailer_ts",
       "target": "waitlist_mailer_sendpriorityunlockedemail"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "waitlist_mailer_resendtemplateemailpayload"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_waitlist_mailer_ts",
+      "target": "waitlist_mailer_sendresendtemplateemail"
     },
     {
       "relation": "calls",
@@ -3611,11 +3651,11 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L77",
+      "source_location": "L45",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "waitlist_mailer_sendverificationemail",
-      "target": "waitlist_mailer_sendresendtemplateemail",
-      "confidence_score": 1.0
+      "target": "waitlist_mailer_getresendclient"
     },
     {
       "relation": "calls",
@@ -3643,12 +3683,23 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "src/lib/waitlist/mailer.ts",
-      "source_location": "L45",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "waitlist_mailer_sendverificationemail",
+      "target": "waitlist_verification_email_template_buildverificationemailhtml"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/mailer.ts",
+      "source_location": "L77",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "waitlist_mailer_sendverificationemail",
-      "target": "waitlist_mailer_getresendclient"
+      "target": "waitlist_mailer_sendresendtemplateemail"
     },
     {
       "relation": "imports_from",
@@ -3841,6 +3892,16 @@
       "confidence_score": 1.0,
       "source": "src_lib_waitlist_service_test_ts",
       "target": "waitlist_service_test_afterunlocked"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/waitlist/verification-email-template.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_lib_waitlist_verification_email_template_ts",
+      "target": "waitlist_verification_email_template_buildverificationemailhtml",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4367,5 +4428,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5c035bba73d12bb89529d38cfdcfe5c399787a0c"
+  "built_at_commit": "8862252f899b8012249bc1265c6c23484d81f616"
 }
